@@ -22,7 +22,12 @@ public class LegendaryTreasure : MonoBehaviour
     void Update()
     {
         float pos = (transform.position - knight.transform.position).magnitude;
-        if (pos < 0.5f && pos > -0.5f)
+        float mage_pos = (transform.position - mage.transform.position).magnitude;
+        float archer_pos = (transform.position - archer.transform.position).magnitude;
+
+        if (pos < 0.5f && pos > -0.5f
+            || mage_pos < 0.5f && mage_pos > -0.5f
+            || mage_pos < 0.5f && mage_pos > -0.5f)
         {
             if (Input.GetMouseButtonDown(1))
             {
