@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         defaultMoveSpeed = moveSpeed;
+        ic = GetComponent<ItemChecker>();
     }
 
     // Update is called once per frame
