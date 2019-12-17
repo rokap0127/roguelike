@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    GameObject player;
-    Player psc;
+    GameObject knight;
+    Knight psc;
     ItemChecker ic;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        psc = player.GetComponent<Player>();
-        ic = player.GetComponent<ItemChecker>();
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        psc = knight.GetComponent<Knight>();
+        ic = knight.GetComponent<ItemChecker>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float pos = (transform.position- player.transform.position).magnitude;
+        float pos = (transform.position- knight.transform.position).magnitude;
         if (pos<1&&pos>-1)
         {
             if (Input.GetMouseButtonDown(1))

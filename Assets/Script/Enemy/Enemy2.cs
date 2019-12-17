@@ -27,8 +27,8 @@ public class Enemy2 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        float pos = (transform.position - player.transform.position).magnitude;
+        GameObject knight = GameObject.FindGameObjectWithTag("Knight");
+        float pos = (transform.position - knight.transform.position).magnitude;
         //プレイヤーの位置へ向かうベクトルを生成する
         var angle = Utils.GetAngle(
             transform.localPosition,
