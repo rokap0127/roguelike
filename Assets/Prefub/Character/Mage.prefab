@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 0.85, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &4651721645738978166
@@ -149,11 +149,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4651721645738978161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33fb6990a4bc3364fa5a4433eda16beb, type: 3}
+  m_Script: {fileID: 11500000, guid: b0aa39da8df4b4948820a086fcdbb93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  magic: {fileID: 794852832553027592, guid: 098e1321a1374e0499913658e92a3207, type: 3}
-  magicSpeed: 0.1
-  teleportRange: 0.7
-  slopeRange: 0.5
+  moveSpeed: 0
+  arrow: {fileID: 0}
+  arrowSpeed: 0
