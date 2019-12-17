@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MapManager2 : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject knight;
+    public GameObject mage;
+    public GameObject archer;
     public GameObject[] map;
     public GameObject[] shutter;
     public GameObject[] bridge;
@@ -56,7 +58,9 @@ public class MapManager2 : MonoBehaviour
     }
     void MapMaker()
     {
-        Instantiate(player, new Vector3(-8.8f, -4, 0), transform.rotation);
+        Instantiate(knight, new Vector3(-8.8f, -4, 0), transform.rotation);
+        Instantiate(archer, new Vector3(-8.8f, -3.8f), transform.rotation);
+        Instantiate(mage, new Vector3(-8.8f, -3.6f), transform.rotation);
         switch (rnd)
         {
             case 0:
