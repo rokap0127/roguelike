@@ -99,7 +99,7 @@ public class Enemy2 : MonoBehaviour
                 Quaternion.identity);
             Destroy(gameObject);
         }
-        if (collision.name.Contains("Player"))
+        if (collision.name.Contains("Knight"))
         {
             //プレイヤーにダメージを与える
             var knight = collision.GetComponent<Knight>();
