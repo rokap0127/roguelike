@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 //向き
@@ -503,6 +504,13 @@ public class Knight : MonoBehaviour
             anim.SetBool("Guard@Left", false);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Needle")
+        {
+            playerHp -= 20;
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -516,6 +524,14 @@ public class Knight : MonoBehaviour
         if (collision.gameObject.tag == "HPportion")
         {
             playerHp += 10;
+        }
+        if (collision.gameObject.tag == "BlastBarrel")
+        {
+            playerHp -= 30;
+        }
+        if (collision.gameObject.tag == "Bomb")
+        {
+            playerHp -= 10;
         }
     }
 
@@ -558,5 +574,13 @@ public class Knight : MonoBehaviour
         if (0 < playerHp) { return; }
 
         gameObject.SetActive(false);
+    }
+    void ChangeScene()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
+    void Death()
+    {
+        Destroy(gameObject);
     }
 }
