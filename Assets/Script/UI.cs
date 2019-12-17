@@ -23,7 +23,7 @@ public class UI : MonoBehaviour
 
         //hpGauge.fillAmount = (float)hp / hpMax;
 
-        var player = Player.instance;
+        var player = Knight.knightInstance;
         var hp = player.playerHp;
         var hpMax = player.MaxHp;
 
