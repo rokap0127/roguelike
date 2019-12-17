@@ -102,9 +102,9 @@ public class Enemy2 : MonoBehaviour
         if (collision.name.Contains("Player"))
         {
             //プレイヤーにダメージを与える
-            var player = collision.GetComponent<Player>();
-            if (player == null) return;
-            player.Damage(damage);
+            var knight = collision.GetComponent<Knight>();
+            if (knight == null) return;
+            knight.Damage(damage);
         }
 
         if (collision.name.Contains("Guard"))
