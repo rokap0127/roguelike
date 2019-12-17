@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: f04c4758c1d84484b80cc63c4e6b9db5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4326180907796634664
+    second: pipo-gwspinitem001_0
+  - first:
+      213: 592340012232636951
+    second: pipo-gwspinitem001_1
+  - first:
+      213: -8256551571715177037
+    second: pipo-gwspinitem001_2
+  - first:
+      213: -1018191714904190242
+    second: pipo-gwspinitem001_3
+  - first:
+      213: -2866525004192366806
+    second: pipo-gwspinitem001_4
+  - first:
+      213: -130010786626900641
+    second: pipo-gwspinitem001_5
+  - first:
+      213: -215818849350246608
+    second: pipo-gwspinitem001_6
+  - first:
+      213: 4112084997647718803
+    second: pipo-gwspinitem001_7
+  - first:
+      213: 5510697310585270278
+    second: pipo-gwspinitem001_8
+  - first:
+      213: -781491755591020409
+    second: pipo-gwspinitem001_9
+  - first:
+      213: -8921420396938914295
+    second: pipo-gwspinitem001_10
+  - first:
+      213: 4255714243252109941
+    second: pipo-gwspinitem001_11
+  - first:
+      213: 8815746384683483903
+    second: pipo-gwspinitem001_12
+  - first:
+      213: -8752882471531504309
+    second: pipo-gwspinitem001_13
+  - first:
+      213: -2487561675759864968
+    second: pipo-gwspinitem001_14
+  - first:
+      213: -2922059508273217647
+    second: pipo-gwspinitem001_15
+  - first:
+      213: 7197537560825026582
+    second: pipo-gwspinitem001_16
+  - first:
+      213: -2995446329751280038
+    second: pipo-gwspinitem001_17
+  - first:
+      213: -3434808139476616399
+    second: pipo-gwspinitem001_18
+  - first:
+      213: 8262111435149829399
+    second: pipo-gwspinitem001_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 591
+        width: 134
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1380ab88d17344b4c9f9406c84071335
+      internalID: 4326180907796634664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 598
+        width: 139
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61520b3f123579c458452a0fd040408f
+      internalID: 592340012232636951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 605
+        width: 135
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b4c431cb71b5747b4eda076a4f7eb2
+      internalID: -8256551571715177037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_3
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 612
+        width: 123
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f664a60b61cc9274d90f8dcf02ddb60e
+      internalID: -1018191714904190242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 618
+        width: 109
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc24d7a4036e36140b845a278c2549ed
+      internalID: -2866525004192366806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 430
+        width: 90
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c561deae9cbfaa40ad3f54e6371860f
+      internalID: -130010786626900641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_6
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 433
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fede824ec1217da4a87a16737d0d04ec
+      internalID: -215818849350246608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 433
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d2369013291c49b9dcc5f4c2de0d0
+      internalID: 4112084997647718803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_8
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 431
+        width: 99
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6735a7665b190e74798ecd8607b190f2
+      internalID: 5510697310585270278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_9
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 427
+        width: 121
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f2276ee8f95b748be8da891a33d92c
+      internalID: -781491755591020409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 229
+        width: 135
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36d4558c327bcc4b9f3d85dc0ab8d8c
+      internalID: -8921420396938914295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 222
+        width: 140
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8d95cabf6880c409ed3dd15d32ff7f
+      internalID: 4255714243252109941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_12
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 213
+        width: 134
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f6a406d58043549b993ba8d3f56a99
+      internalID: 8815746384683483903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 204
+        width: 123
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d671113459d0df408304ff949a642c3
+      internalID: -8752882471531504309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_14
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 198
+        width: 109
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ce694d608698646a97bfe660890a75
+      internalID: -2487561675759864968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_15
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1
+        width: 91
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0c0ff2eb518df4da5ae54293ebe0aa
+      internalID: -2922059508273217647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_16
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 78
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fc1b8fddb325340a616b268d409e2d
+      internalID: 7197537560825026582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_17
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1
+        width: 82
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1413713a77c215145a2eac3a4eff1549
+      internalID: -2995446329751280038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_18
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 5
+        width: 99
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4395e4f05c3c045994abee1a7e1269
+      internalID: -3434808139476616399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-gwspinitem001_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 9
+        width: 120
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3dc973f61cf96419380dda7f85c807
+      internalID: 8262111435149829399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c3def223b7600c54882b2992fefbd8d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
