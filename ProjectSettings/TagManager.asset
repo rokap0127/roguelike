@@ -17,6 +17,9 @@ TagManager:
   - Armor
   - BlastBarrel
   - Needle
+  - Knight
+  - Mage
+  - Archer
   layers:
   - Default
   - TransparentFX

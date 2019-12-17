@@ -33,7 +33,7 @@ public class CameraController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Knight");
         Vector2 pos = player.transform.position;
         if (pos.x < entrance[0].transform.position.x)
         {

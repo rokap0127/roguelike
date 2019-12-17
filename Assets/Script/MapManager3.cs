@@ -32,9 +32,13 @@ public class MapManager3 : MonoBehaviour
         enemynum = Random.Range(0, 2);
         enemylim = Random.Range(2, 5);
         enemypos = 1;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject knight = GameObject.FindGameObjectWithTag("Knight");
+        GameObject archer = GameObject.FindGameObjectWithTag("Archer");
+        GameObject mage = GameObject.FindGameObjectWithTag("Mage");
         Vector3 pos = new Vector3(0.52f, -5.3f,0);
-        player.transform.position = pos;
+        knight.transform.position = pos;
+        archer.transform.position = pos;
+        mage.transform.position = pos;
         //map[0].SetActive(true);
         Invoke("Shut", 0.5f);
         MapMaker();

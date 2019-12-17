@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
     public Explotion explosionPrefab; //爆発エフェクト
+
     // Start is called before the first frame update
     void Start()
     {

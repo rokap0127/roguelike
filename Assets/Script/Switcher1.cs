@@ -27,7 +27,9 @@ public class Switcher1 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Knight"
+            || collision.gameObject.tag == "Archer"
+            || collision.gameObject.tag == "Mage")
         {
             swich1.SetActive(false);
             swich2.SetActive(false);

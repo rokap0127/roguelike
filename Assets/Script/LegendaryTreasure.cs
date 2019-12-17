@@ -5,25 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class LegendaryTreasure : MonoBehaviour
 {
-    GameObject player;
+    GameObject knight;
+    GameObject archer;
+    GameObject mage;
     GameObject checker;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
         checker = GameObject.FindGameObjectWithTag("ItemChecker");
     }
 
     // Update is called once per frame
     void Update()
     {
-        float pos = (transform.position - player.transform.position).magnitude;
+        float pos = (transform.position - knight.transform.position).magnitude;
         if (pos < 0.5f && pos > -0.5f)
         {
             if (Input.GetMouseButtonDown(1))
             {
-                Destroy(player);
+                Destroy(knight);
                 Destroy(checker);
+                Destroy(mage);
+                Destroy(archer);
 
                 SceneManager.LoadScene("TitleScene");
             }
