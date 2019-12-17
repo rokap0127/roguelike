@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ItemMenu : MonoBehaviour
 {
     GameObject player;
-    Player psc;
+    Knight psc;
     ItemChecker ic;
     bool menuflag = false;
     public GameObject ItemUI;
@@ -21,7 +21,7 @@ public class ItemMenu : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        psc = player.GetComponent<Player>();
+        psc = player.GetComponent<Knight>();
         ic = player.GetComponent<ItemChecker>();
         UseItem();
     }

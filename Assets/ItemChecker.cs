@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemChecker : MonoBehaviour
 {
-    Player psc;
+    Knight psc;
     public int HpPortion = 0;
     public int MpPortion = 0;
     public int SpeedUP = 0;
@@ -25,7 +25,7 @@ public class ItemChecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        psc = GetComponent<Player>();
+        psc = GetComponent<Knight>();
     }
 
     // Update is called once per frame

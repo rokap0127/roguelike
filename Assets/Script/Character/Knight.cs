@@ -25,6 +25,7 @@ public class Knight : MonoBehaviour
     public GameObject guard; //ガードオブジェクト
     public static Knight knightInstance;
     public int MaxHp;
+
     GameObject operation;
     Operation operationScript;
     CapsuleCollider2D collider2D;
@@ -37,6 +38,9 @@ public class Knight : MonoBehaviour
     Animator anim; //アニメーター
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     bool isAttack = false; //攻撃中か？
+
+    ItemChecker ic;
+    float defaultMoveSpeed;
 
     void Awake()
     {
@@ -55,6 +59,8 @@ public class Knight : MonoBehaviour
         operation = GameObject.Find("Operation");
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
+        defaultMoveSpeed = moveSpeed;
+        ic = GetComponent<ItemChecker>();
     }
 
     // Update is called once per frame
@@ -78,6 +84,22 @@ public class Knight : MonoBehaviour
 
             //攻撃する
             Attack();
+
+
+            if (playerHp >= MaxHp)
+            {
+                playerHp = MaxHp;
+            }
+            if (playerHp <= 0 && !ic.RevivalFlag)
+            {
+                gameObject.SetActive(false);
+                Invoke("ChangeScene", 0.5f);
+                Invoke("Death", 0.51f);
+            }
+            if (!ic.SpeedFlag)
+            {
+                moveSpeed = defaultMoveSpeed;
+            }
         }
         else if (!operationScript.GetKnightFlag())
         {

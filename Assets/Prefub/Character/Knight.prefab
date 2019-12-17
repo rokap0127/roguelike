@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 2857565500843373987}
   - component: {fileID: 2857565500843373986}
   - component: {fileID: 2857565500843373985}
-  - component: {fileID: 2857565500843373991}
   - component: {fileID: 6529347868099120847}
   - component: {fileID: 2857565500843373984}
+  - component: {fileID: 4587362303536656389}
   - component: {fileID: 7734106486935106642}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Knight
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,25 +106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2857565500843373991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2857565500843373990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab5321c35b65ef94593b6ea7e1f7424e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  guard_MoveSpeed: 1
-  playerHp: 100
-  playerAttack: {fileID: 134940198399910520, guid: 7f9a5128f9277d04cb7249c00cf1168a,
-    type: 3}
-  guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
-  MaxHp: 100
 --- !u!95 &6529347868099120847
 Animator:
   serializedVersion: 3
@@ -160,6 +141,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0.09066838, y: 0.0061153173}
   m_Size: {x: 0.37512696, y: 0.5809251}
   m_Direction: 0
+--- !u!114 &4587362303536656389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2857565500843373990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffd71ccf2cc1244ab85fdf9b7b395fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  guard_MoveSpeed: 1
+  playerHp: 0
+  playerAttack: {fileID: 134940198399910520, guid: 7f9a5128f9277d04cb7249c00cf1168a,
+    type: 3}
+  guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
+  MaxHp: 100
 --- !u!114 &7734106486935106642
 MonoBehaviour:
   m_ObjectHideFlags: 0
