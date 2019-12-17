@@ -16,6 +16,11 @@ public class Operation : MonoBehaviour
         mageFlag = false;
        
     }
+    private void Awake()
+    {
+        //シーンが変わっても削除されない
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Update is called once per frame
     void Update()
