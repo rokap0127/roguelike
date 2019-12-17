@@ -43,10 +43,10 @@ public class Shot : MonoBehaviour
             Destroy(gameObject);
 
 
-        if (collision.name.Contains("Player"))
+        if (collision.name.Contains("Enemy"))
         {
             //プレイヤーにダメージを与える
-            var player = collision.GetComponent<Player>();
+            var player = collision.GetComponent<Knight>();
             if (player == null) return;
             player.Damage(damage);
             //Destroy(gameObject);
