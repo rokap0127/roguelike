@@ -155,11 +155,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   guard_MoveSpeed: 0
+  MaxHp: 100
   playerHp: 0
+  MaxMp: 100
+  playerMp: 0
   playerAttack: {fileID: 134940198399910520, guid: 7f9a5128f9277d04cb7249c00cf1168a,
     type: 3}
   guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
-  MaxHp: 100
 --- !u!114 &7734106486935106642
 MonoBehaviour:
   m_ObjectHideFlags: 0

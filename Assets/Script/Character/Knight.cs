@@ -21,11 +21,14 @@ public class Knight : MonoBehaviour
 {
     public float moveSpeed; //移動速度
     public float guard_MoveSpeed; //ガード中の移動速度
+    public int MaxHp; //MaxHp
     public int playerHp; //HP
+    public int MaxMp; //MaxMp
+    public int playerMp; //Mp
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
     public static Knight knightInstance;
-    public int MaxHp;
+
 
     GameObject operation;
     Operation operationScript;
@@ -39,6 +42,7 @@ public class Knight : MonoBehaviour
     Animator anim; //アニメーター
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     bool isAttack = false; //攻撃中か？
+    float mpCount;
 
     ItemChecker ic;
     float defaultMoveSpeed;
@@ -67,7 +71,7 @@ public class Knight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      //操作モード
         if (operationScript.GetKnightFlag())
         {
             collider2D.enabled = true;
@@ -103,8 +107,17 @@ public class Knight : MonoBehaviour
                 moveSpeed = defaultMoveSpeed;
             }
         }
+        //追尾モード
         else if (!operationScript.GetKnightFlag())
         {
+            Debug.Log(Time.deltaTime);
+            mpCount += Time.deltaTime;
+            if(mpCount >= 1)
+            {
+                playerMp++;
+                mpCount = 0;
+            }
+
             collider2D.enabled = false;
             Tracking();
 
