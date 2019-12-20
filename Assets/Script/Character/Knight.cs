@@ -29,7 +29,7 @@ public class Knight : MonoBehaviour
 
     GameObject operation;
     Operation operationScript;
-    CapsuleCollider2D collider2D;
+    new CapsuleCollider2D collider2D;
 
 
     float speed; //スピードを一時的に保存する

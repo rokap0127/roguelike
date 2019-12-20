@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2108405778115334442}
   - component: {fileID: 180766947962621775}
   - component: {fileID: 1782483978036091275}
+  - component: {fileID: 55029292713427514}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: PlayerAttack
@@ -106,6 +107,27 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000048398968, y: 0.0000013709064}
-  m_Size: {x: 0.64011925, y: 0.6401193}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.6, y: 0.6}
   m_Direction: 0
+--- !u!50 &55029292713427514
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6915923223875610166}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -34,4 +34,13 @@ public class Magic : MonoBehaviour
         //10秒後削除する
         Destroy(gameObject, 10);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.name.Contains("Wall"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

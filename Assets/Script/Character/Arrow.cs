@@ -37,17 +37,14 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("Enemy2"))
+        if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Hit!!");
+            Destroy(gameObject);
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.name.Contains("Enemy2"))
+        if (collision.name.Contains("Wall"))
         {
-            Debug.Log("Hit!!");
+            Destroy(gameObject);
         }
     }
 }

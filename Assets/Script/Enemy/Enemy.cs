@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     public int m_hpMax; //HPの最大値
     public int m_exp; //この敵を倒したときに獲得できる経験値
     public int m_damage; //この敵がプレイヤーに与えるダメージ
+    public Explotion explosionPrefab; //爆発エフェクト
 
     private int m_hp; //HP
     private Vector3 m_direction; //進行方向
@@ -84,8 +85,13 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("PlayerAttack"))
+        if (collision.gameObject.tag == "PlayerAttack")
         {
+            //エフェクト生成
+            Instantiate(
+    explosionPrefab,
+    collision.transform.position,
+    Quaternion.identity);
             //敵のHPを減らす
             m_hp--;
 
