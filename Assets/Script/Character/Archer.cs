@@ -17,7 +17,7 @@ public class Archer : MonoBehaviour
     Rigidbody2D playerRigidbody; //プレイヤーRigidbody
     bool isAttack = false; //攻撃中か？
     float playerAngle; //プレイヤーの方向
-    CapsuleCollider2D collider2D;
+    new CapsuleCollider2D collider2D;
 
 
     void Awake()

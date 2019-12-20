@@ -155,5 +155,5 @@ MonoBehaviour:
   moveSpeed: 2
   magic: {fileID: 794852832553027592, guid: 098e1321a1374e0499913658e92a3207, type: 3}
   magicSpeed: 0.05
-  teleportRange: 0.1
+  teleportRange: 1
   slopeRange: 0.5

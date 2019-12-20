@@ -406,7 +406,7 @@ public class Knight : MonoBehaviour
     void Guard()
     {
         //スペース押したとき
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             //数値を取っておく
             speed = moveSpeed;
@@ -492,7 +492,7 @@ public class Knight : MonoBehaviour
         }
 
         //キーを離したとき
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             //速さをもとに戻す
             moveSpeed = speed;

@@ -18,7 +18,7 @@ public class Mage : MonoBehaviour
     Rigidbody2D playerRigidbody; //プレイヤーRigidbody
     bool isAttack = false; //攻撃中か？
     float magicAngle; //魔法の角度
-    CapsuleCollider2D collider2D;
+    new CapsuleCollider2D collider2D;
 
     // Start is called before the first frame update
     void Start()
