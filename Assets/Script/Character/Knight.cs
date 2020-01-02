@@ -19,15 +19,19 @@ enum Direction
 //Knight専用Script
 public class Knight : MonoBehaviour
 {
-    public float moveSpeed; //移動速度
+    public static Knight instance; //ナイトのインスタンス
+
+    public float moveSpeed; 　　　//移動速度
     public float guard_MoveSpeed; //ガード中の移動速度
-    public int MaxHp; //MaxHp
-    public int playerHp; //HP
-    public int MaxMp; //MaxMp
-    public int playerMp; //Mp
+
+    public int playerHp;    //現在のHP
+    public int playerMaxHp; //最大のHP
+    public int playerMp;    //現在のMP
+    public int playerMaxMp; //最大のMP
+
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
-    public static Knight knightInstance;
+
 
 
     GameObject operation;
@@ -49,7 +53,7 @@ public class Knight : MonoBehaviour
 
     void Awake()
     {
-        knightInstance = this;
+        instance = this;
         //シーンが変わっても削除されない
         DontDestroyOnLoad(gameObject);
     }
@@ -60,7 +64,7 @@ public class Knight : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        playerHp = MaxHp;
+        playerHp = playerMaxHp;
         operation = GameObject.Find("Operation");
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
@@ -92,9 +96,9 @@ public class Knight : MonoBehaviour
             Attack();
 
 
-            if (playerHp >= MaxHp)
+            if (playerHp >= playerMaxHp)
             {
-                playerHp = MaxHp;
+                playerHp = playerMaxHp;
             }
             if (playerHp <= 0 && !ic.RevivalFlag)
             {
@@ -121,7 +125,7 @@ public class Knight : MonoBehaviour
             collider2D.enabled = false;
             Tracking();
 
-            var direction = Mage.mageInstance.transform.position - transform.position;
+            var direction = Mage.instance.transform.position - transform.position;
             var angle = Utils.GetAngle(Vector3.zero, direction);
             //向き指定
             PlayerRote(angle);
@@ -151,37 +155,37 @@ public class Knight : MonoBehaviour
 
     void Tracking()
     {
-        if (Mage.mageInstance.gameObject.transform.localPosition != transform.localPosition)
+        if (Mage.instance.gameObject.transform.localPosition != transform.localPosition)
         {
             playerRigidbody.velocity = Vector2.zero;
             float _range = 0.3f;
             float _speed = 0.05f;
-            if (Mage.mageInstance.transform.position.x > transform.position.x + _range)
+            if (Mage.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
-                    new Vector3(Mage.mageInstance.transform.position.x
-                    - _range, Mage.mageInstance.transform.position.y),
+                    new Vector3(Mage.instance.transform.position.x
+                    - _range, Mage.instance.transform.position.y),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
             }
-            if (Mage.mageInstance.transform.position.x < transform.position.x - _range)
+            if (Mage.instance.transform.position.x < transform.position.x - _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Mage.mageInstance.transform.position.x + _range, Mage.mageInstance.transform.position.y),
+                    new Vector3(Mage.instance.transform.position.x + _range, Mage.instance.transform.position.y),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
             }
-            if (Mage.mageInstance.transform.position.y > transform.position.y + _range)
+            if (Mage.instance.transform.position.y > transform.position.y + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
-                    new Vector3(Mage.mageInstance.transform.position.x, Mage.mageInstance.transform.position.y - _range),
+                    new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y - _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
             }
-            if (Mage.mageInstance.transform.position.y < transform.position.y - _range)
+            if (Mage.instance.transform.position.y < transform.position.y - _range)
             {
                 transform.position = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Mage.mageInstance.transform.position.x, Mage.mageInstance.transform.position.y + _range),
+                    new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y + _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
             }

@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class Archer : MonoBehaviour
 {
-    public static Archer archerInstance;//アーチャーのインスタンス
-    public float moveSpeed; //移動の速さ
-    public Arrow arrow; //矢のプレハブ
+    public static Archer instance; //アーチャーのインスタンス
+
+    public float moveSpeed;  //移動の速さ
+    public Arrow arrow;      //矢のプレハブ
     public float arrowSpeed; //矢の移動の速さ
+
+    public int playerHp;    //現在のHP
+    public int playerMaxHp; //最大のHP
+    public int playerMp;    //現在のMP
+    public int playerMaxMp; //最大のMP
+
     GameObject operation;
     Operation operationScript;
-
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
@@ -22,7 +28,7 @@ public class Archer : MonoBehaviour
 
     void Awake()
     {
-        archerInstance = this;
+        instance = this;
         //シーンが変わっても削除されない
         DontDestroyOnLoad(gameObject);
     }
@@ -67,7 +73,7 @@ public class Archer : MonoBehaviour
         else if (!operationScript.GetArcherFlag())
         {
             collider2D.enabled = false;
-            var direction = Knight.knightInstance.transform.position - transform.position;
+            var direction = Knight.instance.transform.position - transform.position;
             var angle = Utils.GetAngle(Vector3.zero, direction);
             PlayerRote(angle);
             Tracking();
@@ -98,37 +104,37 @@ public class Archer : MonoBehaviour
 
     void Tracking()
     {
-        if (Knight.knightInstance.gameObject.transform.localPosition != transform.localPosition)
+        if (Knight.instance.gameObject.transform.localPosition != transform.localPosition)
         {
             playerRigidbody.velocity = Vector2.zero;
             float _range = 0.3f;
             float _speed = 0.05f;
-            if (Knight.knightInstance.transform.position.x > transform.position.x + _range)
+            if (Knight.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
-                    new Vector3(Knight.knightInstance.transform.position.x
-                    - _range, Knight.knightInstance.transform.position.y),
+                    new Vector3(Knight.instance.transform.position.x
+                    - _range, Knight.instance.transform.position.y),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
             }
-            if (Knight.knightInstance.transform.position.x < transform.position.x - _range)
+            if (Knight.instance.transform.position.x < transform.position.x - _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Knight.knightInstance.transform.position.x + _range, Knight.knightInstance.transform.position.y),
+                    new Vector3(Knight.instance.transform.position.x + _range, Knight.instance.transform.position.y),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
             }
-            if (Knight.knightInstance.transform.position.y > transform.position.y + _range)
+            if (Knight.instance.transform.position.y > transform.position.y + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
-                    new Vector3(Knight.knightInstance.transform.position.x, Knight.knightInstance.transform.position.y - _range),
+                    new Vector3(Knight.instance.transform.position.x, Knight.instance.transform.position.y - _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
             }
-            if (Knight.knightInstance.transform.position.y < transform.position.y - _range)
+            if (Knight.instance.transform.position.y < transform.position.y - _range)
             {
                 transform.position = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Knight.knightInstance.transform.position.x, Knight.knightInstance.transform.position.y + _range),
+                    new Vector3(Knight.instance.transform.position.x, Knight.instance.transform.position.y + _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
             }

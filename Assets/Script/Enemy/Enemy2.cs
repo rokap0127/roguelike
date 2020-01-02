@@ -32,7 +32,7 @@ public class Enemy2 : MonoBehaviour
         //プレイヤーの位置へ向かうベクトルを生成する
         var angle = Utils.GetAngle(
             transform.localPosition,
-            Knight.knightInstance.transform.localPosition);
+            Knight.instance.transform.localPosition);
         direction = Utils.GetDirection(angle);
         if (pos < 7 && pos > -7)
         {
