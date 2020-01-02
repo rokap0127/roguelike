@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    public Image hpGauge;
+    public Image knightHpGauge;
+    public Image archerHpGauge;
+    public Image mageHpGauge;
 
     // Start is called before the first frame update
     void Start()
@@ -16,17 +18,35 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //var mage = Mage.mageInstance;
+        KnightGauge();
+        ArcherGauge();
+        MageGauge();
+    }
 
-        //var hp = mage.playerHp;
-        //var hpMax = mage.MaxHp;
-
-        //hpGauge.fillAmount = (float)hp / hpMax;
-
+    void KnightGauge()
+    {
         var player = Knight.instance;
         var hp = player.playerHp;
         var hpMax = player.playerMaxHp;
 
-        hpGauge.fillAmount = (float)hp / hpMax;
+        knightHpGauge.fillAmount = (float)hp / hpMax;
+    }
+
+    void ArcherGauge()
+    {
+        var player = Archer.instance;
+        var hp = player.playerHp;
+        var hpMax = player.playerMaxHp;
+
+        archerHpGauge.fillAmount = (float)hp / hpMax;
+    }
+
+    void MageGauge()
+    {
+        var player = Mage.instance;
+        var hp = player.playerHp;
+        var hpMax = player.playerMaxHp;
+
+        mageHpGauge.fillAmount = (float)hp / hpMax;
     }
 }

@@ -114,7 +114,7 @@ public class Knight : MonoBehaviour
         //追尾モード
         else if (!operationScript.GetKnightFlag())
         {
-            Debug.Log(Time.deltaTime);
+            //Debug.Log(Time.deltaTime);
             mpCount += Time.deltaTime;
             if(mpCount >= 1)
             {

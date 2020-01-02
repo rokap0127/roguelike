@@ -157,3 +157,7 @@ MonoBehaviour:
   magicSpeed: 0.05
   teleportRange: 1
   slopeRange: 0.5
+  playerHp: 0
+  playerMaxHp: 100
+  playerMp: 0
+  playerMaxMp: 100
