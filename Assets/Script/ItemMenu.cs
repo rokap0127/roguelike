@@ -49,7 +49,7 @@ public class ItemMenu : MonoBehaviour
         if (psc.playerHp <= 0 && ic.RevivalFlag)
         {
             player.SetActive(true);
-            psc.playerHp = psc.MaxHp/2;
+            psc.playerHp = psc.playerMaxHp / 2;
             ic.RevivalFlag = false;
         }
         if (psc.playerHp <= 0 && !ic.RevivalFlag)
@@ -79,7 +79,7 @@ public class ItemMenu : MonoBehaviour
     }
     void UseHpPortion()
     {
-        if (ic.HpPortion > 0 && psc.playerHp < psc.MaxHp)
+        if (ic.HpPortion > 0 && psc.playerHp < psc.playerMaxHp)
         {
             ic.HpPortion -= 1;
             psc.playerHp += 10;
