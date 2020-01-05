@@ -672,6 +672,7 @@ GameObject:
   - component: {fileID: 68106728}
   - component: {fileID: 68106730}
   - component: {fileID: 68106729}
+  - component: {fileID: 68106731}
   m_Layer: 0
   m_Name: 'Map3-3Camera '
   m_TagString: MainCamera
@@ -744,6 +745,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &68106731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68106727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &73565749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4522658306054560043, guid: 7cd1733bc41313b4ea055c85c67de928,
@@ -767,6 +784,7 @@ GameObject:
   - component: {fileID: 104763567}
   - component: {fileID: 104763569}
   - component: {fileID: 104763568}
+  - component: {fileID: 104763570}
   m_Layer: 0
   m_Name: Map3-6Camera
   m_TagString: MainCamera
@@ -839,6 +857,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &104763570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104763566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &106669204
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +884,7 @@ GameObject:
   - component: {fileID: 106669205}
   - component: {fileID: 106669207}
   - component: {fileID: 106669206}
+  - component: {fileID: 106669208}
   m_Layer: 0
   m_Name: Map3-1Camera
   m_TagString: MainCamera
@@ -922,6 +957,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &106669208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106669204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &125746233
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +8196,7 @@ GameObject:
   - component: {fileID: 490053799}
   - component: {fileID: 490053801}
   - component: {fileID: 490053800}
+  - component: {fileID: 490053802}
   m_Layer: 0
   m_Name: Map3-2Camera
   m_TagString: MainCamera
@@ -8217,6 +8269,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &490053802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490053798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &493198240
 GameObject:
   m_ObjectHideFlags: 0
@@ -9086,6 +9154,7 @@ GameObject:
   - component: {fileID: 527302217}
   - component: {fileID: 527302219}
   - component: {fileID: 527302218}
+  - component: {fileID: 527302220}
   m_Layer: 0
   m_Name: Map3-7Camera
   m_TagString: MainCamera
@@ -9158,6 +9227,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &527302220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527302216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &576924125
 GameObject:
   m_ObjectHideFlags: 0
@@ -36048,6 +36133,7 @@ GameObject:
   - component: {fileID: 1525559351}
   - component: {fileID: 1525559353}
   - component: {fileID: 1525559352}
+  - component: {fileID: 1525559354}
   m_Layer: 0
   m_Name: Map3-4Camera
   m_TagString: MainCamera
@@ -36120,6 +36206,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1525559354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525559350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &1534868193
 GameObject:
   m_ObjectHideFlags: 0
@@ -39563,6 +39665,7 @@ GameObject:
   - component: {fileID: 1556333268}
   - component: {fileID: 1556333270}
   - component: {fileID: 1556333269}
+  - component: {fileID: 1556333271}
   m_Layer: 0
   m_Name: Map3-5Camera
   m_TagString: MainCamera
@@ -39635,6 +39738,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1556333271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556333267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690312454, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &1557642150
 GameObject:
   m_ObjectHideFlags: 0

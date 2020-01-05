@@ -21,7 +21,8 @@ public class ItemManager : MonoBehaviour
         float pos = (transform.position- knight.transform.position).magnitude;
         if (pos<1&&pos>-1)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1) && Input.GetKey(KeyCode.LeftShift) ||
+                Input.GetMouseButtonDown(1) && Input.GetKey(KeyCode.RightShift))
             {
                 if(this.tag == "HPportion")
                 {
@@ -66,4 +67,36 @@ public class ItemManager : MonoBehaviour
     //        }
     //    }
     //}
+    public void onClickAct()
+    {
+        if (this.tag == "HPportion")
+        {
+            ic.HpPortion += 1;
+        }
+        if (this.tag == "MPportion")
+        {
+            ic.MpPortion += 1;
+        }
+        if (this.tag == "SpeedUP")
+        {
+            ic.SpeedUP += 1;
+        }
+        if (this.tag == "DamageUP")
+        {
+            ic.DamageUP += 1;
+        }
+        if (this.tag == "RevivalPendant")
+        {
+            ic.RevivalPendant += 1;
+        }
+        if (this.tag == "Armor")
+        {
+            ic.Armor += 1;
+        }
+        if (this.tag == "Bomb")
+        {
+            ic.Bomb += 1;
+        }
+        Destroy(gameObject);
+    }
 }
