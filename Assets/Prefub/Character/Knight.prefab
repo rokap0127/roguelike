@@ -135,7 +135,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.09066838, y: 0.0061153173}
@@ -159,7 +159,7 @@ MonoBehaviour:
   playerMaxHp: 100
   playerMp: 0
   playerMaxMp: 100
-  playerAttack: {fileID: 6844014471202073222, guid: 9808e8e4b90a5184ebfcb1991417e7c0,
+  playerAttack: {fileID: 6352817548670071303, guid: a517aebec5bf90346a2473f4972003f0,
     type: 3}
   guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
 --- !u!114 &7734106486935106642
