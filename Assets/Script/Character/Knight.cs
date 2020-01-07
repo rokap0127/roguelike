@@ -64,7 +64,12 @@ public class Knight : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        //最大Hpに設定
         playerHp = playerMaxHp;
+        //playerMp = playerMaxMp;
+
+        //opreationを探す
         operation = GameObject.Find("Operation");
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
@@ -114,15 +119,18 @@ public class Knight : MonoBehaviour
         //追尾モード
         else if (!operationScript.GetKnightFlag())
         {
-            //Debug.Log(Time.deltaTime);
+            //Mp回復
             mpCount += Time.deltaTime;
-            if(mpCount >= 1)
+            if(mpCount >= 1 && playerMaxMp <= playerMp)
             {
-                playerMp++;
+                playerMp+=5;
                 mpCount = 0;
             }
 
+            //当たり判定オフ
             collider2D.enabled = false;
+
+            //追尾モード
             Tracking();
 
             var direction = Mage.instance.transform.position - transform.position;
