@@ -24,6 +24,7 @@ public class Archer : MonoBehaviour
     bool isAttack = false; //攻撃中か？
     float playerAngle; //プレイヤーの方向
     new CapsuleCollider2D collider2D;
+    float mpCount;　//Mp回復スピード
 
 
     void Awake()
@@ -41,20 +42,14 @@ public class Archer : MonoBehaviour
         operation = GameObject.Find("Operation");
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
-        playerHp = playerMaxHp;
-        playerMp = playerMaxMp;
+        playerHp = playerMaxHp; //Hpを最大に設定
+        //playerMp = playerMaxMp;
     }
     int count;
     // Update is called once per frame
     void Update()
     {
-        count++;
-        if(count == 90)
-        {
-            //Debug.Log(Mage.mageInstance.transform.position);
-            //Debug.Log(transform.position);
-            count = 0;
-        }
+
        
         if (operationScript.GetArcherFlag())
         {
@@ -79,6 +74,14 @@ public class Archer : MonoBehaviour
         }
         else if (!operationScript.GetArcherFlag())
         {
+            //Mp回復
+            mpCount += Time.deltaTime;
+            if (mpCount >= 1 && playerMaxMp >= playerMp)
+            {
+                playerMp += 5;
+                mpCount = 0;
+            }
+
             collider2D.enabled = false;
             var direction = Knight.instance.transform.position - transform.position;
             var angle = Utils.GetAngle(Vector3.zero, direction);

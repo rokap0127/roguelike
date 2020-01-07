@@ -46,7 +46,7 @@ public class Knight : MonoBehaviour
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     bool isAttack = false; //攻撃中か？
     bool isGuard = false; //ガード中か
-    float mpCount;
+    float mpCount;　//Mp回復スピード
 
     ItemChecker ic;
     float defaultMoveSpeed;

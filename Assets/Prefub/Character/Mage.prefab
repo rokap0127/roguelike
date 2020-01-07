@@ -161,3 +161,4 @@ MonoBehaviour:
   playerMaxHp: 100
   playerMp: 0
   playerMaxMp: 100
+  shootMp: 10
