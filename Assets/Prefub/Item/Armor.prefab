@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 456711267906506882}
   - component: {fileID: 1064678144840407332}
   - component: {fileID: -4180258190437188074}
-  - component: {fileID: 400574231008679227}
-  - component: {fileID: -2018610819612493600}
   m_Layer: 0
   m_Name: Armor
   m_TagString: Armor
