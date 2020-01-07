@@ -17,7 +17,9 @@ public class BlastBarrel : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Knight")
+        if (collision.gameObject.tag == "Knight" ||
+            collision.gameObject.tag == "Archer" ||
+            collision.gameObject.tag == "Mage")
         {
             Instantiate(
                 explosionPrefab,
