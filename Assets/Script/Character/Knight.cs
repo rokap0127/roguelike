@@ -31,8 +31,7 @@ public class Knight : MonoBehaviour
 
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
-
-
+    
 
     GameObject operation;
     Operation operationScript;
@@ -97,8 +96,12 @@ public class Knight : MonoBehaviour
             //ガードする
             Guard();
 
-            //攻撃する
-            Attack();
+            //メニューが閉じているなら
+            if(Time.timeScale>0)
+            {
+                //攻撃する
+                Attack();
+            }
 
 
             if (playerHp >= playerMaxHp)

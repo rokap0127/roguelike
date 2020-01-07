@@ -62,7 +62,12 @@ public class Mage : MonoBehaviour
             //方向指定
             PlayerRote(magicAngle);
 
-            Attack();
+            //メニューが閉じているなら
+            if (Time.timeScale > 0)
+            {
+                //攻撃する
+                Attack();
+            }
 
             Teleport(teleportRange, slopeRange);
 

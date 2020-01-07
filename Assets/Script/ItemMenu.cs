@@ -12,6 +12,8 @@ public class ItemMenu : MonoBehaviour
     public GameObject ItemUI;
     public Text[] text;
     public Button[] button;
+
+
     private void Awake()
     {
         //シーンが変わっても削除されない
@@ -139,5 +141,17 @@ public class ItemMenu : MonoBehaviour
             ic.Bomb -= 1;
         }
 
+    }
+
+    public void MenuFlag()
+    {
+        if (menuflag)
+        {
+            enabled = false;
+        }
+        else if (!menuflag)
+        {
+            enabled = true;
+        }
     }
 }

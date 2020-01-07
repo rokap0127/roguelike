@@ -70,7 +70,12 @@ public class Archer : MonoBehaviour
             //方向決定
             PlayerRote(playerAngle);
 
-            Attack();
+            //メニューが閉じているなら
+            if (Time.timeScale > 0)
+            {
+                //攻撃する
+                Attack();
+            }
         }
         else if (!operationScript.GetArcherFlag())
         {
