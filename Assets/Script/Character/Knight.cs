@@ -212,7 +212,17 @@ public class Knight : MonoBehaviour
     {
         Vector2 movement = Vector2.zero;
         movement.Set(h, v);
-        movement = movement.normalized * moveSpeed * Time.deltaTime;
+        //ガードしてるとき
+        if (isGuard)
+        {
+            movement = movement.normalized * guard_MoveSpeed * Time.deltaTime;
+        }
+        //ガードしていない時
+        else if (!isGuard)
+        {
+            movement = movement.normalized * moveSpeed * Time.deltaTime;
+        }
+        
         playerRigidbody.MovePosition(playerRigidbody.position + movement);
     }
 

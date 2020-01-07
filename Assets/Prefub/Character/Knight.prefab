@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  guard_MoveSpeed: 0
+  guard_MoveSpeed: 0.5
   playerHp: 0
   playerMaxHp: 100
   playerMp: 0
