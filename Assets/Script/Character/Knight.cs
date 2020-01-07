@@ -45,6 +45,7 @@ public class Knight : MonoBehaviour
     Animator anim; //アニメーター
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     bool isAttack = false; //攻撃中か？
+    bool isGuard = false; //ガード中か
     float mpCount;
 
     ItemChecker ic;
@@ -99,8 +100,11 @@ public class Knight : MonoBehaviour
             //メニューが閉じているなら
             if(Time.timeScale>0)
             {
-                //攻撃する
-                Attack();
+                if (!isGuard)
+                {
+                    //攻撃する
+                    Attack();
+                }               
             }
 
 
@@ -436,6 +440,7 @@ public class Knight : MonoBehaviour
         //スペース押したとき
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
+            isGuard = true;
             //数値を取っておく
             speed = moveSpeed;
             //ガード中のスピードにする
@@ -526,6 +531,7 @@ public class Knight : MonoBehaviour
         //キーを離したとき
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
+            isGuard = false;
             //速さをもとに戻す
             moveSpeed = speed;
             //オブジェクトを削除する
