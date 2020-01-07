@@ -336,7 +336,7 @@ public class Knight : MonoBehaviour
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
                     transform.localPosition + new Vector3(0, 0.2f),
-                    Quaternion.identity);
+                    Quaternion.Euler(0, 0, 180));
                 attack_object.transform.parent = transform;
                 //anim.Play("Attack_Up");
                 isAttack = true;
@@ -349,7 +349,7 @@ public class Knight : MonoBehaviour
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
                     transform.localPosition + new Vector3(0.1f, 0.1f),
-                    Quaternion.Euler(0, 0, -45));
+                    Quaternion.Euler(0, 0, 135));
                 attack_object.transform.parent = transform;
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
@@ -384,7 +384,7 @@ public class Knight : MonoBehaviour
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
-                    transform.localPosition + new Vector3(0, -0.2f),
+                    transform.localPosition + new Vector3(0, -0.3f),
                     Quaternion.identity);
                 attack_object.transform.parent = transform;
                 //anim.Play("Attack_Down");
@@ -409,7 +409,7 @@ public class Knight : MonoBehaviour
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
                     transform.localPosition + new Vector3(-0.2f, 0),
-                    Quaternion.Euler(0, 0, 90));
+                    Quaternion.Euler(0, 0, -90));
                 attack_object.transform.parent = transform;
                 //anim.Play("Attack_Left");
                 isAttack = true;
@@ -422,7 +422,7 @@ public class Knight : MonoBehaviour
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
                     transform.localPosition + new Vector3(-0.1f, 0.1f),
-                   Quaternion.Euler(0, 0, 45));
+                   Quaternion.Euler(0, 0, 225));
                 attack_object.transform.parent = transform;
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
