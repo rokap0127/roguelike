@@ -446,7 +446,7 @@ public class Knight : MonoBehaviour
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
-                    transform.localPosition + new Vector3(0, 0.2f),
+                    transform.localPosition + new Vector3(0, 0.1f),
                     Quaternion.identity);
                 guard_Prefab.transform.parent = transform;
                 anim.SetBool("Guard@Up", true);
@@ -459,6 +459,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0.1f, 0.1f),
                    Quaternion.Euler(0, 0, -45));
                 guard_Prefab.transform.parent = transform;
+                anim.SetBool("Guard@UpRight", true);
             }
             //右
             if (direciton == Direction.RIGHT)
@@ -478,6 +479,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0.1f, -0.1f),
                     Quaternion.Euler(0, 0, 45));
                 guard_Prefab.transform.parent = transform;
+                anim.SetBool("Guard@DownRight", true);
             }
             //下
             if (direciton == Direction.DOWN)
@@ -497,6 +499,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(-0.1f, -0.1f),
                     Quaternion.Euler(0, 0, -45));
                 guard_Prefab.transform.parent = transform;
+                anim.SetBool("Guard@DownLeft", true);
             }
             //左
             if (direciton == Direction.LEFT)
@@ -516,6 +519,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(-0.1f, 0.1f),
                     Quaternion.Euler(0, 0, 45));
                 guard_Prefab.transform.parent = transform;
+                anim.SetBool("Guard@UpLeft", true);
             }
         }
 
@@ -528,6 +532,10 @@ public class Knight : MonoBehaviour
             Destroy(guard_Prefab);
             //アニメーションオフ
             anim.SetBool("Guard@Down", false);
+            anim.SetBool("Guard@DownRight", false);
+            anim.SetBool("Guard@DownLeft", false);
+            anim.SetBool("Guard@UpRight", false);
+            anim.SetBool("Guard@UpLeft", false);
             anim.SetBool("Guard@Up", false);
             anim.SetBool("Guard@Right", false);
             anim.SetBool("Guard@Left", false);

@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 40780863c3c45f44a9daecc83a1be9b8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9148543571294007632
+    second: Guard360_0
+  - first:
+      213: 2113247257536896386
+    second: Guard_Up
+  - first:
+      213: 7740725741961879143
+    second: Guard_UpRight
+  - first:
+      213: 5584210656111057842
+    second: Guard_Right
+  - first:
+      213: -3100719983114686530
+    second: Guard_DownRight
+  - first:
+      213: 5655156254232862765
+    second: Guard_Down
+  - first:
+      213: 8347887499685748651
+    second: Guard_DownLeft
+  - first:
+      213: -8826079780470499357
+    second: Guard_Left
+  - first:
+      213: 1877952878843791432
+    second: Guard_UpLeft
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,14 +67,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -69,9 +96,188 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Guard_Up
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 274
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249eb6d0d5146bc498a715b49f53c474
+      internalID: 2113247257536896386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_UpRight
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 270
+        width: 96
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b1a96adf07b1c458ad3228e85a6daa
+      internalID: 7740725741961879143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_Right
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 165
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca102a871aa02894f841b2b49bd083cf
+      internalID: 5584210656111057842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_DownRight
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 29
+        width: 103
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7803df95bf46840badd859f72dda81
+      internalID: -3100719983114686530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_Down
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 33
+        width: 99
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9678fb45f32ffd4fa3ff490f1d00acb
+      internalID: 5655156254232862765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_DownLeft
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 17
+        width: 95
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6dd47bd973cda45b7618cca479e1bf
+      internalID: 8347887499685748651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_Left
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 163
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d622fe266f7bc342b4392cb799b5a73
+      internalID: -8826079780470499357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_UpLeft
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 270
+        width: 90
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714526e21d113b943b55699bacaa8299
+      internalID: 1877952878843791432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
