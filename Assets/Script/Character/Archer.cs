@@ -42,6 +42,7 @@ public class Archer : MonoBehaviour
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp;
+        playerMp = playerMaxMp;
     }
     int count;
     // Update is called once per frame

@@ -716,6 +716,9 @@ MonoBehaviour:
   knightHpGauge: {fileID: 3160679655919503934}
   archerHpGauge: {fileID: 85786937}
   mageHpGauge: {fileID: 1904053688}
+  knightMpGauge: {fileID: 1800258999240038818}
+  archerMpGauge: {fileID: 492883169862350524}
+  mageMpGauge: {fileID: 1652259054726675552}
 --- !u!1 &3160679656716893089
 GameObject:
   m_ObjectHideFlags: 0

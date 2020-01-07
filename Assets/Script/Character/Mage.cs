@@ -35,6 +35,7 @@ public class Mage : MonoBehaviour
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp;
+        playerMp = playerMaxMp;
     }
 
     void Awake()
