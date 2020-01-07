@@ -88,9 +88,10 @@ public class ItemMenu : MonoBehaviour
     }
     void UseMpPortion()
     {
-        if (ic.MpPortion > 0)
+        if (ic.MpPortion > 0 && psc.playerMp < psc.playerMaxMp)
         {
             ic.MpPortion -= 1;
+            psc.playerMp += 10;
         }
 
     }
