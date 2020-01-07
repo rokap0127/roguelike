@@ -11,8 +11,8 @@ public class Operation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        archerFlag = true;
-        knightFlag = false;
+        archerFlag = false;
+        knightFlag = true;
         mageFlag = false;
        
     }
@@ -28,15 +28,15 @@ public class Operation : MonoBehaviour
         if(!archerFlag &
             Input.GetKeyDown(KeyCode.Alpha1))
         {
-            archerFlag = true;
+            archerFlag = false;
             mageFlag = false;
-            knightFlag = false;
+            knightFlag = true;
         }
         else if(!knightFlag &
             Input.GetKeyDown(KeyCode.Alpha2))
         {
-            knightFlag = true;
-            archerFlag = false;
+            knightFlag = false;
+            archerFlag = true;
             mageFlag = false;
         }
         else if (!mageFlag &
