@@ -32,22 +32,6 @@ public class ItemMenu : MonoBehaviour
     void Update()
     {
         ItemDisplay();
-        if (Input.GetKeyDown(KeyCode.RightControl) && !menuflag ||
-            Input.GetKeyDown(KeyCode.LeftControl) && !menuflag)
-        {
-            ItemUI.SetActive(true);
-            Time.timeScale = 0f;
-            menuflag = !menuflag;
-        }
-        else if (Input.GetKeyDown(KeyCode.RightControl) && menuflag ||
-                 Input.GetKeyDown(KeyCode.LeftControl) && menuflag||
-                 Input.GetMouseButtonDown(1) && menuflag)
-        {
-            ItemUI.SetActive(false);
-            Time.timeScale = 1f;
-            menuflag = !menuflag;
-        }
-
         if (psc.playerHp <= 0 && ic.RevivalFlag)
         {
             player.SetActive(true);

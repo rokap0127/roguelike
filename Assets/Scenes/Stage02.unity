@@ -14384,6 +14384,31 @@ PrefabInstance:
       propertyPath: button.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 913707785792173374, guid: 898906ae10b86644489c52db27fff48e,
+        type: 3}
+      propertyPath: menu.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 913707785792173374, guid: 898906ae10b86644489c52db27fff48e,
+        type: 3}
+      propertyPath: menu.Array.data[0]
+      value: 
+      objectReference: {fileID: 780690922}
+    - target: {fileID: 913707785792173374, guid: 898906ae10b86644489c52db27fff48e,
+        type: 3}
+      propertyPath: mapCamera
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 913707785792173374, guid: 898906ae10b86644489c52db27fff48e,
+        type: 3}
+      propertyPath: menu.Array.data[1]
+      value: 
+      objectReference: {fileID: 1018160621}
+    - target: {fileID: 913707785792173374, guid: 898906ae10b86644489c52db27fff48e,
+        type: 3}
+      propertyPath: menu.Array.data[2]
+      value: 
+      objectReference: {fileID: 425795982}
     m_RemovedComponents:
     - {fileID: 1611248095466385541, guid: 898906ae10b86644489c52db27fff48e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 898906ae10b86644489c52db27fff48e, type: 3}
@@ -22893,18 +22918,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &984841081 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1611248096207108676, guid: 898906ae10b86644489c52db27fff48e,
-    type: 3}
-  m_PrefabInstance: {fileID: 550900897}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1001116698
 GameObject:
   m_ObjectHideFlags: 0
@@ -39861,18 +39874,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650642490}
   m_CullTransparentMesh: 0
---- !u!114 &1658635767 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1611248095474487477, guid: 898906ae10b86644489c52db27fff48e,
-    type: 3}
-  m_PrefabInstance: {fileID: 550900897}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1709132794
 GameObject:
   m_ObjectHideFlags: 0
@@ -41284,38 +41285,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1728363619 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1611248095466385540, guid: 898906ae10b86644489c52db27fff48e,
-    type: 3}
-  m_PrefabInstance: {fileID: 550900897}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1728363620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728363619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7aa5476823c63409402dff07045da1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menu:
-  - {fileID: 780690922}
-  - {fileID: 1018160621}
-  - {fileID: 425795982}
-  button:
-  - {fileID: 2045890472}
-  - {fileID: 2027092785}
-  - {fileID: 984841081}
-  - {fileID: 1658635767}
-  mapCamera: {fileID: 519420028}
-  menuflag: 0
-  cameraFlag: 0
-  itemFlag: 0
-  endFlag: 0
 --- !u!1 &1738549648
 GameObject:
   m_ObjectHideFlags: 0
@@ -51929,30 +51898,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999096091}
   m_CullTransparentMesh: 0
---- !u!114 &2027092785 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1611248096444202491, guid: 898906ae10b86644489c52db27fff48e,
-    type: 3}
-  m_PrefabInstance: {fileID: 550900897}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2045890472 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1611248095996468410, guid: 898906ae10b86644489c52db27fff48e,
-    type: 3}
-  m_PrefabInstance: {fileID: 550900897}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2073987694
 GameObject:
   m_ObjectHideFlags: 0
