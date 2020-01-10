@@ -305,10 +305,13 @@ public class Archer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            //矢を発射する
-            ShootNWay(playerAngle, 0, arrowSpeed, 1);
-
-            playerMp -= shootMp;
+            if (playerMp > shootMp)
+            {
+                //矢を発射する
+                ShootNWay(playerAngle, 0, arrowSpeed, 1);
+                //Mpを減らす
+                playerMp -= shootMp;
+            }
         }
     }
 
