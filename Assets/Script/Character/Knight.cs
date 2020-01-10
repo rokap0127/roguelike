@@ -67,7 +67,8 @@ public class Knight : MonoBehaviour
 
         //最大Hpに設定
         playerHp = playerMaxHp;
-        //playerMp = playerMaxMp;
+        //最大Mpに設定する
+        playerMp = playerMaxMp;
 
         //opreationを探す
         operation = GameObject.Find("Operation");

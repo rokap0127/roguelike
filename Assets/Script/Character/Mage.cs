@@ -39,7 +39,7 @@ public class Mage : MonoBehaviour
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp;　//Hpを最大に設定する
-        //playerMp = playerMaxMp;
+        playerMp = playerMaxMp;  //Mpを最大に設定する
     }
 
     void Awake()

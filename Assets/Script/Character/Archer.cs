@@ -14,6 +14,7 @@ public class Archer : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+    int shootMp = 10; //shootのMp
 
     GameObject operation;
     Operation operationScript;
@@ -43,14 +44,13 @@ public class Archer : MonoBehaviour
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp; //Hpを最大に設定
-        //playerMp = playerMaxMp;
+        playerMp = playerMaxMp; //Mpを最大に設定する
     }
     int count;
     // Update is called once per frame
     void Update()
     {
-
-       
+       //操作モード
         if (operationScript.GetArcherFlag())
         {
             collider2D.enabled = true;
@@ -72,6 +72,7 @@ public class Archer : MonoBehaviour
                 Attack();
             }
         }
+        //追尾モード
         else if (!operationScript.GetArcherFlag())
         {
             //Mp回復
@@ -302,55 +303,12 @@ public class Archer : MonoBehaviour
 
     void Attack()
     {
-        //攻撃
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-
-            //上
-            if (direciton == Direction.UP)
-            {
-            }
-            //右上
-            if (direciton == Direction.UPRIGHT)
-            {
-
-            }
-            //右
-            if (direciton == Direction.RIGHT)
-            {
-
-            }
-            //右下
-            if (direciton == Direction.DOWNRIGHT)
-            {
-
-            }
-            //下
-            if (direciton == Direction.DOWN)
-            {
-
-            }
-            //左下
-            if (direciton == Direction.DOWNLEFT)
-            {
-
-            }
-            //左
-            if (direciton == Direction.LEFT)
-            {
-
-            }
-            //左上
-            if (direciton == Direction.UPLEFT)
-            {
-
-            }
-        }
-
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             //矢を発射する
-            ShootNWay( playerAngle, 0, arrowSpeed, 1);
+            ShootNWay(playerAngle, 0, arrowSpeed, 1);
+
+            playerMp -= shootMp;
         }
     }
 
