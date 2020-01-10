@@ -80,7 +80,7 @@ public class Mage : MonoBehaviour
         {
             //Mp回復
             mpCount += Time.deltaTime;
-            if (mpCount >= 1 && playerMaxMp >= playerMp)
+            if (mpCount >= 1 && playerMaxMp > playerMp)
             {
                 playerMp += 5;
                 mpCount = 0;

@@ -28,7 +28,10 @@ public class Knight : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+    float mpCount;　//Mp回復スピード
     int shootMp = 10; //消費Mp
+    int guardMp = 2; //ガードMp
+    float guardMpCount; //Mp消費間隔
 
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
@@ -47,7 +50,7 @@ public class Knight : MonoBehaviour
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     bool isAttack = false; //攻撃中か？
     bool isGuard = false; //ガード中か
-    float mpCount;　//Mp回復スピード
+
 
     ItemChecker ic;
     float defaultMoveSpeed;
@@ -96,18 +99,38 @@ public class Knight : MonoBehaviour
             angles.z = angle;
             PlayerRote(angle);
 
-            //ガードする
-            Guard();
+            //Mpが足りているなら
+            if (playerMp > guardMp)
+            {
+                //ガードする
+                Guard();
+            }
 
+          
             //メニューが閉じているなら
             if(Time.timeScale>0)
             {
+                //ガードしていない時
                 if (!isGuard)
                 {
                     if(playerMp > shootMp)
                     //攻撃する
                     Attack();
                 }               
+            }
+
+            //ガード中なら
+            if (isGuard)
+            {
+                //Mpカウントプラス
+                guardMpCount += Time.deltaTime;
+                if(guardMpCount > 0.5)
+                {
+                    //Mp消費
+                    playerMp -= guardMp;
+                    guardMpCount = 0;
+                }
+
             }
 
 
@@ -131,7 +154,7 @@ public class Knight : MonoBehaviour
         {
             //Mp回復
             mpCount += Time.deltaTime;
-            if(mpCount >= 1 && playerMaxMp >= playerMp)
+            if(mpCount >= 1 && playerMaxMp > playerMp)
             {
                 playerMp+=5;
                 mpCount = 0;
