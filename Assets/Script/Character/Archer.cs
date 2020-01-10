@@ -118,7 +118,7 @@ public class Archer : MonoBehaviour
         {
             playerRigidbody.velocity = Vector2.zero;
             float _range = 0.3f;
-            float _speed = 0.05f;
+            float _speed = 0.03f;
             if (Knight.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
