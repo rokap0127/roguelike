@@ -28,6 +28,7 @@ public class Knight : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+    int shootMp = 10; //消費Mp
 
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
@@ -103,6 +104,7 @@ public class Knight : MonoBehaviour
             {
                 if (!isGuard)
                 {
+                    if(playerMp > shootMp)
                     //攻撃する
                     Attack();
                 }               
@@ -344,7 +346,8 @@ public class Knight : MonoBehaviour
         //攻撃
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-
+            //Mpを減らす
+            playerMp -= shootMp; 
             //上
             if (direciton == Direction.UP)
             {
