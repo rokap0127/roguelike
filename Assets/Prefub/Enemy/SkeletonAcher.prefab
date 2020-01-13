@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2478756979409202577}
   - component: {fileID: -6712969308720308317}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: SkeletonAcher
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
