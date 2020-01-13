@@ -5,9 +5,14 @@ using UnityEngine;
 public class SuperSlime : MonoBehaviour
 {
     public float moveSpeed; //移動速度
+    public float shotSpeed; //ショットスピード
     public int bossHp; //現在のHp
     public int bossMaxHp; //最大のHp
     public GameObject slimeShot;
+
+    public float shotInterval; //ショットの間隔
+   float shotCount; //shotカウント
+   
 
     public Explotion explosionPrefab; //爆発エフェクト
 
@@ -31,19 +36,22 @@ public class SuperSlime : MonoBehaviour
         //プレイヤーが存在する方向へ移動する
         transform.localPosition += direction * moveSpeed;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        shotCount ++;
+
+        if (shotCount == shotInterval)
         {
-            SlimeShot();
+            shotCount = 0;
+            SlimeShot(direction);
         }
 
     }
 
-    void SlimeShot()
+    //スライムショット
+    void SlimeShot(Vector3 direction)
     {
         var slime = Instantiate(slimeShot, transform.position, Quaternion.identity);
         var rb = slime.GetComponent<Rigidbody2D>();
-
-        rb.AddForce(new Vector2(100, 100));
+        rb.AddForce(direction * shotSpeed);
 
     }
 }
