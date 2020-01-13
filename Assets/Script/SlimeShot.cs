@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SlimeShot : MonoBehaviour
 {
+    public GameObject miniSlime; //ミニスライム
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class SlimeShot : MonoBehaviour
         if(collision.name.Contains("Wall"))
         {
             Destroy(gameObject);
+            Instantiate(miniSlime, transform.position, Quaternion.identity);
         }
     }
 }

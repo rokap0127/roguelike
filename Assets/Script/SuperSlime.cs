@@ -8,7 +8,7 @@ public class SuperSlime : MonoBehaviour
     public float shotSpeed; //ショットスピード
     public int bossHp; //現在のHp
     public int bossMaxHp; //最大のHp
-    public GameObject slimeShot;
+    public GameObject slimeShot; //スライムショット
 
     public float shotInterval; //ショットの間隔
    float shotCount; //shotカウント
