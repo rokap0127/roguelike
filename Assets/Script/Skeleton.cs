@@ -5,6 +5,7 @@ using UnityEngine;
 public class Skeleton : MonoBehaviour
 {
     public float moveSpeed;
+    public int damage;
     public Explotion explosionPrefab; //爆発エフェクト
 
     Direction direciton = Direction.DOWN; //現在の向き
@@ -143,6 +144,47 @@ public class Skeleton : MonoBehaviour
             anim.SetBool("Move@DownLeft", false);
             anim.SetBool("Move@Left", false);
             anim.SetBool("Move@UpLeft", true);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "PlayerAttack")
+        {
+            Instantiate(
+                explosionPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            Destroy(gameObject);
+        }
+        if (collision.name.Contains("Knight"))
+        {
+            //プレイヤーにダメージを与える
+            var knight = collision.GetComponent<Knight>();
+            if (knight == null) return;
+            knight.Damage(damage);
+        }
+
+        if (collision.name.Contains("Guard"))
+        {
+            moveSpeed = 0;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        moveSpeed = 0.01f;
+        if (collision.name.Contains("Guard"))
+        {
+            moveSpeed = 0;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Guard")
+        {
+            moveSpeed = 0.01f;
         }
     }
 }
