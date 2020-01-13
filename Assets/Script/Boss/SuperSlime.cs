@@ -54,4 +54,23 @@ public class SuperSlime : MonoBehaviour
         rb.AddForce(direction * shotSpeed);
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "PlayerAttack")
+        {
+            //エフェクト生成
+            Instantiate(
+    explosionPrefab,
+    collision.transform.position,
+    Quaternion.identity);
+            //敵のHPを減らす
+            bossHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < bossHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+    }
 }
