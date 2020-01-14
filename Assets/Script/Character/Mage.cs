@@ -7,6 +7,7 @@ public class Mage : MonoBehaviour
     public static Mage instance; //メイジのインスタンス
     public float moveSpeed; //移動の速さ
     public Magic magic; //魔法のプレハブ
+    public Magic n_Magic; //ノーマルマジック
     public float magicSpeed; //魔法の速度
     public float teleportRange; //テレポートの距離
     public float slopeRange; //テレオート時間
@@ -311,7 +312,18 @@ public class Mage : MonoBehaviour
     }
 
     void Attack()
-    { 
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if(playerMp > shootMp)
+            {
+                ShootNWay2(magicAngle, 0, magicSpeed, 1);
+
+                playerMp -= shootMp;
+            }
+            
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if(playerMp > shootMp)
@@ -354,6 +366,33 @@ public class Mage : MonoBehaviour
         else if (count == 1)
         {
             var shot = Instantiate(magic, pos, Quaternion.identity);
+
+            shot.Init(angleBase, speed);
+        }
+    }
+
+    private void ShootNWay2(
+       float angleBase, float angleRange, float speed, int count)
+    {
+        var pos = transform.localPosition; //プレイヤーの位置
+
+        if (1 < count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                //弾の発射角を計算する
+                var angle = angleBase +
+                    angleRange * ((float)i / (count - 1) - 0.5f);
+
+                //発射する弾を生成する
+                var shot = Instantiate(n_Magic, pos, Quaternion.identity);
+
+                shot.Init(angle, speed);
+            }
+        }
+        else if (count == 1)
+        {
+            var shot = Instantiate(n_Magic, pos, Quaternion.identity);
 
             shot.Init(angleBase, speed);
         }

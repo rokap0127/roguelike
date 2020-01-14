@@ -210,7 +210,7 @@ public class Enemy2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("Magic"))
+        if (collision.name.Contains("N_Magic"))
         {
             Instantiate(magicPrefab,
                 collision.transform.position,
