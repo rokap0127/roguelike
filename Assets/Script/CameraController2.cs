@@ -381,7 +381,7 @@ public class CameraController2 : MonoBehaviour
         {
             SceneManager.LoadScene("Stage03");
         }
-        if (pos.x > entrance[6].transform.position.x&&op.knightFlag)
+        if (pos.x > entrance[6].transform.position.x)
         {
             SceneManager.LoadScene("Stage03");
         }
