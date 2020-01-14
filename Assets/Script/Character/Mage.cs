@@ -73,7 +73,7 @@ public class Mage : MonoBehaviour
                 Attack();
             }
 
-            Teleport(teleportRange, slopeRange);
+            //Teleport(teleportRange, slopeRange);
 
         }
         else if (operationScript.GetMageFlag() == false)
@@ -113,10 +113,7 @@ public class Mage : MonoBehaviour
                 //移動する
                 Move(x, y);
             }
-        }
-       
-
-       
+        }  
     }
 
     //追尾する
@@ -407,5 +404,15 @@ public class Mage : MonoBehaviour
                 transform.position += new Vector3(-slopeRange, slopeRange);
             }
         }
+    }
+
+    public void Damage(int damage)
+    {
+        playerHp -= damage;
+
+        //HPがまだある場合、ここで処理を終える
+        if (0 < playerHp) { return; }
+
+        gameObject.SetActive(false);
     }
 }

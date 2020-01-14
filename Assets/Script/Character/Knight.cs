@@ -585,6 +585,7 @@ public class Knight : MonoBehaviour
             anim.SetBool("Guard@Left", false);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Needle")
@@ -595,13 +596,6 @@ public class Knight : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        //    if(collision.gameObject.tag == "Enemy" &&
-        //        gameObject.tag != "Guard")
-        //    {
-        //        StartCoroutine(Blinl());
-        //        playerHp -= 10;
-        //    }
         if (collision.gameObject.tag == "HPportion")
         {
             playerHp += 10;
@@ -615,18 +609,6 @@ public class Knight : MonoBehaviour
             playerHp -= 10;
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Enemy" &&
-    //        gameObject.tag != "Guard")
-    //    {
-
-    //            StartCoroutine(Blinl());
-    //            playerHp -= 10;
-
-    //    }
-    //}
 
 
     //攻撃してるとき1時停止する

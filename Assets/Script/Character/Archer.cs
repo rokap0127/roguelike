@@ -345,4 +345,14 @@ public class Archer : MonoBehaviour
         
     }
 
+    public void Damage(int damage)
+    {
+        playerHp -= damage;
+
+        //HPがまだある場合、ここで処理を終える
+        if (0 < playerHp) { return; }
+
+        gameObject.SetActive(false);
+    }
+
 }
