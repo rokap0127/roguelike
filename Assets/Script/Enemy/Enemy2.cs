@@ -5,8 +5,9 @@ using UnityEngine;
 public class Enemy2 : MonoBehaviour
 {
     public float moveSpeed;
-    public int hpMax;
     public int damage;
+    public int enemyHp;
+    public int enemyMaxHp;
     public Shot shotPrefab; //弾のプレハブ
     public float shotSpeed; //弾の移動の速さ
     public float shotAngleRange; //複数の弾を発射する時の角度
@@ -24,6 +25,7 @@ public class Enemy2 : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        enemyHp = enemyMaxHp;
     }
 
     // Update is called once per frame
@@ -213,6 +215,12 @@ public class Enemy2 : MonoBehaviour
                 explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
             Destroy(gameObject);
         }
         if (collision.name.Contains("Knight"))

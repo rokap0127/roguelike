@@ -6,6 +6,8 @@ public class Skeleton : MonoBehaviour
 {
     public float moveSpeed;
     public int damage;
+    public int enemyHp;
+    public int enemyMaxHp;
     public Explotion explosionPrefab; //爆発エフェクト
 
     Direction direciton = Direction.DOWN; //現在の向き
@@ -15,6 +17,7 @@ public class Skeleton : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        enemyHp = enemyMaxHp;
     }
 
     // Update is called once per frame
@@ -155,8 +158,15 @@ public class Skeleton : MonoBehaviour
                 explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
             Destroy(gameObject);
         }
+
         if (collision.name.Contains("Knight"))
         {
             //プレイヤーにダメージを与える
