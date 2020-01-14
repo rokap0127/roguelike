@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   magic: {fileID: 794852832553027592, guid: 098e1321a1374e0499913658e92a3207, type: 3}
+  n_Magic: {fileID: 794852832553027592, guid: 7ba55fcae90684d4984e2f29d11c1c1e, type: 3}
   magicSpeed: 0.05
   teleportRange: 1
   slopeRange: 0.5
