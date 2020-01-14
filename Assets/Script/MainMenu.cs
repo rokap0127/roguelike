@@ -21,20 +21,23 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && !menuflag)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !menuflag||
+            Input.GetKeyDown(KeyCode.RightControl) && !menuflag)
         {
             menu[0].SetActive(true);
             Time.timeScale = 0f;
             menuflag = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Return) && menuflag&&!cameraFlag&&!itemFlag&&!endFlag ||
+        else if (Input.GetKeyDown(KeyCode.LeftControl) && menuflag&&!cameraFlag&&!itemFlag&&!endFlag ||
+                 Input.GetKeyDown(KeyCode.RightControl) && menuflag && !cameraFlag && !itemFlag && !endFlag ||
                  Input.GetMouseButtonDown(1) && menuflag && !cameraFlag && !itemFlag && !endFlag)
         {
             menu[0].SetActive(false);
             Time.timeScale = 1f;
             menuflag = false;
         }
-        if(Input.GetKeyDown(KeyCode.Return) && cameraFlag ||
+        if(Input.GetKeyDown(KeyCode.LeftControl) && cameraFlag ||
+           Input.GetKeyDown(KeyCode.RightControl) && cameraFlag ||
            Input.GetMouseButtonDown(1) && cameraFlag)
         {
 
@@ -42,14 +45,16 @@ public class MainMenu : MonoBehaviour
             menu[0].SetActive(true);
             cameraFlag = false;
         }
-        if (Input.GetKeyDown(KeyCode.Return) && itemFlag ||
+        if (Input.GetKeyDown(KeyCode.LeftControl) && itemFlag ||
+            Input.GetKeyDown(KeyCode.RightControl) && itemFlag ||
             Input.GetMouseButtonDown(1) && itemFlag)
         {
             menu[1].SetActive(false);
             menu[0].SetActive(true);
             itemFlag = false;
         }
-        if (Input.GetKeyDown(KeyCode.Return) && endFlag ||
+        if (Input.GetKeyDown(KeyCode.LeftControl) && endFlag ||
+            Input.GetKeyDown(KeyCode.RightControl) && endFlag ||
             Input.GetMouseButtonDown(1) && endFlag)
         {
             menu[2].SetActive(false);

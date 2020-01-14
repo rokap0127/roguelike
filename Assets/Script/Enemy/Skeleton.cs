@@ -6,7 +6,10 @@ public class Skeleton : MonoBehaviour
 {
     public float moveSpeed;
     public int damage;
+    public int enemyHp;
+    public int enemyMaxHp;
     public Explotion explosionPrefab; //爆発エフェクト
+    public Explotion magicPrefab;
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim;
@@ -15,6 +18,7 @@ public class Skeleton : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        enemyHp = enemyMaxHp;
     }
 
     // Update is called once per frame
@@ -149,20 +153,55 @@ public class Skeleton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.name.Contains("Magic"))
+        {
+            Instantiate(magicPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
         if (collision.gameObject.tag == "PlayerAttack")
         {
             Instantiate(
                 explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
             Destroy(gameObject);
         }
+
+        //Playerにダメージ
         if (collision.name.Contains("Knight"))
         {
             //プレイヤーにダメージを与える
             var knight = collision.GetComponent<Knight>();
             if (knight == null) return;
             knight.Damage(damage);
+        }
+        if (collision.name.Contains("Archer"))
+        {
+            //プレイヤーにダメージを与える
+            var archer = collision.GetComponent<Archer>();
+            if (archer == null) return;
+            archer.Damage(damage);
+        }
+        if (collision.name.Contains("Mage"))
+        {
+            //プレイヤーにダメージを与える
+            var mage = collision.GetComponent<Mage>();
+            if (mage == null) return;
+            mage.Damage(damage);
         }
 
         if (collision.name.Contains("Guard"))

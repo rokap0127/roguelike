@@ -5,8 +5,9 @@ using UnityEngine;
 public class Enemy2 : MonoBehaviour
 {
     public float moveSpeed;
-    public int hpMax;
     public int damage;
+    public int enemyHp;
+    public int enemyMaxHp;
     public Shot shotPrefab; //弾のプレハブ
     public float shotSpeed; //弾の移動の速さ
     public float shotAngleRange; //複数の弾を発射する時の角度
@@ -14,6 +15,7 @@ public class Enemy2 : MonoBehaviour
     public int shotCount; //弾の発射数
     public float shotInterval; //弾の発射間隔(秒)
     public Explotion explosionPrefab; //爆発エフェクト
+    public Explotion magicPrefab;
 
     int Hp;
     Vector3 direction;
@@ -24,6 +26,7 @@ public class Enemy2 : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        enemyHp = enemyMaxHp;
     }
 
     // Update is called once per frame
@@ -207,20 +210,57 @@ public class Enemy2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.name.Contains("Magic"))
+        {
+            Instantiate(magicPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+
         if (collision.gameObject.tag == "PlayerAttack")
         {
             Instantiate(
                 explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
             Destroy(gameObject);
         }
+
+
+        //Playerにダメージ
         if (collision.name.Contains("Knight"))
         {
             //プレイヤーにダメージを与える
             var knight = collision.GetComponent<Knight>();
             if (knight == null) return;
             knight.Damage(damage);
+        }
+        if (collision.name.Contains("Archer"))
+        {
+            //プレイヤーにダメージを与える
+            var archer = collision.GetComponent<Archer>();
+            if (archer == null) return;
+            archer.Damage(damage);
+        }
+        if (collision.name.Contains("Mage"))
+        {
+            //プレイヤーにダメージを与える
+            var mage = collision.GetComponent<Mage>();
+            if (mage == null) return;
+            mage.Damage(damage);
         }
 
         if (collision.name.Contains("Guard"))
