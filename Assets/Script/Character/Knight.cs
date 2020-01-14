@@ -602,10 +602,10 @@ public class Knight : MonoBehaviour
         //        StartCoroutine(Blinl());
         //        playerHp -= 10;
         //    }
-        if (collision.gameObject.tag == "HPportion")
-        {
-            playerHp += 10;
-        }
+        //if (collision.gameObject.tag == "HPportion")
+        //{
+        //    playerHp += 10;
+        //}
         if (collision.gameObject.tag == "BlastBarrel")
         {
             playerHp -= 30;
