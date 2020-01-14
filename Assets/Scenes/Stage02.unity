@@ -26388,7 +26388,7 @@ MonoBehaviour:
   - {fileID: 2678072501406143880, guid: 8231db46c8e106e49a00ebf3f0169d00, type: 3}
   - {fileID: 4902001450418590346, guid: 70faed102969f8645b4e6654f8322b74, type: 3}
   enemy:
-  - {fileID: 4664380003836020595, guid: a7bf0497413730048bb9fd658b483743, type: 3}
+  - {fileID: 6278591368226052380, guid: 156841eca222e1143a9b963eef6db2bd, type: 3}
   - {fileID: 2478756979409202285, guid: d0857d4242230454abcbb46cc38eb01b, type: 3}
   rnd: 0
   itemlim: 0

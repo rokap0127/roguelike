@@ -28,6 +28,10 @@ public class Knight : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+    float mpCount;　//Mp回復スピード
+    int shootMp = 10; //消費Mp
+    int guardMp = 2; //ガードMp
+    float guardMpCount; //Mp消費間隔
 
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
@@ -46,7 +50,7 @@ public class Knight : MonoBehaviour
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     bool isAttack = false; //攻撃中か？
     bool isGuard = false; //ガード中か
-    float mpCount;
+
 
     ItemChecker ic;
     float defaultMoveSpeed;
@@ -67,7 +71,8 @@ public class Knight : MonoBehaviour
 
         //最大Hpに設定
         playerHp = playerMaxHp;
-        //playerMp = playerMaxMp;
+        //最大Mpに設定する
+        playerMp = playerMaxMp;
 
         //opreationを探す
         operation = GameObject.Find("Operation");
@@ -94,17 +99,38 @@ public class Knight : MonoBehaviour
             angles.z = angle;
             PlayerRote(angle);
 
-            //ガードする
-            Guard();
+            //Mpが足りているなら
+            if (playerMp > guardMp)
+            {
+                //ガードする
+                Guard();
+            }
 
+          
             //メニューが閉じているなら
             if(Time.timeScale>0)
             {
+                //ガードしていない時
                 if (!isGuard)
                 {
+                    if(playerMp > shootMp)
                     //攻撃する
                     Attack();
                 }               
+            }
+
+            //ガード中なら
+            if (isGuard)
+            {
+                //Mpカウントプラス
+                guardMpCount += Time.deltaTime;
+                if(guardMpCount > 0.5)
+                {
+                    //Mp消費
+                    playerMp -= guardMp;
+                    guardMpCount = 0;
+                }
+
             }
 
 
@@ -128,7 +154,7 @@ public class Knight : MonoBehaviour
         {
             //Mp回復
             mpCount += Time.deltaTime;
-            if(mpCount >= 1 && playerMaxMp >= playerMp)
+            if(mpCount >= 1 && playerMaxMp > playerMp)
             {
                 playerMp+=5;
                 mpCount = 0;
@@ -173,8 +199,8 @@ public class Knight : MonoBehaviour
         if (Mage.instance.gameObject.transform.localPosition != transform.localPosition)
         {
             playerRigidbody.velocity = Vector2.zero;
-            float _range = 0.3f;
-            float _speed = 0.05f;
+            float _range = 0.25f; //追尾の幅
+            float _speed = 0.033f; //追尾の時のスピード
             if (Mage.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
@@ -343,7 +369,8 @@ public class Knight : MonoBehaviour
         //攻撃
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-
+            //Mpを減らす
+            playerMp -= shootMp; 
             //上
             if (direciton == Direction.UP)
             {

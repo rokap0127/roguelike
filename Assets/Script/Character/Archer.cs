@@ -14,6 +14,7 @@ public class Archer : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+    int shootMp = 10; //shootのMp
 
     GameObject operation;
     Operation operationScript;
@@ -24,6 +25,7 @@ public class Archer : MonoBehaviour
     bool isAttack = false; //攻撃中か？
     float playerAngle; //プレイヤーの方向
     new CapsuleCollider2D collider2D;
+    float mpCount;　//Mp回復スピード
 
 
     void Awake()
@@ -41,21 +43,14 @@ public class Archer : MonoBehaviour
         operation = GameObject.Find("Operation");
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
-        playerHp = playerMaxHp;
-        playerMp = playerMaxMp;
+        playerHp = playerMaxHp; //Hpを最大に設定
+        playerMp = playerMaxMp; //Mpを最大に設定する
     }
     int count;
     // Update is called once per frame
     void Update()
     {
-        count++;
-        if(count == 90)
-        {
-            //Debug.Log(Mage.mageInstance.transform.position);
-            //Debug.Log(transform.position);
-            count = 0;
-        }
-       
+       //操作モード
         if (operationScript.GetArcherFlag())
         {
             collider2D.enabled = true;
@@ -77,8 +72,17 @@ public class Archer : MonoBehaviour
                 Attack();
             }
         }
+        //追尾モード
         else if (!operationScript.GetArcherFlag())
         {
+            //Mp回復
+            mpCount += Time.deltaTime;
+            if (mpCount >= 1 && playerMaxMp > playerMp)
+            {
+                playerMp += 5;
+                mpCount = 0;
+            }
+
             collider2D.enabled = false;
             var direction = Knight.instance.transform.position - transform.position;
             var angle = Utils.GetAngle(Vector3.zero, direction);
@@ -114,8 +118,8 @@ public class Archer : MonoBehaviour
         if (Knight.instance.gameObject.transform.localPosition != transform.localPosition)
         {
             playerRigidbody.velocity = Vector2.zero;
-            float _range = 0.3f;
-            float _speed = 0.05f;
+            float _range = 0.25f;
+            float _speed = 0.033f;
             if (Knight.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
@@ -299,55 +303,15 @@ public class Archer : MonoBehaviour
 
     void Attack()
     {
-        //攻撃
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-
-            //上
-            if (direciton == Direction.UP)
+            if (playerMp > shootMp)
             {
+                //矢を発射する
+                ShootNWay(playerAngle, 0, arrowSpeed, 1);
+                //Mpを減らす
+                playerMp -= shootMp;
             }
-            //右上
-            if (direciton == Direction.UPRIGHT)
-            {
-
-            }
-            //右
-            if (direciton == Direction.RIGHT)
-            {
-
-            }
-            //右下
-            if (direciton == Direction.DOWNRIGHT)
-            {
-
-            }
-            //下
-            if (direciton == Direction.DOWN)
-            {
-
-            }
-            //左下
-            if (direciton == Direction.DOWNLEFT)
-            {
-
-            }
-            //左
-            if (direciton == Direction.LEFT)
-            {
-
-            }
-            //左上
-            if (direciton == Direction.UPLEFT)
-            {
-
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            //矢を発射する
-            ShootNWay( playerAngle, 0, arrowSpeed, 1);
         }
     }
 

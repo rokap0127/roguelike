@@ -9,12 +9,15 @@ public class Mage : MonoBehaviour
     public Magic magic; //魔法のプレハブ
     public float magicSpeed; //魔法の速度
     public float teleportRange; //テレポートの距離
-    public float slopeRange;
+    public float slopeRange; //テレオート時間
 
     public int playerHp;    //現在のHP
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+
+    public int shootMp;
+
 
     GameObject operation;
     Operation operationScript;
@@ -25,6 +28,7 @@ public class Mage : MonoBehaviour
     bool isAttack = false; //攻撃中か？
     float magicAngle; //魔法の角度
     new CapsuleCollider2D collider2D;
+    float mpCount;　//Mp回復スピード
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +38,8 @@ public class Mage : MonoBehaviour
         operation = GameObject.Find("Operation");
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
-        playerHp = playerMaxHp;
-        playerMp = playerMaxMp;
+        playerHp = playerMaxHp;　//Hpを最大に設定する
+        playerMp = playerMaxMp;  //Mpを最大に設定する
     }
 
     void Awake()
@@ -74,6 +78,14 @@ public class Mage : MonoBehaviour
         }
         else if (operationScript.GetMageFlag() == false)
         {
+            //Mp回復
+            mpCount += Time.deltaTime;
+            if (mpCount >= 1 && playerMaxMp > playerMp)
+            {
+                playerMp += 5;
+                mpCount = 0;
+            }
+
             collider2D.enabled = false;
             var direction = Archer.instance.transform.position - transform.position;
             var angle = Utils.GetAngle(Vector3.zero, direction);
@@ -113,8 +125,8 @@ public class Mage : MonoBehaviour
         if (Archer.instance.gameObject.transform.localPosition != transform.localPosition)
         {
             playerRigidbody.velocity = Vector2.zero;
-            float _range = 0.3f;
-            float _speed = 0.05f;
+            float _range = 0.25f;
+            float _speed = 0.033f;
             if (Archer.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
@@ -305,8 +317,14 @@ public class Mage : MonoBehaviour
     { 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            //1発撃つ
-            ShootNWay(magicAngle, 0, magicSpeed, 1);
+            if(playerMp > shootMp)
+            {
+                //1発撃つ
+                ShootNWay(magicAngle, 0, magicSpeed, 1);
+
+                playerMp -= shootMp;
+            }
+           
         }
     }
 

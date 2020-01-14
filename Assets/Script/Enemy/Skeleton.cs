@@ -2,21 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class Skeleton : MonoBehaviour
 {
     public float moveSpeed;
-    public int hpMax;
     public int damage;
-    public Shot shotPrefab; //弾のプレハブ
-    public float shotSpeed; //弾の移動の速さ
-    public float shotAngleRange; //複数の弾を発射する時の角度
-    public float shotTimer; //弾の発射タイミングを管理するタイマー
-    public int shotCount; //弾の発射数
-    public float shotInterval; //弾の発射間隔(秒)
     public Explotion explosionPrefab; //爆発エフェクト
 
-    int Hp;
-    Vector3 direction;
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim;
 
@@ -30,31 +21,18 @@ public class Enemy2 : MonoBehaviour
     void FixedUpdate()
     {
         GameObject knight = GameObject.FindGameObjectWithTag("Knight");
-        float pos = (transform.position - knight.transform.position).magnitude;
+
         //プレイヤーの位置へ向かうベクトルを生成する
         var angle = Utils.GetAngle(
             transform.localPosition,
             Knight.instance.transform.localPosition);
-        direction = Utils.GetDirection(angle);
-        if (pos < 7 && pos > -7)
-        {
-            //プレイヤーが存在する方向へ移動する
-            transform.localPosition += direction * moveSpeed;
-        }
+        var direction = Utils.GetDirection(angle);
+
+        //プレイヤーが存在する方向へ移動する
+        transform.localPosition += direction * moveSpeed;
+
+        //向き
         PlayerRote(angle);
-
-        //弾の発射を管理するタイマーを更新する
-        shotTimer += Time.deltaTime;
-
-        //まだ弾を発射するタイミングではない場合ここで処理を終える
-        if (shotTimer < shotInterval) return;
-
-        //弾を発射するタイマーをリセットする
-        shotTimer = 0;
-
-        //弾を発射する
-        if (pos < 5 && pos > -5)
-            ShootNWay(angle, shotAngleRange, shotSpeed, shotCount);
     }
 
     void PlayerRote(float angle)
@@ -166,42 +144,6 @@ public class Enemy2 : MonoBehaviour
             anim.SetBool("Move@DownLeft", false);
             anim.SetBool("Move@Left", false);
             anim.SetBool("Move@UpLeft", true);
-        }
-    }
-
-
-    private void ShootNWay(
-        float angleBase, float angleRange, float speed, int count)
-    {
-        var pos = transform.localPosition; //プレイヤーの位置       
-        transform.localEulerAngles = direction;
-        var rot = transform.localRotation;
-
-        //弾を複数発射する場合
-        if(1 < count)
-        {
-            //発射する回数分ループする
-            for(int i= 0; i< count; i++)
-            {
-                //弾の発射角度を計算する
-                var angle = angleBase +
-                    angleRange * ((float)i / (count - 1) - 0.5f);
-
-                //発射する弾を生成する
-                var shot = Instantiate(shotPrefab, pos, rot);
-
-                //弾を発射する方向と速さを設定する
-                shot.Init(angle, speed);
-            }
-        }
-        else if(count == 1)
-        {
-            //発射する弾を生成する
-            var shot = Instantiate(shotPrefab, pos, rot);
-
-            //弾を発射する方向と速さを設定する
-            shot.Init(angleBase, speed);
-        
         }
     }
 

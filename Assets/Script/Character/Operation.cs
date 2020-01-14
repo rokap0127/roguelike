@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Operation : MonoBehaviour
 {
-    public bool archerFlag;
-    public bool knightFlag;
-    public bool mageFlag;
+    public bool knightFlag; //ナイト
+    public bool archerFlag; //アーチャー
+    public bool mageFlag;   //メイジ
 
     // Start is called before the first frame update
     void Start()
     {
-        archerFlag = false;
-        knightFlag = true;
-        mageFlag = false;
+        knightFlag = true;  //オン
+        archerFlag = false; //オフ
+        mageFlag = false;   //オフ
        
     }
     private void Awake()
@@ -25,14 +25,15 @@ public class Operation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!archerFlag &
+        if(!knightFlag &
             Input.GetKeyDown(KeyCode.Alpha1))
         {
+            knightFlag = true;
             archerFlag = false;
             mageFlag = false;
-            knightFlag = true;
+           
         }
-        else if(!knightFlag &
+        else if(!archerFlag &
             Input.GetKeyDown(KeyCode.Alpha2))
         {
             knightFlag = false;
@@ -41,10 +42,10 @@ public class Operation : MonoBehaviour
         }
         else if (!mageFlag &
             Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            mageFlag = true;
+        {       
             knightFlag = false;
-            archerFlag = false;      
+            archerFlag = false;
+            mageFlag = true;
         }
     }
 
