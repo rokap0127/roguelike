@@ -24,17 +24,39 @@ public class CameraController2 : MonoBehaviour
     public GameObject[] gimmick;
     int gimmicknum;
     public int gimmicklim;
+
+    GameObject operation;
+    Operation op;
+    GameObject knight;
+    GameObject archer;
+    GameObject mage;
+    Vector2 pos;
     // Start is called before the first frame update
     void Start()
     {
+        operation = GameObject.FindGameObjectWithTag("Operation");
+        op = operation.GetComponent<Operation>();
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
         sceneCamera[1].SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Knight");
-        Vector2 pos = player.transform.position;
+        if(op.knightFlag)
+        {
+            pos = knight.transform.position;
+        }
+        if(op.archerFlag)
+        {
+            pos = archer.transform.position;
+        }
+        if(op.mageFlag)
+        {
+            pos = mage.transform.position;
+        }
         if (pos.x < entrance[0].transform.position.x)
         {
             sceneCamera[1].SetActive(true);
@@ -359,7 +381,7 @@ public class CameraController2 : MonoBehaviour
         {
             SceneManager.LoadScene("Stage03");
         }
-        if (pos.x > entrance[6].transform.position.x)
+        if (pos.x > entrance[6].transform.position.x&&op.knightFlag)
         {
             SceneManager.LoadScene("Stage03");
         }

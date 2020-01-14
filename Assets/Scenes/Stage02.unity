@@ -18732,6 +18732,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Operation
       objectReference: {fileID: 0}
+    - target: {fileID: 6789567677110233710, guid: 761e77c951774fc4e8468eda60e48570,
+        type: 3}
+      propertyPath: m_TagString
+      value: Operation
+      objectReference: {fileID: 0}
     - target: {fileID: 6789567677110233704, guid: 761e77c951774fc4e8468eda60e48570,
         type: 3}
       propertyPath: m_LocalPosition.x
