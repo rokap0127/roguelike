@@ -380,10 +380,10 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0, 0.2f),
                     Quaternion.Euler(0, 0, 180));
                 attack_object.transform.parent = transform;
-                //anim.Play("Attack_Up");
+                anim.SetBool("Attack@Up", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
-                //up_Attack.SetActive(true);
+
             }
             //右上
             if (direciton == Direction.UPRIGHT)
@@ -393,6 +393,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0.1f, 0.1f),
                     Quaternion.Euler(0, 0, 135));
                 attack_object.transform.parent = transform;
+                anim.SetBool("Attack@UpRight", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
 
@@ -405,10 +406,10 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0.2f, 0),
                     Quaternion.Euler(0, 0, 90));
                 attack_object.transform.parent = transform;
-                //anim.Play("Attack_Right");
+                anim.SetBool("Attack@Right", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
-                //right_Attack.SetActive(true);
+
             }
             //右下
             if (direciton == Direction.DOWNRIGHT)
@@ -418,6 +419,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0.1f, -0.1f),
                       Quaternion.Euler(0, 0, 45));
                 attack_object.transform.parent = transform;
+                anim.SetBool("Attack@DownRight", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
             }
@@ -429,10 +431,10 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(0, -0.3f),
                     Quaternion.identity);
                 attack_object.transform.parent = transform;
-                //anim.Play("Attack_Down");
+                anim.SetBool("Attack@Down", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
-                //down_Attack.SetActive(true);
+
             }
             //左下
             if (direciton == Direction.DOWNLEFT)
@@ -442,6 +444,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(-0.1f, -0.1f),
                      Quaternion.Euler(0, 0, -45));
                 attack_object.transform.parent = transform;
+                anim.SetBool("Attack@DownLeft", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
             }
@@ -453,10 +456,10 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(-0.2f, 0),
                     Quaternion.Euler(0, 0, -90));
                 attack_object.transform.parent = transform;
-                //anim.Play("Attack_Left");
+                anim.SetBool("Attack@Left", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
-                //left_Attack.SetActive(true);
+
             }
             //左上
             if (direciton == Direction.UPLEFT)
@@ -466,6 +469,7 @@ public class Knight : MonoBehaviour
                     transform.localPosition + new Vector3(-0.1f, 0.1f),
                    Quaternion.Euler(0, 0, 225));
                 attack_object.transform.parent = transform;
+                anim.SetBool("Attack@UpLeft", true);
                 isAttack = true;
                 StartCoroutine("WaitForAttack");
             }
@@ -613,6 +617,14 @@ public class Knight : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         isAttack = false;
+        anim.SetBool("Attack@Up", false);
+        anim.SetBool("Attack@Left", false);
+        anim.SetBool("Attack@Right", false);
+        anim.SetBool("Attack@Down", false);
+        anim.SetBool("Attack@UpRight", false);
+        anim.SetBool("Attack@UpLeft", false);
+        anim.SetBool("Attack@DownRight", false);
+        anim.SetBool("Attack@DownLeft", false);
     }
 
     //点滅
