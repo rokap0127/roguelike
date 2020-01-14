@@ -11,7 +11,7 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Knight");
         player_Script = player.GetComponent<Player>();
         guard = GameObject.Find("Guard");
     }
@@ -29,7 +29,7 @@ public class bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Knight")
         {
             if(collision.gameObject != guard)
             player_Script.Damage(10);
