@@ -20,6 +20,8 @@ TagManager:
   - Knight
   - Mage
   - Archer
+  - Menu
+  - ItemMenu
   layers:
   - Default
   - TransparentFX

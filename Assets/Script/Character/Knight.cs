@@ -48,6 +48,7 @@ public class Knight : MonoBehaviour
     bool isGuard = false; //ガード中か
     float mpCount;
 
+    GameObject iChecker;
     ItemChecker ic;
     float defaultMoveSpeed;
 
@@ -74,13 +75,14 @@ public class Knight : MonoBehaviour
         operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         defaultMoveSpeed = moveSpeed;
-        ic = GetComponent<ItemChecker>();
     }
 
     // Update is called once per frame
     void Update()
     {
-      //操作モード
+        iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
+        ic = iChecker.GetComponent<ItemChecker>();
+        //操作モード
         if (operationScript.GetKnightFlag())
         {
             collider2D.enabled = true;
@@ -115,7 +117,6 @@ public class Knight : MonoBehaviour
             if (playerHp <= 0 && !ic.RevivalFlag)
             {
                 gameObject.SetActive(false);
-                Invoke("ChangeScene", 0.5f);
                 Invoke("Death", 0.51f);
             }
             if (!ic.SpeedFlag)

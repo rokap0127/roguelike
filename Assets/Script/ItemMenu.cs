@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 public class ItemMenu : MonoBehaviour
 {
-    GameObject player;
-    Knight psc;
+    GameObject knight;
+    GameObject archer;
+    GameObject mage;
+    GameObject iChecker;
+    Knight kt;
+    Archer ac;
+    Mage mg;
     ItemChecker ic;
     bool menuflag = false;
     public GameObject ItemUI;
@@ -16,31 +21,27 @@ public class ItemMenu : MonoBehaviour
 
     private void Awake()
     {
-        //シーンが変わっても削除されない
-        DontDestroyOnLoad(gameObject);
     }
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Knight");
-        psc = player.GetComponent<Knight>();
-        ic = player.GetComponent<ItemChecker>();
-        UseItem();
     }
-
     // Update is called once per frame
     void Update()
     {
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        kt = knight.GetComponent<Knight>();
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        ac = archer.GetComponent<Archer>();
+        mage = GameObject.FindGameObjectWithTag("Mage");
+        mg = mage.GetComponent<Mage>();
+        iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
+        ic = iChecker.GetComponent<ItemChecker>();
         ItemDisplay();
-        if (psc.playerHp <= 0 && ic.RevivalFlag)
+        if (kt.playerHp <= 0 && ic.RevivalFlag)
         {
-            player.SetActive(true);
-            psc.playerHp = psc.playerMaxHp / 2;
+            kt.playerHp = kt.playerMaxHp / 2;
             ic.RevivalFlag = false;
-        }
-        if (psc.playerHp <= 0 && !ic.RevivalFlag)
-        {
-            Destroy(gameObject);
         }
     }
     void ItemDisplay()
@@ -53,45 +54,35 @@ public class ItemMenu : MonoBehaviour
         text[5].text = "強化アーマー ×" + ic.Armor;
         text[6].text = "爆弾 ×" + ic.Bomb;
     }
-    void UseItem()
+    public void UseHpPortion()
     {
-        button[0].onClick.AddListener(UseHpPortion);
-        button[1].onClick.AddListener(UseMpPortion);
-        button[2].onClick.AddListener(UseSpeedUP);
-        button[3].onClick.AddListener(UseDamageUP);
-        button[4].onClick.AddListener(UseRevivalPendant);
-        button[5].onClick.AddListener(UseArmor);
-        button[6].onClick.AddListener(UseBomb);
-    }
-    void UseHpPortion()
-    {
-        if (ic.HpPortion > 0 && psc.playerHp < psc.playerMaxHp)
+        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp)
         {
             ic.HpPortion -= 1;
-            psc.playerHp += 10;
+            kt.playerHp += 10;
         }
 
     }
-    void UseMpPortion()
+    public void UseMpPortion()
     {
-        if (ic.MpPortion > 0 && psc.playerMp < psc.playerMaxMp)
+        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp)
         {
             ic.MpPortion -= 1;
-            psc.playerMp += 10;
+            kt.playerMp += 10;
         }
 
     }
-    void UseSpeedUP()
+    public void UseSpeedUP()
     {
         if (ic.SpeedUP > 0&&!ic.SpeedFlag)
         {
             ic.SpeedFlag = true;
-            psc.moveSpeed = psc.moveSpeed * 3;
+            kt.moveSpeed = kt.moveSpeed * 3;
             ic.SpeedUP -= 1;
         }
 
     }
-    void UseDamageUP()
+    public void UseDamageUP()
     {
         if (ic.DamageUP > 0&&!ic.DamageFlag)
         {
@@ -100,7 +91,7 @@ public class ItemMenu : MonoBehaviour
         }
 
     }
-    void UseRevivalPendant()
+    public void UseRevivalPendant()
     {
         if (ic.RevivalPendant > 0&& !ic.RevivalFlag)
         {
@@ -109,7 +100,7 @@ public class ItemMenu : MonoBehaviour
         }
 
     }
-    void UseArmor()
+    public void UseArmor()
     {
         if (ic.Armor > 0&&!ic.ArmorFlag)
         {
@@ -118,7 +109,7 @@ public class ItemMenu : MonoBehaviour
         }
 
     }
-    void UseBomb()
+    public void UseBomb()
     {
         if (ic.Bomb > 0&&!ic.BombFlag)
         {
