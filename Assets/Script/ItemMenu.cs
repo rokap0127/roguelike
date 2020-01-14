@@ -17,6 +17,8 @@ public class ItemMenu : MonoBehaviour
     public GameObject ItemUI;
     public Text[] text;
     public Button[] button;
+    GameObject operation;
+    Operation op;
 
 
     private void Awake()
@@ -37,6 +39,8 @@ public class ItemMenu : MonoBehaviour
         mg = mage.GetComponent<Mage>();
         iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
         ic = iChecker.GetComponent<ItemChecker>();
+        operation = GameObject.FindGameObjectWithTag("Operation");
+        op = operation.GetComponent<Operation>();
         ItemDisplay();
         if (kt.playerHp <= 0 && ic.RevivalFlag)
         {
@@ -56,25 +60,43 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseHpPortion()
     {
-        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp)
+        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp && op.knightFlag)
         {
-            ic.HpPortion -= 1;
             kt.playerHp += 10;
+            ic.HpPortion -= 1;
         }
-
+        if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp && op.archerFlag)
+        {
+            ac.playerHp += 10;
+            ic.HpPortion -= 1;
+        }
+        if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp && op.mageFlag)
+        {
+            mg.playerHp += 10;
+            ic.HpPortion -= 1;
+        }
     }
     public void UseMpPortion()
     {
-        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp)
+        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp && op.knightFlag)
         {
-            ic.MpPortion -= 1;
             kt.playerMp += 10;
+            ic.MpPortion -= 1;
         }
-
+        if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp && op.archerFlag)
+        {
+            ac.playerMp += 10;
+            ic.MpPortion -= 1;
+        }
+        if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp && op.mageFlag)
+        {
+            mg.playerMp += 10;
+            ic.MpPortion -= 1;
+        }
     }
     public void UseSpeedUP()
     {
-        if (ic.SpeedUP > 0&&!ic.SpeedFlag)
+        if (ic.SpeedUP > 0 && !ic.SpeedFlag)
         {
             ic.SpeedFlag = true;
             kt.moveSpeed = kt.moveSpeed * 3;
@@ -84,7 +106,7 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseDamageUP()
     {
-        if (ic.DamageUP > 0&&!ic.DamageFlag)
+        if (ic.DamageUP > 0 && !ic.DamageFlag)
         {
             ic.DamageFlag = true;
             ic.DamageUP -= 1;
@@ -93,7 +115,7 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseRevivalPendant()
     {
-        if (ic.RevivalPendant > 0&& !ic.RevivalFlag)
+        if (ic.RevivalPendant > 0 && !ic.RevivalFlag)
         {
             ic.RevivalFlag = true;
             ic.RevivalPendant -= 1;
@@ -102,7 +124,7 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseArmor()
     {
-        if (ic.Armor > 0&&!ic.ArmorFlag)
+        if (ic.Armor > 0 && !ic.ArmorFlag)
         {
             ic.ArmorFlag = true;
             ic.Armor -= 1;
@@ -111,7 +133,7 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseBomb()
     {
-        if (ic.Bomb > 0&&!ic.BombFlag)
+        if (ic.Bomb > 0 && !ic.BombFlag)
         {
             ic.BombFlag = true;
             ic.Bomb -= 1;
