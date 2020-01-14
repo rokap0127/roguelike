@@ -19,4 +19,9 @@ public class Title : MonoBehaviour
             SceneManager.LoadScene("Stage02");
         }
     }
+
+    public void OnButtonClick()
+    {
+        SceneManager.LoadScene("Stage02");
+    }
 }
