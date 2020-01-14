@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class ItemChecker : MonoBehaviour
 {
-    Knight psc;
+    GameObject knight;
+    GameObject archer;
+    GameObject mage;
+    Knight kt;
+    Archer ac;
+    Mage mg;
     public int HpPortion = 0;
     public int MpPortion = 0;
     public int SpeedUP = 0;
@@ -21,25 +26,24 @@ public class ItemChecker : MonoBehaviour
     public GameObject bombActive;
     private void Awake()
     {
+        //シーンが変わっても削除されない
+        DontDestroyOnLoad(gameObject);
     }
     // Start is called before the first frame update
     void Start()
     {
-        psc = GetComponent<Knight>();
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
+        kt = knight.GetComponent<Knight>();
+        ac = archer.GetComponent<Archer>();
+        mg = mage.GetComponent<Mage>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        int hp = psc.playerHp;
-        if (HpPortion>0&&hp<100)
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                psc.playerHp += 10;
-                HpPortion -= 1;
-            }
-        }
     }
     private void FixedUpdate()
     {
@@ -75,7 +79,7 @@ public class ItemChecker : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.B))
             {
-                Instantiate(bombActive, new Vector3(transform.position.x, transform.position.y+0.3f, 0), transform.rotation);
+                Instantiate(bombActive, new Vector3(knight.transform.position.x, knight.transform.position.y+0.3f, 0), transform.rotation);
                 BombFlag = false;
             }
         }
