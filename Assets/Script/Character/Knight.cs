@@ -107,6 +107,23 @@ public class Knight : MonoBehaviour
                 //ガードする
                 Guard();
             }
+            else
+            {
+                isGuard = false;
+                //速さをもとに戻す
+                moveSpeed = speed;
+                //オブジェクトを削除する
+                Destroy(guard_Prefab);
+                //アニメーションオフ
+                anim.SetBool("Guard@Down", false);
+                anim.SetBool("Guard@DownRight", false);
+                anim.SetBool("Guard@DownLeft", false);
+                anim.SetBool("Guard@UpRight", false);
+                anim.SetBool("Guard@UpLeft", false);
+                anim.SetBool("Guard@Up", false);
+                anim.SetBool("Guard@Right", false);
+                anim.SetBool("Guard@Left", false);
+            }
 
           
             //メニューが閉じているなら
