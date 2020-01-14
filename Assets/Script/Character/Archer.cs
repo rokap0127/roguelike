@@ -342,7 +342,21 @@ public class Archer : MonoBehaviour
             shot.Init(angleBase, speed);
         }
 
-        
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Needle")
+        {
+            playerHp -= 20;
+        }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BlastBarrel")
+        {
+            playerHp -= 30;
+        }
+    }
 }
