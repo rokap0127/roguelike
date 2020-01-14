@@ -28792,7 +28792,7 @@ MonoBehaviour:
   - {fileID: 1644958610}
   - {fileID: 1639571450}
   enemy:
-  - {fileID: 4664380003836020595, guid: a7bf0497413730048bb9fd658b483743, type: 3}
+  - {fileID: 6278591368226052380, guid: 156841eca222e1143a9b963eef6db2bd, type: 3}
   - {fileID: 2478756979409202285, guid: d0857d4242230454abcbb46cc38eb01b, type: 3}
   enemylim: 0
   item:
