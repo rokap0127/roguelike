@@ -9,6 +9,7 @@ public class Skeleton : MonoBehaviour
     public int enemyHp;
     public int enemyMaxHp;
     public Explotion explosionPrefab; //爆発エフェクト
+    public Explotion magicPrefab;
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim;
@@ -152,6 +153,19 @@ public class Skeleton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.name.Contains("Magic"))
+        {
+            Instantiate(magicPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
         if (collision.gameObject.tag == "PlayerAttack")
         {
             Instantiate(

@@ -15,6 +15,7 @@ public class Enemy2 : MonoBehaviour
     public int shotCount; //弾の発射数
     public float shotInterval; //弾の発射間隔(秒)
     public Explotion explosionPrefab; //爆発エフェクト
+    public Explotion magicPrefab;
 
     int Hp;
     Vector3 direction;
@@ -209,6 +210,20 @@ public class Enemy2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.name.Contains("Magic"))
+        {
+            Instantiate(magicPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp--;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+
         if (collision.gameObject.tag == "PlayerAttack")
         {
             Instantiate(

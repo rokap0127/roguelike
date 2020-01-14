@@ -312,7 +312,7 @@ public class Mage : MonoBehaviour
 
     void Attack()
     { 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if(playerMp > shootMp)
             {
