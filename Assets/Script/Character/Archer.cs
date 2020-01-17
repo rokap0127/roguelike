@@ -14,7 +14,7 @@ public class Archer : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
-    int shootMp = 10; //shootのMp
+    public int shootMp; //shootのMp
 
     GameObject operation;
     Operation operationScript;

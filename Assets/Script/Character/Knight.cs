@@ -28,13 +28,17 @@ public class Knight : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
+
+    public int shootMp; //消費Mp
+    public int guardMp; //ガードMp
     float mpCount;　//Mp回復スピード
-    int shootMp = 10; //消費Mp
-    int guardMp = 2; //ガードMp
+   
     float guardMpCount; //Mp消費間隔
 
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
+
+    public int str;
     
 
     GameObject operation;

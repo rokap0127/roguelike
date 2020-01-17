@@ -17,7 +17,8 @@ public class Mage : MonoBehaviour
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
 
-    public int shootMp;
+    public int shootMp; //通常攻撃
+    public int skillMp; //スキル攻撃
 
 
     GameObject operation;
@@ -326,12 +327,12 @@ public class Mage : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            if(playerMp > shootMp)
+            if(playerMp > skillMp)
             {
                 //1発撃つ
                 ShootNWay(magicAngle, 0, magicSpeed, 1);
 
-                playerMp -= shootMp;
+                playerMp -= skillMp;
             }
            
         }
