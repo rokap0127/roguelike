@@ -143,7 +143,7 @@ MonoBehaviour:
   moveSpeed: 0.01
   damage: 10
   enemyHp: 0
-  enemyMaxHp: 1
+  enemyMaxHp: 100
   explosionPrefab: {fileID: 8971686452076375958, guid: c8b6e47383c07b54aaea49359b9c99c7,
     type: 3}
   magicPrefab: {fileID: 1172302413244965821, guid: 72cd820ef24413a4b847f803546e3c66,

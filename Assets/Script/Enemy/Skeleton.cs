@@ -153,33 +153,94 @@ public class Skeleton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //ナイト
+        int knightAttack = 80;
+        if (collision.gameObject.tag == "PlayerAttack")
+        {
+            Instantiate(explosionPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= knightAttack;
+
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        //アーチャー
+        int arrow = 50;
+        if (collision.name.Contains("Arrow"))
+        {
+            Instantiate(explosionPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= arrow;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+
+        //メイジ
+        int m_shot = 25;
+        if (collision.name.Contains("Shot_M"))
+        {
+            Instantiate(explosionPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= m_shot;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        int magic = 100;
         if (collision.name.Contains("Magic"))
         {
             Instantiate(magicPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp--;
+            enemyHp -= magic;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
             //敵を削除する
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "PlayerAttack")
-        {
-            Instantiate(
-                explosionPrefab,
-                collision.transform.position,
-                Quaternion.identity);
-            //敵のHPを減らす
-            enemyHp--;
-            //敵のHPがまだ残っている場合はここで処理を終える
-            if (0 < enemyHp) { return; }
+        //if (collision.name.Contains("Magic"))
+        //{
+        //    Instantiate(magicPrefab,
+        //        collision.transform.position,
+        //        Quaternion.identity);
+        //    //敵のHPを減らす
+        //    enemyHp--;
+        //    //敵のHPがまだ残っている場合はここで処理を終える
+        //    if (0 < enemyHp) { return; }
 
-            //敵を削除する
-            Destroy(gameObject);
-        }
+        //    //敵を削除する
+        //    Destroy(gameObject);
+        //}
+        //if (collision.gameObject.tag == "PlayerAttack")
+        //{
+        //    Instantiate(
+        //        explosionPrefab,
+        //        collision.transform.position,
+        //        Quaternion.identity);
+        //    //敵のHPを減らす
+        //    enemyHp--;
+        //    //敵のHPがまだ残っている場合はここで処理を終える
+        //    if (0 < enemyHp) { return; }
+
+        //    //敵を削除する
+        //    Destroy(gameObject);
+        //}
 
         //Playerにダメージ
         if (collision.name.Contains("Knight"))

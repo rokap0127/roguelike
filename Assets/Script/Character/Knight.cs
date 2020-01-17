@@ -37,6 +37,8 @@ public class Knight : MonoBehaviour
 
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
+
+    public int str;
     
 
     GameObject operation;
