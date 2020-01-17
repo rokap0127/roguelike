@@ -112,7 +112,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.008548915, y: 0.0042746067}
@@ -145,4 +145,6 @@ MonoBehaviour:
   enemyHp: 0
   enemyMaxHp: 1
   explosionPrefab: {fileID: 8971686452076375958, guid: c8b6e47383c07b54aaea49359b9c99c7,
+    type: 3}
+  magicPrefab: {fileID: 1172302413244965821, guid: 72cd820ef24413a4b847f803546e3c66,
     type: 3}

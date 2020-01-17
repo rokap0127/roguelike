@@ -1,0 +1,17 @@
+
+EnemyHP = 100
+BossHP = 500
+
+       　　　　　　　　ダメージ /　MPコスト            ダメージ /　MPコスト
+Knight  左クリック　= 80　 /　25MP 　　  右クリック =    0   /  10MP
+
+Archer  左クリック　= 50  　/　16MP　　　　 右クリック =  60   /  30mp
+
+Mage    左クリック　= 25  　/　10MP　　　　 右クリック =  100  /  55mp
+
+Stats           HP          MP
+Knight         120         100
+
+Archer         80          100
+
+Mage           70          100

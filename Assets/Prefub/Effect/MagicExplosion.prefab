@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8637064423426059876}
   - component: {fileID: 2095838201387154346}
   - component: {fileID: 8340576149222647692}
+  - component: {fileID: 1172302413244965821}
   m_Layer: 0
   m_Name: MagicExplosion
   m_TagString: Untagged
@@ -4810,3 +4811,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1172302413244965821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6478161170672898719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7128248bbe1d0c542911a1618579cd0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

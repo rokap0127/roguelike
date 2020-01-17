@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 89f5e2e14f9042644aa49aaefed9bb4a
+  - enabled: 1
+    path: Assets/Scenes/Sousa.unity
+    guid: 8e2eefdb8ea1d074c9050ccab9d23e33
+  - enabled: 1
+    path: Assets/Scenes/GameClear.unity
+    guid: 9f69d8a73a6ceff40971f31acf496a6b
   m_configObjects: {}
