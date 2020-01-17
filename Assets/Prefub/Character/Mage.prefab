@@ -163,3 +163,4 @@ MonoBehaviour:
   playerMp: 0
   playerMaxMp: 100
   shootMp: 10
+  skillMp: 55

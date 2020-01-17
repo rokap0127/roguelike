@@ -140,6 +140,7 @@ MonoBehaviour:
   playerMaxHp: 80
   playerMp: 0
   playerMaxMp: 100
+  shootMp: 16
 --- !u!95 &-1746892344352209283
 Animator:
   serializedVersion: 3
