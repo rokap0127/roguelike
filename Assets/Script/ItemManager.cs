@@ -58,6 +58,17 @@ public class ItemManager : MonoBehaviour
                 ic.Bomb += 1;
                 Destroy(gameObject);
             }
+            if (this.tag == "Treasure")
+            {
+                ic.HpPortion += 1;
+                ic.MpPortion += 1;
+                ic.SpeedUP += 1;
+                ic.DamageUP += 1;
+                ic.RevivalPendant += 1;
+                ic.Armor += 1;
+                ic.Bomb += 1;
+                Destroy(gameObject);
+            }
         }
     }
 }

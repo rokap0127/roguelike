@@ -31,22 +31,13 @@ public class ItemMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        knight = GameObject.FindGameObjectWithTag("Knight");
-        kt = knight.GetComponent<Knight>();
-        archer = GameObject.FindGameObjectWithTag("Archer");
-        ac = archer.GetComponent<Archer>();
-        mage = GameObject.FindGameObjectWithTag("Mage");
-        mg = mage.GetComponent<Mage>();
+        operation = GameObject.FindGameObjectWithTag("Operation");
+        op = operation.GetComponent<Operation>();
         iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
         ic = iChecker.GetComponent<ItemChecker>();
         operation = GameObject.FindGameObjectWithTag("Operation");
         op = operation.GetComponent<Operation>();
         ItemDisplay();
-        if (kt.playerHp <= 0 && ic.RevivalFlag)
-        {
-            kt.playerHp = kt.playerMaxHp / 2;
-            ic.RevivalFlag = false;
-        }
     }
     void ItemDisplay()
     {
@@ -60,38 +51,68 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseHpPortion()
     {
-        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp && op.knightFlag)
+        if(op.knightFlag)
         {
-            kt.playerHp += 10;
-            ic.HpPortion -= 1;
+            knight = GameObject.FindGameObjectWithTag("Knight");
+            kt = knight.GetComponent<Knight>();
+            if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp)
+            {
+                kt.playerHp += 10;
+                ic.HpPortion -= 1;
+            }
         }
-        if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp && op.archerFlag)
+        if(op.archerFlag)
         {
-            ac.playerHp += 10;
-            ic.HpPortion -= 1;
+            archer = GameObject.FindGameObjectWithTag("Archer");
+            ac = archer.GetComponent<Archer>();
+            if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp)
+            {
+                ac.playerHp += 10;
+                ic.HpPortion -= 1;
+            }
         }
-        if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp && op.mageFlag)
+        if(op.mageFlag)
         {
-            mg.playerHp += 10;
-            ic.HpPortion -= 1;
+            mage = GameObject.FindGameObjectWithTag("Mage");
+            mg = mage.GetComponent<Mage>();
+            if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp)
+            {
+                mg.playerHp += 10;
+                ic.HpPortion -= 1;
+            }
         }
     }
     public void UseMpPortion()
     {
-        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp && op.knightFlag)
+        if(op.knightFlag)
         {
-            kt.playerMp += 10;
-            ic.MpPortion -= 1;
+            knight = GameObject.FindGameObjectWithTag("Knight");
+            kt = knight.GetComponent<Knight>();
+            if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp)
+            {
+                kt.playerMp += 10;
+                ic.MpPortion -= 1;
+            }
         }
-        if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp && op.archerFlag)
+        if(op.archerFlag)
         {
-            ac.playerMp += 10;
-            ic.MpPortion -= 1;
+            archer = GameObject.FindGameObjectWithTag("Archer");
+            ac = archer.GetComponent<Archer>();
+            if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp)
+            {
+                ac.playerMp += 10;
+                ic.MpPortion -= 1;
+            }
         }
-        if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp && op.mageFlag)
+        if(op.mageFlag)
         {
-            mg.playerMp += 10;
-            ic.MpPortion -= 1;
+            mage = GameObject.FindGameObjectWithTag("Mage");
+            mg = mage.GetComponent<Mage>();
+            if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp)
+            {
+                mg.playerMp += 10;
+                ic.MpPortion -= 1;
+            }
         }
     }
     public void UseSpeedUP()
