@@ -36,9 +36,6 @@ public class CameraController2 : MonoBehaviour
     {
         operation = GameObject.FindGameObjectWithTag("Operation");
         op = operation.GetComponent<Operation>();
-        knight = GameObject.FindGameObjectWithTag("Knight");
-        archer = GameObject.FindGameObjectWithTag("Archer");
-        mage = GameObject.FindGameObjectWithTag("Mage");
         sceneCamera[1].SetActive(true);
     }
 
@@ -47,14 +44,17 @@ public class CameraController2 : MonoBehaviour
     {
         if(op.knightFlag)
         {
+            knight = GameObject.FindGameObjectWithTag("Knight");
             pos = knight.transform.position;
         }
         if(op.archerFlag)
         {
+            archer = GameObject.FindGameObjectWithTag("Archer");
             pos = archer.transform.position;
         }
         if(op.mageFlag)
         {
+            mage = GameObject.FindGameObjectWithTag("Mage");
             pos = mage.transform.position;
         }
         if (pos.x < entrance[0].transform.position.x)
