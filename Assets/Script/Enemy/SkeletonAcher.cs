@@ -32,13 +32,15 @@ public class SkeletonAcher : MonoBehaviour
         //Hpを最大にする
         enemyHp = enemyMaxHp;
         //現在の向き
-        direciton = Direction.DOWN; 
+        direciton = Direction.DOWN;
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject knight = GameObject.FindGameObjectWithTag("Knight");
         float pos = (transform.position - knight.transform.position).magnitude;
         //プレイヤーの位置へ向かうベクトルを生成する
         //ナイト

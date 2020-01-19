@@ -16,8 +16,6 @@ public class Skeleton : MonoBehaviour
     GameObject knight; //ナイト
     GameObject archer; //アーチャー
     GameObject mage; //メイジ
-    GameObject operation;
-    Operation operationScript;
     float angle;
     Vector3 direction;
 
@@ -32,9 +30,6 @@ public class Skeleton : MonoBehaviour
         knight = GameObject.FindGameObjectWithTag("Knight");
         archer = GameObject.FindGameObjectWithTag("Archer");
         mage = GameObject.FindGameObjectWithTag("Mage");
-        //opreationを探す
-        operation = GameObject.Find("Operation");
-        operationScript = operation.GetComponent<Operation>();
 
     }
 
