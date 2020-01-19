@@ -92,7 +92,7 @@ public class Knight : MonoBehaviour
         iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
         ic = iChecker.GetComponent<ItemChecker>();
         //操作モード
-        if (operationScript.GetKnightFlag())
+        if (Operation.GetKnightFlag())
         {
             collider2D.enabled = true;
             //マウスを向けた方向を向く
@@ -172,7 +172,7 @@ public class Knight : MonoBehaviour
             }
         }
         //追尾モード
-        else if (!operationScript.GetKnightFlag())
+        else
         {
             //Mp回復
             mpCount += Time.deltaTime;
@@ -200,7 +200,7 @@ public class Knight : MonoBehaviour
     {
 
         //＊移動＊
-        if (operationScript.GetKnightFlag())
+        if (Operation.GetKnightFlag())
         {
             //攻撃してない時
             if (isAttack == false)

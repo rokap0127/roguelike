@@ -45,15 +45,15 @@ public class CameraController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(op.knightFlag)
+        if(Operation.knightFlag)
         {
             pos = knight.transform.position;
         }
-        if(op.archerFlag)
+        if(Operation.archerFlag)
         {
             pos = archer.transform.position;
         }
-        if(op.mageFlag)
+        if(Operation.mageFlag)
         {
             pos = mage.transform.position;
         }

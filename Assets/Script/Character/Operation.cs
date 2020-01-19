@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Operation : MonoBehaviour
 {
-    public bool knightFlag; //ナイト
-    public bool archerFlag; //アーチャー
-    public bool mageFlag;   //メイジ
+    public static bool knightFlag; //ナイト
+    public static bool archerFlag; //アーチャー
+    public static bool mageFlag;   //メイジ
 
     // Start is called before the first frame update
     void Start()
@@ -49,17 +49,18 @@ public class Operation : MonoBehaviour
         }
     }
 
-    public bool GetArcherFlag()
-    {
-        return archerFlag;
-    }
-
-    public bool GetKnightFlag()
+    public static bool GetKnightFlag()
     {
         return knightFlag;
     }
 
-    public bool GetMageFlag()
+
+    public static bool GetArcherFlag()
+    {
+        return archerFlag;
+    }
+
+    public static bool GetMageFlag()
     {
         return mageFlag;
     }

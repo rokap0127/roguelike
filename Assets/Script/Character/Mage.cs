@@ -54,7 +54,7 @@ public class Mage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (operationScript.GetMageFlag() == true)
+        if (Operation.GetMageFlag())
         {
             collider2D.enabled = true;
             //マウスのほうへ向く
@@ -78,7 +78,7 @@ public class Mage : MonoBehaviour
             //Teleport(teleportRange, slopeRange);
 
         }
-        else if (operationScript.GetMageFlag() == false)
+        else
         {
             //Mp回復
             mpCount += Time.deltaTime;
@@ -101,7 +101,7 @@ public class Mage : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (operationScript.GetMageFlag() == true)
+        if (Operation.GetMageFlag())
         {
             //＊移動＊
             //攻撃してない時

@@ -60,17 +60,17 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseHpPortion()
     {
-        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp && op.knightFlag)
+        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp && Operation.knightFlag)
         {
             kt.playerHp += 10;
             ic.HpPortion -= 1;
         }
-        if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp && op.archerFlag)
+        if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp && Operation.archerFlag)
         {
             ac.playerHp += 10;
             ic.HpPortion -= 1;
         }
-        if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp && op.mageFlag)
+        if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp && Operation.mageFlag)
         {
             mg.playerHp += 10;
             ic.HpPortion -= 1;
@@ -78,17 +78,17 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseMpPortion()
     {
-        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp && op.knightFlag)
+        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp && Operation.knightFlag)
         {
             kt.playerMp += 10;
             ic.MpPortion -= 1;
         }
-        if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp && op.archerFlag)
+        if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp && Operation.archerFlag)
         {
             ac.playerMp += 10;
             ic.MpPortion -= 1;
         }
-        if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp && op.mageFlag)
+        if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp && Operation.mageFlag)
         {
             mg.playerMp += 10;
             ic.MpPortion -= 1;

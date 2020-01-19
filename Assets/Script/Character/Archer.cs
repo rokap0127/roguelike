@@ -51,7 +51,7 @@ public class Archer : MonoBehaviour
     void Update()
     {
        //操作モード
-        if (operationScript.GetArcherFlag())
+        if (Operation.GetArcherFlag())
         {
             collider2D.enabled = true;
             //マウスのほうへ向く
@@ -73,7 +73,7 @@ public class Archer : MonoBehaviour
             }
         }
         //追尾モード
-        else if (!operationScript.GetArcherFlag())
+        else
         {
             //Mp回復
             mpCount += Time.deltaTime;
@@ -95,7 +95,7 @@ public class Archer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (operationScript.GetArcherFlag())
+        if (Operation.GetArcherFlag())
         {
             //＊移動＊
             //攻撃してない時

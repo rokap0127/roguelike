@@ -4,29 +4,48 @@ using UnityEngine;
 
 public class Skeleton : MonoBehaviour
 {
-    public float moveSpeed;
-    public int damage;
-    public int enemyHp;
-    public int enemyMaxHp;
+    public float moveSpeed; //移動速度
+    public int damage; //攻撃力
+    public int enemyHp; //現在のHp
+    public int enemyMaxHp; //最大のHp
     public Explotion explosionPrefab; //爆発エフェクト
-    public Explotion magicPrefab;
+    public Explotion magicPrefab; //メイジスキルエフェクト
 
-    Direction direciton = Direction.DOWN; //現在の向き
-    Animator anim;
+    Direction direciton;  //向き
+    Animator anim; //アニメーション
+    GameObject knight; //ナイト
+    GameObject archer; //アーチャー
+    GameObject mage; //メイジ
+    GameObject operation;
+    Operation operationScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        //最大Hpにする
         enemyHp = enemyMaxHp;
+        //現在の向き
+        direciton = Direction.DOWN;
+        anim = GetComponent<Animator>();
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
+        //opreationを探す
+        operation = GameObject.Find("Operation");
+        operationScript = operation.GetComponent<Operation>();
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject knight = GameObject.FindGameObjectWithTag("Knight");
+
 
         //プレイヤーの位置へ向かうベクトルを生成する
+        if (Operation.GetKnightFlag())
+        {
+
+        }
         var angle = Utils.GetAngle(
             transform.localPosition,
             Knight.instance.transform.localPosition);
@@ -214,33 +233,6 @@ public class Skeleton : MonoBehaviour
             //敵を削除する
             Destroy(gameObject);
         }
-        //if (collision.name.Contains("Magic"))
-        //{
-        //    Instantiate(magicPrefab,
-        //        collision.transform.position,
-        //        Quaternion.identity);
-        //    //敵のHPを減らす
-        //    enemyHp--;
-        //    //敵のHPがまだ残っている場合はここで処理を終える
-        //    if (0 < enemyHp) { return; }
-
-        //    //敵を削除する
-        //    Destroy(gameObject);
-        //}
-        //if (collision.gameObject.tag == "PlayerAttack")
-        //{
-        //    Instantiate(
-        //        explosionPrefab,
-        //        collision.transform.position,
-        //        Quaternion.identity);
-        //    //敵のHPを減らす
-        //    enemyHp--;
-        //    //敵のHPがまだ残っている場合はここで処理を終える
-        //    if (0 < enemyHp) { return; }
-
-        //    //敵を削除する
-        //    Destroy(gameObject);
-        //}
 
         //Playerにダメージ
         if (collision.name.Contains("Knight"))

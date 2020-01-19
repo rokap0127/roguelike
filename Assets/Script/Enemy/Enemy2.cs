@@ -273,22 +273,6 @@ public class Enemy2 : MonoBehaviour
         }
 
 
-        //if (collision.gameObject.tag == "PlayerAttack")
-        //{
-        //    Instantiate(
-        //        explosionPrefab,
-        //        collision.transform.position,
-        //        Quaternion.identity);
-        //    //敵のHPを減らす
-        //    enemyHp--;
-        //    //敵のHPがまだ残っている場合はここで処理を終える
-        //    if (0 < enemyHp) { return; }
-
-        //    //敵を削除する
-        //    Destroy(gameObject);
-        //}
-
-
         //Playerにダメージ
         if (collision.name.Contains("Knight"))
         {
