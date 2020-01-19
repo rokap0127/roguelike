@@ -46,8 +46,9 @@ public class Archer : MonoBehaviour
     void Update()
     {
        //操作モード
-        if (Operation.GetArcherFlag())
+        if (Operation.archerFlag)
         {
+            //当たり判定 オン
             collider2D.enabled = true;
             //マウスのほうへ向く
             //プレイヤーのスクリーン座標を計算する
@@ -83,14 +84,13 @@ public class Archer : MonoBehaviour
             var angle = Utils.GetAngle(Vector3.zero, direction);
             PlayerRote(angle);
             Tracking();
-
         }
        
     }
 
     private void FixedUpdate()
     {
-        if (Operation.GetArcherFlag())
+        if (Operation.archerFlag)
         {
             //＊移動＊
             //攻撃してない時
@@ -346,8 +346,20 @@ public class Archer : MonoBehaviour
 
         //HPがまだある場合、ここで処理を終える
         if (0 < playerHp) { return; }
-
+        //アーチャー非表示
         gameObject.SetActive(false);
+        //アーチャーデスフラッグオン
+        Operation.archerDead = true;
+        //メイジが生きているなら
+        if (!Operation.mageDead)
+        {
+            Operation.MageFlagOn();
+        }
+        //ナイトが生きているなら
+        else
+        {
+            Operation.KnightFlagOn();
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D collision)

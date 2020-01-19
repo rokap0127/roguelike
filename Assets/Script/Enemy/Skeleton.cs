@@ -38,7 +38,7 @@ public class Skeleton : MonoBehaviour
     {
         //プレイヤーの位置へ向かうベクトルを生成する
         //ナイト
-        if (Operation.GetKnightFlag())
+        if (Operation.knightFlag)
         {
            angle = Utils.GetAngle(
            transform.localPosition,
@@ -46,7 +46,7 @@ public class Skeleton : MonoBehaviour
            direction = Utils.GetDirection(angle);
         }
         //アーチャー
-        else if (Operation.GetArcherFlag())
+        if (Operation.archerFlag)
         {
           angle = Utils.GetAngle(
           transform.localPosition,
@@ -54,7 +54,7 @@ public class Skeleton : MonoBehaviour
           direction = Utils.GetDirection(angle);
         }
         //メイジ
-        else if (Operation.GetMageFlag())
+        if (Operation.mageFlag)
         {
             angle = Utils.GetAngle(
             transform.localPosition,

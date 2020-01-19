@@ -48,8 +48,9 @@ public class Mage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Operation.GetMageFlag())
+        if (Operation.mageFlag)
         {
+            //当たり判定 オン
             collider2D.enabled = true;
             //マウスのほうへ向く
             //プレイヤーのスクリーン座標を計算する
@@ -95,7 +96,7 @@ public class Mage : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Operation.GetMageFlag())
+        if (Operation.mageFlag)
         {
             //＊移動＊
             //攻撃してない時
@@ -446,8 +447,20 @@ public class Mage : MonoBehaviour
 
         //HPがまだある場合、ここで処理を終える
         if (0 < playerHp) { return; }
-
+        //メイジ非表示
         gameObject.SetActive(false);
+        //メイジデスフラッグオン
+        Operation.mageDead = true;
+        //ナイトが生きているなら
+        if (!Operation.knightDead)
+        {
+            Operation.knightFlag = true;
+        }
+        //アーチャーが生きているなら
+        else
+        {
+            Operation.archerFlag = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

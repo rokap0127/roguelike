@@ -23,7 +23,7 @@ public class SkeletonAcher : MonoBehaviour
     Direction direciton; //向き
     Animator anim; //アニメージョン
     float angle;
-    Vector3 direction;
+    Vector3 _direction;
 
     // Start is called before the first frame update
     void Start()
@@ -41,37 +41,34 @@ public class SkeletonAcher : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float pos = (transform.position - knight.transform.position).magnitude;
         //プレイヤーの位置へ向かうベクトルを生成する
         //ナイト
-        if (Operation.GetKnightFlag())
+        if (Operation.knightFlag)
         {
             angle = Utils.GetAngle(
             transform.localPosition,
             Knight.instance.transform.localPosition);
-            direction = Utils.GetDirection(angle);
+            _direction = Utils.GetDirection(angle);
         }
         //アーチャー
-        else if (Operation.GetArcherFlag())
+        if (Operation.archerFlag)
         {
             angle = Utils.GetAngle(
             transform.localPosition,
             Archer.instance.transform.localPosition);
-            direction = Utils.GetDirection(angle);
+            _direction = Utils.GetDirection(angle);
         }
         //メイジ
-        else if (Operation.GetMageFlag())
+        if (Operation.mageFlag)
         {
             angle = Utils.GetAngle(
             transform.localPosition,
             Mage.instance.transform.localPosition);
-            direction = Utils.GetDirection(angle);
+            _direction = Utils.GetDirection(angle);
         }
-        if (pos < 7 && pos > -7)
-        {
-            //プレイヤーが存在する方向へ移動する
-            transform.localPosition += direction * moveSpeed;
-        }
+
+        //プレイヤーが存在する方向へ移動する
+        transform.localPosition += _direction * moveSpeed;
         PlayerRote(angle);
 
         //弾の発射を管理するタイマーを更新する
@@ -84,7 +81,6 @@ public class SkeletonAcher : MonoBehaviour
         shotTimer = 0;
 
         //弾を発射する
-        if (pos < 5 && pos > -5)
             ShootNWay(angle, shotAngleRange, shotSpeed, shotCount);
     }
 
@@ -205,7 +201,7 @@ public class SkeletonAcher : MonoBehaviour
         float angleBase, float angleRange, float speed, int count)
     {
         var pos = transform.localPosition; //プレイヤーの位置       
-        transform.localEulerAngles = direction;
+        transform.localEulerAngles = _direction;
         var rot = transform.localRotation;
 
         //弾を複数発射する場合

@@ -85,8 +85,9 @@ public class Knight : MonoBehaviour
         iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
         ic = iChecker.GetComponent<ItemChecker>();
         //操作モード
-        if (Operation.GetKnightFlag())
+        if (Operation.knightFlag)
         {
+            //当たり判定 オン
             collider2D.enabled = true;
             //マウスを向けた方向を向く
             //プレイヤーのスクリーン座標を計算する
@@ -149,11 +150,12 @@ public class Knight : MonoBehaviour
 
             }
 
-
+            //プレイヤーHpがMaxを超えたらMaxまで戻す
             if (playerHp >= playerMaxHp)
             {
                 playerHp = playerMaxHp;
             }
+
             if (playerHp <= 0 && !ic.RevivalFlag)
             {
                 gameObject.SetActive(false);
@@ -193,7 +195,7 @@ public class Knight : MonoBehaviour
     {
 
         //＊移動＊
-        if (Operation.GetKnightFlag())
+        if (Operation.knightFlag)
         {
             //攻撃してない時
             if (isAttack == false)
@@ -658,8 +660,21 @@ public class Knight : MonoBehaviour
 
         //HPがまだある場合、ここで処理を終える
         if (0 < playerHp) { return; }
-
+        //ナイト非表示
         gameObject.SetActive(false);
+        //ナイトデスフラッグオン
+        Operation.knightDead = true;
+        //アーチャーが生きているなら
+        if (!Operation.archerDead)
+        {
+            Operation.ArcherFlagOn();
+        }
+        //メイジが生きているなら
+        else
+        {
+            Operation.MageFlagOn();
+        }
+
     }
     void ChangeScene()
     {
