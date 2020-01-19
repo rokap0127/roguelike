@@ -212,42 +212,74 @@ public class Knight : MonoBehaviour
     }
 
     void Tracking()
-    {
-        if (Mage.instance.gameObject.transform.localPosition != transform.localPosition)
-        {
-            playerRigidbody.velocity = Vector2.zero;
-            float _range = 0.25f; //追尾の幅
-            float _speed = 0.033f; //追尾の時のスピード
+    {       
+        playerRigidbody.velocity = Vector2.zero;
+        float _range = 0.25f; //追尾の幅
+        float _speed = 0.033f; //追尾の時のスピード
+
             if (Mage.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
                     new Vector3(Mage.instance.transform.position.x
                     - _range, Mage.instance.transform.position.y),
                     _speed);
-                //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
             }
             if (Mage.instance.transform.position.x < transform.position.x - _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.localPosition,
                     new Vector3(Mage.instance.transform.position.x + _range, Mage.instance.transform.position.y),
                     _speed);
-                //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
             }
             if (Mage.instance.transform.position.y > transform.position.y + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
                     new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y - _range),
                     _speed);
+
+            }
+        if (Mage.instance.transform.position.y < transform.position.y - _range)
+        {
+            transform.position = Vector3.MoveTowards(transform.localPosition,
+                new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y + _range),
+                _speed);
+
+
+        }
+
+        if (Operation.archerFlag && Operation.mageDead)
+        {
+            if (Archer.instance.transform.position.x > transform.position.x + _range)
+            {
+                transform.localPosition = Vector3.MoveTowards(transform.position,
+                    new Vector3(Archer.instance.transform.position.x
+                    - _range, Archer.instance.transform.position.y),
+                    _speed);
+                //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
+            }
+            if (Archer.instance.transform.position.x < transform.position.x - _range)
+            {
+                transform.localPosition = Vector3.MoveTowards(transform.localPosition,
+                    new Vector3(Archer.instance.transform.position.x + _range, Archer.instance.transform.position.y),
+                    _speed);
+                //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
+            }
+            if (Archer.instance.transform.position.y > transform.position.y + _range)
+            {
+                transform.localPosition = Vector3.MoveTowards(transform.position,
+                    new Vector3(Archer.instance.transform.position.x, Archer.instance.transform.position.y - _range),
+                    _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
             }
-            if (Mage.instance.transform.position.y < transform.position.y - _range)
+            if (Archer.instance.transform.position.y < transform.position.y - _range)
             {
                 transform.position = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y + _range),
+                    new Vector3(Archer.instance.transform.position.x, Archer.instance.transform.position.y + _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
             }
         }
+            
+        
     }
 
     //移動
@@ -664,6 +696,7 @@ public class Knight : MonoBehaviour
         gameObject.SetActive(false);
         //ナイトデスフラッグオン
         Operation.knightDead = true;
+        Operation.knightFlag = false;
         //アーチャーが生きているなら
         if (!Operation.archerDead)
         {
