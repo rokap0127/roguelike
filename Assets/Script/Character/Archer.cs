@@ -16,9 +16,6 @@ public class Archer : MonoBehaviour
     public int playerMaxMp; //最大のMP
     public int shootMp; //shootのMp
 
-    GameObject operation;
-    Operation operationScript;
-
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
     Rigidbody2D playerRigidbody; //プレイヤーRigidbody
@@ -40,8 +37,6 @@ public class Archer : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        operation = GameObject.Find("Operation");
-        operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp; //Hpを最大に設定
         playerMp = playerMaxMp; //Mpを最大に設定する
@@ -305,7 +300,7 @@ public class Archer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (playerMp > shootMp)
+            if (playerMp >= shootMp)
             {
                 //矢を発射する
                 ShootNWay(playerAngle, 0, arrowSpeed, 1);

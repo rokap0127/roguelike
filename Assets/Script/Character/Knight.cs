@@ -40,11 +40,7 @@ public class Knight : MonoBehaviour
 
     public int str;
     
-
-    GameObject operation;
-    Operation operationScript;
     new CapsuleCollider2D collider2D;
-
 
     float speed; //スピードを一時的に保存する
     GameObject guard_Prefab; //ガードのプレハブ
@@ -79,9 +75,6 @@ public class Knight : MonoBehaviour
         //最大Mpに設定する
         playerMp = playerMaxMp;
 
-        //opreationを探す
-        operation = GameObject.Find("Operation");
-        operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         defaultMoveSpeed = moveSpeed;
     }
@@ -106,7 +99,7 @@ public class Knight : MonoBehaviour
             PlayerRote(angle);
 
             //Mpが足りているなら
-            if (playerMp > guardMp)
+            if (playerMp >= guardMp)
             {
                 //ガードする
                 Guard();
