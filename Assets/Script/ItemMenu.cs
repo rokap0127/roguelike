@@ -27,24 +27,24 @@ public class ItemMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    }
-    // Update is called once per frame
-    void Update()
-    {
         knight = GameObject.FindGameObjectWithTag("Knight");
         kt = knight.GetComponent<Knight>();
         archer = GameObject.FindGameObjectWithTag("Archer");
         ac = archer.GetComponent<Archer>();
         mage = GameObject.FindGameObjectWithTag("Mage");
-        mg = mage.GetComponent<Mage>();
-        iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
-        ic = iChecker.GetComponent<ItemChecker>();
+        mg = mage.GetComponent<Mage>();      
         operation = GameObject.FindGameObjectWithTag("Operation");
         op = operation.GetComponent<Operation>();
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
+        ic = iChecker.GetComponent<ItemChecker>();
         ItemDisplay();
-        if (kt.playerHp <= 0 && ic.RevivalFlag)
+        if (Knight.instance.playerHp <= 0 && ic.RevivalFlag)
         {
-            kt.playerHp = kt.playerMaxHp / 2;
+            Knight.instance.playerHp = Knight.instance.playerMaxHp / 2;
             ic.RevivalFlag = false;
         }
     }
@@ -60,37 +60,37 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseHpPortion()
     {
-        if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp && Operation.knightFlag)
+        if (ic.HpPortion > 0 && Knight.instance.playerHp < Knight.instance.playerMaxHp && Operation.knightFlag)
         {
-            kt.playerHp += 10;
+            Knight.instance.playerHp += 10;
             ic.HpPortion -= 1;
         }
-        if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp && Operation.archerFlag)
+        if (ic.HpPortion > 0 && Archer.instance.playerHp < Archer.instance.playerMaxHp && Operation.archerFlag)
         {
-            ac.playerHp += 10;
+            Archer.instance.playerHp += 10;
             ic.HpPortion -= 1;
         }
-        if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp && Operation.mageFlag)
+        if (ic.HpPortion > 0 && Mage.instance.playerHp < Mage.instance.playerMaxHp && Operation.mageFlag)
         {
-            mg.playerHp += 10;
+            Mage.instance.playerHp += 10;
             ic.HpPortion -= 1;
         }
     }
     public void UseMpPortion()
     {
-        if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp && Operation.knightFlag)
+        if (ic.MpPortion > 0 && Knight.instance.playerMp < Knight.instance.playerMaxMp && Operation.knightFlag)
         {
-            kt.playerMp += 10;
+            Knight.instance.playerMp += 10;
             ic.MpPortion -= 1;
         }
-        if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp && Operation.archerFlag)
+        if (ic.MpPortion > 0 && Archer.instance.playerMp < Archer.instance.playerMaxMp && Operation.archerFlag)
         {
-            ac.playerMp += 10;
+            Archer.instance.playerMp += 10;
             ic.MpPortion -= 1;
         }
-        if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp && Operation.mageFlag)
+        if (ic.MpPortion > 0 && Mage.instance.playerMp < Mage.instance.playerMaxMp && Operation.mageFlag)
         {
-            mg.playerMp += 10;
+            Mage.instance.playerMp += 10;
             ic.MpPortion -= 1;
         }
     }
@@ -99,7 +99,7 @@ public class ItemMenu : MonoBehaviour
         if (ic.SpeedUP > 0 && !ic.SpeedFlag)
         {
             ic.SpeedFlag = true;
-            kt.moveSpeed = kt.moveSpeed * 3;
+            Knight.instance.moveSpeed = Knight.instance.moveSpeed * 3;
             ic.SpeedUP -= 1;
         }
 
