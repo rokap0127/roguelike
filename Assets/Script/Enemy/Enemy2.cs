@@ -17,16 +17,22 @@ public class Enemy2 : MonoBehaviour
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab;
 
-    int Hp;
+    GameObject knight; //ナイト
+    GameObject archer; //アーチャー
+    GameObject mage; //メイジ
+    Direction direciton; //向き
+    Animator anim; //アニメージョン
+    float angle;
     Vector3 direction;
-    Direction direciton = Direction.DOWN; //現在の向き
-    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        //Hpを最大にする
         enemyHp = enemyMaxHp;
+        //現在の向き
+        direciton = Direction.DOWN; 
     }
 
     // Update is called once per frame
@@ -35,10 +41,30 @@ public class Enemy2 : MonoBehaviour
         GameObject knight = GameObject.FindGameObjectWithTag("Knight");
         float pos = (transform.position - knight.transform.position).magnitude;
         //プレイヤーの位置へ向かうベクトルを生成する
-        var angle = Utils.GetAngle(
+        //ナイト
+        if (Operation.GetKnightFlag())
+        {
+            angle = Utils.GetAngle(
             transform.localPosition,
             Knight.instance.transform.localPosition);
-        direction = Utils.GetDirection(angle);
+            direction = Utils.GetDirection(angle);
+        }
+        //アーチャー
+        else if (Operation.GetArcherFlag())
+        {
+            angle = Utils.GetAngle(
+            transform.localPosition,
+            Archer.instance.transform.localPosition);
+            direction = Utils.GetDirection(angle);
+        }
+        //メイジ
+        else if (Operation.GetMageFlag())
+        {
+            angle = Utils.GetAngle(
+            transform.localPosition,
+            Mage.instance.transform.localPosition);
+            direction = Utils.GetDirection(angle);
+        }
         if (pos < 7 && pos > -7)
         {
             //プレイヤーが存在する方向へ移動する

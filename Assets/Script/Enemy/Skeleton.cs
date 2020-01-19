@@ -18,6 +18,8 @@ public class Skeleton : MonoBehaviour
     GameObject mage; //メイジ
     GameObject operation;
     Operation operationScript;
+    float angle;
+    Vector3 direction;
 
     // Start is called before the first frame update
     void Start()
@@ -39,17 +41,31 @@ public class Skeleton : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-
         //プレイヤーの位置へ向かうベクトルを生成する
+        //ナイト
         if (Operation.GetKnightFlag())
         {
-
+           angle = Utils.GetAngle(
+           transform.localPosition,
+           Knight.instance.transform.localPosition);
+           direction = Utils.GetDirection(angle);
         }
-        var angle = Utils.GetAngle(
+        //アーチャー
+        else if (Operation.GetArcherFlag())
+        {
+          angle = Utils.GetAngle(
+          transform.localPosition,
+          Archer.instance.transform.localPosition);
+          direction = Utils.GetDirection(angle);
+        }
+        //メイジ
+        else if (Operation.GetMageFlag())
+        {
+            angle = Utils.GetAngle(
             transform.localPosition,
-            Knight.instance.transform.localPosition);
-        var direction = Utils.GetDirection(angle);
+            Mage.instance.transform.localPosition);
+            direction = Utils.GetDirection(angle);
+        }
 
         //プレイヤーが存在する方向へ移動する
         transform.localPosition += direction * moveSpeed;
