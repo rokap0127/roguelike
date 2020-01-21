@@ -346,7 +346,7 @@ public class SkeletonAcher : MonoBehaviour
         //    moveSpeed = 0;
         //}
 
-          int trap = 60;
+          int trap = 30;
         //トラップ
         if (collision.name.Contains("Trap"))
         {
