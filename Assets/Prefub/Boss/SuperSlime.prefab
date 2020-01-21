@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.001
   shotSpeed: 100
+  damage: 20
   bossHp: 0
   bossMaxHp: 100
   slimeShot: {fileID: 7051151963027882561, guid: d90f1ebc372e2e540ab15d384023e0e9,
