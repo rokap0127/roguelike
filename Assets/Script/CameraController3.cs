@@ -40,6 +40,7 @@ public class CameraController3: MonoBehaviour
     GameObject mage;
     Vector2 pos;
     public GameObject boss;
+    public GameObject bossPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -274,7 +275,7 @@ public class CameraController3: MonoBehaviour
                     itemnum = Random.Range(0, 3);
                     i++;
                 }
-                Instantiate(boss, new Vector3(0.2f, 2.7f, 0), transform.rotation);
+                Instantiate(boss, bossPosition.transform.position, transform.rotation);
                 callEnemy5 = true;
             }
             //Invoke("Shut", 0.5f);
