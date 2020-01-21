@@ -36,7 +36,6 @@ public class ItemMenu : MonoBehaviour
         iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
         ic = iChecker.GetComponent<ItemChecker>();
         operation = GameObject.FindGameObjectWithTag("Operation");
-        op = operation.GetComponent<Operation>();
         ItemDisplay();
     }
     void ItemDisplay()
@@ -120,7 +119,24 @@ public class ItemMenu : MonoBehaviour
         if (ic.SpeedUP > 0 && !ic.SpeedFlag)
         {
             ic.SpeedFlag = true;
-            kt.moveSpeed = kt.moveSpeed * 3;
+            if(!Operation.knightDead)
+            {
+                knight = GameObject.FindGameObjectWithTag("Knight");
+                kt = knight.GetComponent<Knight>();
+                kt.moveSpeed = kt.moveSpeed * 3;
+            }
+            if(!Operation.archerDead)
+            {
+                archer = GameObject.FindGameObjectWithTag("Archer");
+                ac = archer.GetComponent<Archer>();
+                ac.moveSpeed = ac.moveSpeed * 3;
+            }
+            if(!Operation.mageDead)
+            {
+                mage = GameObject.FindGameObjectWithTag("Mage");
+                mg = mage.GetComponent<Mage>();
+                mg.moveSpeed = mg.moveSpeed * 3;
+            }
             ic.SpeedUP -= 1;
         }
 
