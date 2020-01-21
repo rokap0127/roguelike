@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9b9e7114624ba1b4dbc7876b1cb8ec7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniSlime: {fileID: 2839335497574208970, guid: c85e37a92e0019c46bb0bfea50e30c25,
     type: 3}
+  damage: 5
 --- !u!61 &6257650297309785464
 BoxCollider2D:
   m_ObjectHideFlags: 0
