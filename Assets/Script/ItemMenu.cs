@@ -51,7 +51,7 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseHpPortion()
     {
-        if(op.knightFlag)
+        if(Operation.knightFlag)
         {
             knight = GameObject.FindGameObjectWithTag("Knight");
             kt = knight.GetComponent<Knight>();
@@ -61,7 +61,7 @@ public class ItemMenu : MonoBehaviour
                 ic.HpPortion -= 1;
             }
         }
-        if(op.archerFlag)
+        if(Operation.archerFlag)
         {
             archer = GameObject.FindGameObjectWithTag("Archer");
             ac = archer.GetComponent<Archer>();
@@ -71,7 +71,7 @@ public class ItemMenu : MonoBehaviour
                 ic.HpPortion -= 1;
             }
         }
-        if(op.mageFlag)
+        if(Operation.mageFlag)
         {
             mage = GameObject.FindGameObjectWithTag("Mage");
             mg = mage.GetComponent<Mage>();
@@ -84,7 +84,7 @@ public class ItemMenu : MonoBehaviour
     }
     public void UseMpPortion()
     {
-        if(op.knightFlag)
+        if(Operation.knightFlag)
         {
             knight = GameObject.FindGameObjectWithTag("Knight");
             kt = knight.GetComponent<Knight>();
@@ -94,7 +94,7 @@ public class ItemMenu : MonoBehaviour
                 ic.MpPortion -= 1;
             }
         }
-        if(op.archerFlag)
+        if(Operation.archerFlag)
         {
             archer = GameObject.FindGameObjectWithTag("Archer");
             ac = archer.GetComponent<Archer>();
@@ -104,7 +104,7 @@ public class ItemMenu : MonoBehaviour
                 ic.MpPortion -= 1;
             }
         }
-        if(op.mageFlag)
+        if(Operation.mageFlag)
         {
             mage = GameObject.FindGameObjectWithTag("Mage");
             mg = mage.GetComponent<Mage>();
