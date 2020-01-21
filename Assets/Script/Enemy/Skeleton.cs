@@ -289,7 +289,7 @@ public class Skeleton : MonoBehaviour
             mage.Damage(damage);
         }
 
-        int trap = 60;
+        int trap = 30;
         //トラップ
         if (collision.name.Contains("Trap"))
         {

@@ -216,7 +216,8 @@ public class Knight : MonoBehaviour
         playerRigidbody.velocity = Vector2.zero;
         float _range = 0.25f; //追尾の幅
         float _speed = 0.033f; //追尾の時のスピード
-
+        if (!Operation.mageDead)
+        {
             if (Mage.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
@@ -237,14 +238,16 @@ public class Knight : MonoBehaviour
                     _speed);
 
             }
-        if (Mage.instance.transform.position.y < transform.position.y - _range)
-        {
-            transform.position = Vector3.MoveTowards(transform.localPosition,
-                new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y + _range),
-                _speed);
+            if (Mage.instance.transform.position.y < transform.position.y - _range)
+            {
+                transform.position = Vector3.MoveTowards(transform.localPosition,
+                    new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y + _range),
+                    _speed);
 
 
+            }
         }
+           
 
         if (Operation.archerFlag && Operation.mageDead)
         {

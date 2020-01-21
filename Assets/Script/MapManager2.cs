@@ -96,35 +96,6 @@ public class MapManager2 : MonoBehaviour
                 bridge[4].SetActive(true);
                 key[1].SetActive(true);
                 break;
-            case 5:
-                map[1].SetActive(true);
-                map[2].SetActive(true);
-                map[3].SetActive(true);
-                map[4].SetActive(true);
-                shutter[7].SetActive(true);
-                shutter[8].SetActive(true);
-                bridge[1].SetActive(true);
-                map[5].SetActive(true);
-                bridge[0].SetActive(true);
-                bridge[3].SetActive(true);
-                bridge[4].SetActive(true);
-                break;
-            case 4:
-                map[1].SetActive(true);
-                map[2].SetActive(true);
-                map[3].SetActive(true);
-                map[4].SetActive(true);
-                shutter[1].SetActive(true);
-                shutter[4].SetActive(true);
-                shutter[7].SetActive(true);
-                shutter[8].SetActive(true);
-                shutter[9].SetActive(true);
-                shutter[10].SetActive(true);
-                bridge[0].SetActive(true);
-                bridge[1].SetActive(true);
-                bridge[3].SetActive(true);
-                hole[5].SetActive(true);
-                break;
             case 3:
                 map[2].SetActive(true);
                 map[5].SetActive(true);
@@ -136,16 +107,6 @@ public class MapManager2 : MonoBehaviour
                 bridge[4].SetActive(true);
                 bridge[5].SetActive(true);
                 bridge[6].SetActive(true);
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
-            case 10:
                 break;
 
         }
@@ -261,28 +222,6 @@ public class MapManager2 : MonoBehaviour
                         break;
                 }
                 break;
-            case 5:
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                break;
-            case 4:
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                break;
             case 3:
                 switch (itempos)
                 {
@@ -323,21 +262,6 @@ public class MapManager2 : MonoBehaviour
                     case 5:
                         break;
                 }
-                break;
-            case 6:
-                rnd = 0;
-                break;
-            case 7:
-                rnd = 0;
-                break;
-            case 8:
-                rnd = 0;
-                break;
-            case 9:
-                rnd = 0;
-                break;
-            case 10:
-                rnd = 0;
                 break;
         }
     }
@@ -452,28 +376,6 @@ public class MapManager2 : MonoBehaviour
                         break;
                 }
                 break;
-            case 5:
-                Instantiate(enemy[enemynum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                enemynum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                break;
-            case 4:
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                itemnum = Random.Range(0, 7);
-                Instantiate(item[itemnum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
-                break;
             case 3:
                 switch (enemypos)
                 {
@@ -520,21 +422,6 @@ public class MapManager2 : MonoBehaviour
                         }
                         break;
                 }
-                break;
-            case 6:
-                rnd = 0;
-                break;
-            case 7:
-                rnd = 0;
-                break;
-            case 8:
-                rnd = 0;
-                break;
-            case 9:
-                rnd = 0;
-                break;
-            case 10:
-                rnd = 0;
                 break;
         }
     }

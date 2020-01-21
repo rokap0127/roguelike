@@ -20,8 +20,6 @@ public class SuperSlime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //スタート位置を設定
-        transform.position = new Vector3(-8, -3);
         bossHp = bossMaxHp; //Hpを最大にする
     }
 
