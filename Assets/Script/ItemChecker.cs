@@ -77,7 +77,8 @@ public class ItemChecker : MonoBehaviour
     {
         if(BombFlag)
         {
-            if(Input.GetKeyDown(KeyCode.B))
+            if(Input.GetKeyDown(KeyCode.LeftShift)||
+               Input.GetKeyDown(KeyCode.RightShift))
             {
                 Instantiate(bombActive, new Vector3(knight.transform.position.x, knight.transform.position.y+0.3f, 0), transform.rotation);
                 BombFlag = false;
