@@ -131,36 +131,40 @@ public class Mage : MonoBehaviour
             playerRigidbody.velocity = Vector2.zero;
             float _range = 0.25f;
             float _speed = 0.033f;
-                if (Archer.instance.transform.position.x > transform.position.x + _range)
-                {
-                    transform.localPosition = Vector3.MoveTowards(transform.position,
-                        new Vector3(Archer.instance.transform.position.x
-                        - _range, Archer.instance.transform.position.y),
-                        _speed);
-                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
-                }
-                if (Archer.instance.transform.position.x < transform.position.x - _range)
-                {
-                    transform.localPosition = Vector3.MoveTowards(transform.localPosition,
-                        new Vector3(Archer.instance.transform.position.x + _range, Archer.instance.transform.position.y),
-                        _speed);
-                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
-                }
-                if (Archer.instance.transform.position.y > transform.position.y + _range)
-                {
-                    transform.localPosition = Vector3.MoveTowards(transform.position,
-                        new Vector3(Archer.instance.transform.position.x, Archer.instance.transform.position.y - _range),
-                        _speed);
-                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
-                }
-                if (Archer.instance.transform.position.y < transform.position.y - _range)
-                {
-                    transform.position = Vector3.MoveTowards(transform.localPosition,
-                        new Vector3(Archer.instance.transform.position.x, Archer.instance.transform.position.y + _range),
-                        _speed);
-                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
-                }
-        else if (Operation.knightFlag && Operation.archerDead)
+        if (!Operation.archerDead)
+        {
+            if (Archer.instance.transform.position.x > transform.position.x + _range)
+            {
+                transform.localPosition = Vector3.MoveTowards(transform.position,
+                    new Vector3(Archer.instance.transform.position.x
+                    - _range, Archer.instance.transform.position.y),
+                    _speed);
+                //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
+            }
+            if (Archer.instance.transform.position.x < transform.position.x - _range)
+            {
+                transform.localPosition = Vector3.MoveTowards(transform.localPosition,
+                    new Vector3(Archer.instance.transform.position.x + _range, Archer.instance.transform.position.y),
+                    _speed);
+                //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
+            }
+            if (Archer.instance.transform.position.y > transform.position.y + _range)
+            {
+                transform.localPosition = Vector3.MoveTowards(transform.position,
+                    new Vector3(Archer.instance.transform.position.x, Archer.instance.transform.position.y - _range),
+                    _speed);
+                //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
+            }
+            if (Archer.instance.transform.position.y < transform.position.y - _range)
+            {
+                transform.position = Vector3.MoveTowards(transform.localPosition,
+                    new Vector3(Archer.instance.transform.position.x, Archer.instance.transform.position.y + _range),
+                    _speed);
+                //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
+            }
+        }
+                
+        if (Operation.knightFlag && Operation.archerDead)
         {
             if (Knight.instance.transform.position.x > transform.position.x + _range)
             {
