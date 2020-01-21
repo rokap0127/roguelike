@@ -1,0 +1,7877 @@
+fileFormatVersion: 2
+guid: 3e343cf2afed0ce45ae76a0aa6f49181
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: japanese1kana_0
+  - first:
+      213: 21300002
+    second: japanese1kana_1
+  - first:
+      213: 21300004
+    second: japanese1kana_2
+  - first:
+      213: 21300006
+    second: japanese1kana_3
+  - first:
+      213: 21300008
+    second: japanese1kana_4
+  - first:
+      213: 21300010
+    second: japanese1kana_5
+  - first:
+      213: 21300012
+    second: japanese1kana_6
+  - first:
+      213: 21300014
+    second: japanese1kana_7
+  - first:
+      213: 21300016
+    second: japanese1kana_8
+  - first:
+      213: 21300018
+    second: japanese1kana_9
+  - first:
+      213: 21300020
+    second: japanese1kana_10
+  - first:
+      213: 21300022
+    second: japanese1kana_11
+  - first:
+      213: 21300024
+    second: japanese1kana_12
+  - first:
+      213: 21300026
+    second: japanese1kana_13
+  - first:
+      213: 21300028
+    second: japanese1kana_14
+  - first:
+      213: 21300030
+    second: japanese1kana_15
+  - first:
+      213: 21300032
+    second: japanese1kana_16
+  - first:
+      213: 21300034
+    second: japanese1kana_17
+  - first:
+      213: 21300036
+    second: japanese1kana_18
+  - first:
+      213: 21300038
+    second: japanese1kana_19
+  - first:
+      213: 21300040
+    second: japanese1kana_20
+  - first:
+      213: 21300042
+    second: japanese1kana_21
+  - first:
+      213: 21300044
+    second: japanese1kana_22
+  - first:
+      213: 21300046
+    second: japanese1kana_23
+  - first:
+      213: 21300048
+    second: japanese1kana_24
+  - first:
+      213: 21300050
+    second: japanese1kana_25
+  - first:
+      213: 21300052
+    second: japanese1kana_26
+  - first:
+      213: 21300054
+    second: japanese1kana_27
+  - first:
+      213: 21300056
+    second: japanese1kana_28
+  - first:
+      213: 21300058
+    second: japanese1kana_29
+  - first:
+      213: 21300060
+    second: japanese1kana_30
+  - first:
+      213: 21300062
+    second: japanese1kana_31
+  - first:
+      213: 21300064
+    second: japanese1kana_32
+  - first:
+      213: 21300066
+    second: japanese1kana_33
+  - first:
+      213: 21300068
+    second: japanese1kana_34
+  - first:
+      213: 21300070
+    second: japanese1kana_35
+  - first:
+      213: 21300072
+    second: japanese1kana_36
+  - first:
+      213: 21300074
+    second: japanese1kana_37
+  - first:
+      213: 21300076
+    second: japanese1kana_38
+  - first:
+      213: 21300078
+    second: japanese1kana_39
+  - first:
+      213: 21300080
+    second: japanese1kana_40
+  - first:
+      213: 21300082
+    second: japanese1kana_41
+  - first:
+      213: 21300084
+    second: japanese1kana_42
+  - first:
+      213: 21300086
+    second: japanese1kana_43
+  - first:
+      213: 21300088
+    second: japanese1kana_44
+  - first:
+      213: 21300090
+    second: japanese1kana_45
+  - first:
+      213: 21300092
+    second: japanese1kana_46
+  - first:
+      213: 21300094
+    second: japanese1kana_47
+  - first:
+      213: 21300096
+    second: japanese1kana_48
+  - first:
+      213: 21300098
+    second: japanese1kana_49
+  - first:
+      213: 21300100
+    second: japanese1kana_50
+  - first:
+      213: 21300102
+    second: japanese1kana_51
+  - first:
+      213: 21300104
+    second: japanese1kana_52
+  - first:
+      213: 21300106
+    second: japanese1kana_53
+  - first:
+      213: 21300108
+    second: japanese1kana_54
+  - first:
+      213: 21300110
+    second: japanese1kana_55
+  - first:
+      213: 21300112
+    second: japanese1kana_56
+  - first:
+      213: 21300114
+    second: japanese1kana_57
+  - first:
+      213: 21300116
+    second: japanese1kana_58
+  - first:
+      213: 21300118
+    second: japanese1kana_59
+  - first:
+      213: 21300120
+    second: japanese1kana_60
+  - first:
+      213: 21300122
+    second: japanese1kana_61
+  - first:
+      213: 21300124
+    second: japanese1kana_62
+  - first:
+      213: 21300126
+    second: japanese1kana_63
+  - first:
+      213: 21300128
+    second: japanese1kana_64
+  - first:
+      213: 21300130
+    second: japanese1kana_65
+  - first:
+      213: 21300132
+    second: japanese1kana_66
+  - first:
+      213: 21300134
+    second: japanese1kana_67
+  - first:
+      213: 21300136
+    second: japanese1kana_68
+  - first:
+      213: 21300138
+    second: japanese1kana_69
+  - first:
+      213: 21300140
+    second: japanese1kana_70
+  - first:
+      213: 21300142
+    second: japanese1kana_71
+  - first:
+      213: 21300144
+    second: japanese1kana_72
+  - first:
+      213: 21300146
+    second: japanese1kana_73
+  - first:
+      213: 21300148
+    second: japanese1kana_74
+  - first:
+      213: 21300150
+    second: japanese1kana_75
+  - first:
+      213: 21300152
+    second: japanese1kana_76
+  - first:
+      213: 21300154
+    second: japanese1kana_77
+  - first:
+      213: 21300156
+    second: japanese1kana_78
+  - first:
+      213: 21300158
+    second: japanese1kana_79
+  - first:
+      213: 21300160
+    second: japanese1kana_80
+  - first:
+      213: 21300162
+    second: japanese1kana_81
+  - first:
+      213: 21300164
+    second: japanese1kana_82
+  - first:
+      213: 21300166
+    second: japanese1kana_83
+  - first:
+      213: 21300168
+    second: japanese1kana_84
+  - first:
+      213: 21300170
+    second: japanese1kana_85
+  - first:
+      213: 21300172
+    second: japanese1kana_86
+  - first:
+      213: 21300174
+    second: japanese1kana_87
+  - first:
+      213: 21300176
+    second: japanese1kana_88
+  - first:
+      213: 21300178
+    second: japanese1kana_89
+  - first:
+      213: 21300180
+    second: japanese1kana_90
+  - first:
+      213: 21300182
+    second: japanese1kana_91
+  - first:
+      213: 21300184
+    second: japanese1kana_92
+  - first:
+      213: 21300186
+    second: japanese1kana_93
+  - first:
+      213: 21300188
+    second: japanese1kana_94
+  - first:
+      213: 21300190
+    second: japanese1kana_95
+  - first:
+      213: 21300192
+    second: japanese1kana_96
+  - first:
+      213: 21300194
+    second: japanese1kana_97
+  - first:
+      213: 21300196
+    second: japanese1kana_98
+  - first:
+      213: 21300198
+    second: japanese1kana_99
+  - first:
+      213: 21300200
+    second: japanese1kana_100
+  - first:
+      213: 21300202
+    second: japanese1kana_101
+  - first:
+      213: 21300204
+    second: japanese1kana_102
+  - first:
+      213: 21300206
+    second: japanese1kana_103
+  - first:
+      213: 21300208
+    second: japanese1kana_104
+  - first:
+      213: 21300210
+    second: japanese1kana_105
+  - first:
+      213: 21300212
+    second: japanese1kana_106
+  - first:
+      213: 21300214
+    second: japanese1kana_107
+  - first:
+      213: 21300216
+    second: japanese1kana_108
+  - first:
+      213: 21300218
+    second: japanese1kana_109
+  - first:
+      213: 21300220
+    second: japanese1kana_110
+  - first:
+      213: 21300222
+    second: japanese1kana_111
+  - first:
+      213: 21300224
+    second: japanese1kana_112
+  - first:
+      213: 21300226
+    second: japanese1kana_113
+  - first:
+      213: 21300228
+    second: japanese1kana_114
+  - first:
+      213: 21300230
+    second: japanese1kana_115
+  - first:
+      213: 21300232
+    second: japanese1kana_116
+  - first:
+      213: 21300234
+    second: japanese1kana_117
+  - first:
+      213: 21300236
+    second: japanese1kana_118
+  - first:
+      213: 21300238
+    second: japanese1kana_119
+  - first:
+      213: 21300240
+    second: japanese1kana_120
+  - first:
+      213: 21300242
+    second: japanese1kana_121
+  - first:
+      213: 21300244
+    second: japanese1kana_122
+  - first:
+      213: 21300246
+    second: japanese1kana_123
+  - first:
+      213: 21300248
+    second: japanese1kana_124
+  - first:
+      213: 21300250
+    second: japanese1kana_125
+  - first:
+      213: 21300252
+    second: japanese1kana_126
+  - first:
+      213: 21300254
+    second: japanese1kana_127
+  - first:
+      213: 21300256
+    second: japanese1kana_128
+  - first:
+      213: 21300258
+    second: japanese1kana_129
+  - first:
+      213: 21300260
+    second: japanese1kana_130
+  - first:
+      213: 21300262
+    second: japanese1kana_131
+  - first:
+      213: 21300264
+    second: japanese1kana_132
+  - first:
+      213: 21300266
+    second: japanese1kana_133
+  - first:
+      213: 21300268
+    second: japanese1kana_134
+  - first:
+      213: 21300270
+    second: japanese1kana_135
+  - first:
+      213: 21300272
+    second: japanese1kana_136
+  - first:
+      213: 21300274
+    second: japanese1kana_137
+  - first:
+      213: 21300276
+    second: japanese1kana_138
+  - first:
+      213: 21300278
+    second: japanese1kana_139
+  - first:
+      213: 21300280
+    second: japanese1kana_140
+  - first:
+      213: 21300282
+    second: japanese1kana_141
+  - first:
+      213: 21300284
+    second: japanese1kana_142
+  - first:
+      213: 21300286
+    second: japanese1kana_143
+  - first:
+      213: 21300288
+    second: japanese1kana_144
+  - first:
+      213: 21300290
+    second: japanese1kana_145
+  - first:
+      213: 21300292
+    second: japanese1kana_146
+  - first:
+      213: 21300294
+    second: japanese1kana_147
+  - first:
+      213: 21300296
+    second: japanese1kana_148
+  - first:
+      213: 21300298
+    second: japanese1kana_149
+  - first:
+      213: 21300300
+    second: japanese1kana_150
+  - first:
+      213: 21300302
+    second: japanese1kana_151
+  - first:
+      213: 21300304
+    second: japanese1kana_152
+  - first:
+      213: 21300306
+    second: japanese1kana_153
+  - first:
+      213: 21300308
+    second: japanese1kana_154
+  - first:
+      213: 21300310
+    second: japanese1kana_155
+  - first:
+      213: 21300312
+    second: japanese1kana_156
+  - first:
+      213: 21300314
+    second: japanese1kana_157
+  - first:
+      213: 21300316
+    second: japanese1kana_158
+  - first:
+      213: 21300318
+    second: japanese1kana_159
+  - first:
+      213: 21300320
+    second: japanese1kana_160
+  - first:
+      213: 21300322
+    second: japanese1kana_161
+  - first:
+      213: 21300324
+    second: japanese1kana_162
+  - first:
+      213: 21300326
+    second: japanese1kana_163
+  - first:
+      213: 21300328
+    second: japanese1kana_164
+  - first:
+      213: 21300330
+    second: japanese1kana_165
+  - first:
+      213: 21300332
+    second: japanese1kana_166
+  - first:
+      213: 21300334
+    second: japanese1kana_167
+  - first:
+      213: 21300336
+    second: japanese1kana_168
+  - first:
+      213: 21300338
+    second: japanese1kana_169
+  - first:
+      213: 21300340
+    second: japanese1kana_170
+  - first:
+      213: 21300342
+    second: japanese1kana_171
+  - first:
+      213: 21300344
+    second: japanese1kana_172
+  - first:
+      213: 21300346
+    second: japanese1kana_173
+  - first:
+      213: 21300348
+    second: japanese1kana_174
+  - first:
+      213: 21300350
+    second: japanese1kana_175
+  - first:
+      213: 21300352
+    second: japanese1kana_176
+  - first:
+      213: 21300354
+    second: japanese1kana_177
+  - first:
+      213: 21300356
+    second: japanese1kana_178
+  - first:
+      213: 21300358
+    second: japanese1kana_179
+  - first:
+      213: 21300360
+    second: japanese1kana_180
+  - first:
+      213: 21300362
+    second: japanese1kana_181
+  - first:
+      213: 21300364
+    second: japanese1kana_182
+  - first:
+      213: 21300366
+    second: japanese1kana_183
+  - first:
+      213: 21300368
+    second: japanese1kana_184
+  - first:
+      213: 21300370
+    second: japanese1kana_185
+  - first:
+      213: 21300372
+    second: japanese1kana_186
+  - first:
+      213: 21300374
+    second: japanese1kana_187
+  - first:
+      213: 21300376
+    second: japanese1kana_188
+  - first:
+      213: 21300378
+    second: japanese1kana_189
+  - first:
+      213: 21300380
+    second: japanese1kana_190
+  - first:
+      213: 21300382
+    second: japanese1kana_191
+  - first:
+      213: 21300384
+    second: japanese1kana_192
+  - first:
+      213: 21300386
+    second: japanese1kana_193
+  - first:
+      213: 21300388
+    second: japanese1kana_194
+  - first:
+      213: 21300390
+    second: japanese1kana_195
+  - first:
+      213: 21300392
+    second: japanese1kana_196
+  - first:
+      213: 21300394
+    second: japanese1kana_197
+  - first:
+      213: 21300396
+    second: japanese1kana_198
+  - first:
+      213: 21300398
+    second: japanese1kana_199
+  - first:
+      213: 21300400
+    second: japanese1kana_200
+  - first:
+      213: 21300402
+    second: japanese1kana_201
+  - first:
+      213: 21300404
+    second: japanese1kana_202
+  - first:
+      213: 21300406
+    second: japanese1kana_203
+  - first:
+      213: 21300408
+    second: japanese1kana_204
+  - first:
+      213: 21300410
+    second: japanese1kana_205
+  - first:
+      213: 21300412
+    second: japanese1kana_206
+  - first:
+      213: 21300414
+    second: japanese1kana_207
+  - first:
+      213: 21300416
+    second: japanese1kana_208
+  - first:
+      213: 21300418
+    second: japanese1kana_209
+  - first:
+      213: 21300420
+    second: japanese1kana_210
+  - first:
+      213: 21300422
+    second: japanese1kana_211
+  - first:
+      213: 21300424
+    second: japanese1kana_212
+  - first:
+      213: 21300426
+    second: japanese1kana_213
+  - first:
+      213: 21300428
+    second: japanese1kana_214
+  - first:
+      213: 21300430
+    second: japanese1kana_215
+  - first:
+      213: 21300432
+    second: japanese1kana_216
+  - first:
+      213: 21300434
+    second: japanese1kana_217
+  - first:
+      213: 21300436
+    second: japanese1kana_218
+  - first:
+      213: 21300438
+    second: japanese1kana_219
+  - first:
+      213: 21300440
+    second: japanese1kana_220
+  - first:
+      213: 21300442
+    second: japanese1kana_221
+  - first:
+      213: 21300444
+    second: japanese1kana_222
+  - first:
+      213: 21300446
+    second: japanese1kana_223
+  - first:
+      213: 21300448
+    second: japanese1kana_224
+  - first:
+      213: 21300450
+    second: japanese1kana_225
+  - first:
+      213: 21300452
+    second: japanese1kana_226
+  - first:
+      213: 21300454
+    second: japanese1kana_227
+  - first:
+      213: 21300456
+    second: japanese1kana_228
+  - first:
+      213: 21300458
+    second: japanese1kana_229
+  - first:
+      213: 21300460
+    second: japanese1kana_230
+  - first:
+      213: 21300462
+    second: japanese1kana_231
+  - first:
+      213: 21300464
+    second: japanese1kana_232
+  - first:
+      213: 21300466
+    second: japanese1kana_233
+  - first:
+      213: 21300468
+    second: japanese1kana_234
+  - first:
+      213: 21300470
+    second: japanese1kana_235
+  - first:
+      213: 21300472
+    second: japanese1kana_236
+  - first:
+      213: 21300474
+    second: japanese1kana_237
+  - first:
+      213: 21300476
+    second: japanese1kana_238
+  - first:
+      213: 21300478
+    second: japanese1kana_239
+  - first:
+      213: 21300480
+    second: japanese1kana_240
+  - first:
+      213: 21300482
+    second: japanese1kana_241
+  - first:
+      213: 21300484
+    second: japanese1kana_242
+  - first:
+      213: 21300486
+    second: japanese1kana_243
+  - first:
+      213: 21300488
+    second: japanese1kana_244
+  - first:
+      213: 21300490
+    second: japanese1kana_245
+  - first:
+      213: 21300492
+    second: japanese1kana_246
+  - first:
+      213: 21300494
+    second: japanese1kana_247
+  - first:
+      213: 21300496
+    second: japanese1kana_248
+  - first:
+      213: 21300498
+    second: japanese1kana_249
+  - first:
+      213: 21300500
+    second: japanese1kana_250
+  - first:
+      213: 21300502
+    second: japanese1kana_251
+  - first:
+      213: 21300504
+    second: japanese1kana_252
+  - first:
+      213: 21300506
+    second: japanese1kana_253
+  - first:
+      213: 21300508
+    second: japanese1kana_254
+  - first:
+      213: 21300510
+    second: japanese1kana_255
+  - first:
+      213: 21300512
+    second: japanese1kana_256
+  - first:
+      213: 21300514
+    second: japanese1kana_257
+  - first:
+      213: 21300516
+    second: japanese1kana_258
+  - first:
+      213: 21300518
+    second: japanese1kana_259
+  - first:
+      213: 21300520
+    second: japanese1kana_260
+  - first:
+      213: 21300522
+    second: japanese1kana_261
+  - first:
+      213: 21300524
+    second: japanese1kana_262
+  - first:
+      213: 21300526
+    second: japanese1kana_263
+  - first:
+      213: 21300528
+    second: japanese1kana_264
+  - first:
+      213: 21300530
+    second: japanese1kana_265
+  - first:
+      213: 21300532
+    second: japanese1kana_266
+  - first:
+      213: 21300534
+    second: japanese1kana_267
+  - first:
+      213: 21300536
+    second: japanese1kana_268
+  - first:
+      213: 21300538
+    second: japanese1kana_269
+  - first:
+      213: 21300540
+    second: japanese1kana_270
+  - first:
+      213: 21300542
+    second: japanese1kana_271
+  - first:
+      213: 21300544
+    second: japanese1kana_272
+  - first:
+      213: 21300546
+    second: japanese1kana_273
+  - first:
+      213: 21300548
+    second: japanese1kana_274
+  - first:
+      213: 21300550
+    second: japanese1kana_275
+  - first:
+      213: 21300552
+    second: japanese1kana_276
+  - first:
+      213: 21300554
+    second: japanese1kana_277
+  - first:
+      213: 21300556
+    second: japanese1kana_278
+  - first:
+      213: 21300558
+    second: japanese1kana_279
+  - first:
+      213: 21300560
+    second: japanese1kana_280
+  - first:
+      213: 21300562
+    second: japanese1kana_281
+  - first:
+      213: 21300564
+    second: japanese1kana_282
+  - first:
+      213: 21300566
+    second: japanese1kana_283
+  - first:
+      213: 21300568
+    second: japanese1kana_284
+  - first:
+      213: 21300570
+    second: japanese1kana_285
+  - first:
+      213: 21300572
+    second: japanese1kana_286
+  - first:
+      213: 21300574
+    second: japanese1kana_287
+  - first:
+      213: 21300576
+    second: japanese1kana_288
+  - first:
+      213: 21300578
+    second: japanese1kana_289
+  - first:
+      213: 21300580
+    second: japanese1kana_290
+  - first:
+      213: 21300582
+    second: japanese1kana_291
+  - first:
+      213: 21300584
+    second: japanese1kana_292
+  - first:
+      213: 21300586
+    second: japanese1kana_293
+  - first:
+      213: 21300588
+    second: japanese1kana_294
+  - first:
+      213: 21300590
+    second: japanese1kana_295
+  - first:
+      213: 21300592
+    second: japanese1kana_296
+  - first:
+      213: 21300594
+    second: japanese1kana_297
+  - first:
+      213: 21300596
+    second: japanese1kana_298
+  - first:
+      213: 21300598
+    second: japanese1kana_299
+  - first:
+      213: 21300600
+    second: japanese1kana_300
+  - first:
+      213: 21300602
+    second: japanese1kana_301
+  - first:
+      213: 21300604
+    second: japanese1kana_302
+  - first:
+      213: 21300606
+    second: japanese1kana_303
+  - first:
+      213: 21300608
+    second: japanese1kana_304
+  - first:
+      213: 21300610
+    second: japanese1kana_305
+  - first:
+      213: 21300612
+    second: japanese1kana_306
+  - first:
+      213: 21300614
+    second: japanese1kana_307
+  - first:
+      213: 21300616
+    second: japanese1kana_308
+  - first:
+      213: 21300618
+    second: japanese1kana_309
+  - first:
+      213: 21300620
+    second: japanese1kana_310
+  - first:
+      213: 21300622
+    second: japanese1kana_311
+  - first:
+      213: 21300624
+    second: japanese1kana_312
+  - first:
+      213: 21300626
+    second: japanese1kana_313
+  - first:
+      213: 21300628
+    second: japanese1kana_314
+  - first:
+      213: 21300630
+    second: japanese1kana_315
+  - first:
+      213: 21300632
+    second: japanese1kana_316
+  - first:
+      213: 21300634
+    second: japanese1kana_317
+  - first:
+      213: 21300636
+    second: japanese1kana_318
+  - first:
+      213: 21300638
+    second: japanese1kana_319
+  - first:
+      213: 21300640
+    second: japanese1kana_320
+  - first:
+      213: 21300642
+    second: japanese1kana_321
+  - first:
+      213: 21300644
+    second: japanese1kana_322
+  - first:
+      213: 21300646
+    second: japanese1kana_323
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: japanese1kana_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313bcd717ad680b41b5606ea1affb282
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fc55b7447af5c4ab188b77432d2e25
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9440df3d80193f54589f00fe363213f1
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78da9e7900e2f1547862be65d60b6570
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845d798ea3074264c8ff2ad70d652395
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328ceaa2225aaf24b919df3e3a540862
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_6
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a7dfbdbdc165347a14e215479b9a95
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef623634b2c01244bff29c1f7095336
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ed7decad56e044fa5a0c711bcaa38a
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99d415b716269349a4a4083d9da279b
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e20d45db3213244bb38bc64fd845fc
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c4c0dd941146b4abca1da634d3a28b
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_12
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c49f164724be9d42b19c4f25e15d9ee
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934bdd25133fcb24183faf63a8e8db75
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1167540726ca67048a21b7a4b8f9bfed
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_15
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47428294daad593469bb324d78603a5b
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ee16b63cc480c4786dd4d713eb44c2
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fbc783b567fbf4286db48fbf0e7761
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b9d1da985193a40af012937e22a1af
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6adfba95a9981644b1b8a22eadcb7a1
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af40f7c77631884baa200f5d935f923
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_21
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a793f9746d4581842a9d01b083e733df
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_22
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731e3ee5ebadc844e97025a852f4391f
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_23
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c23238f6faf37144b821c6da44b679b
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_24
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e8de8871ea4c946a5c219f13e3ac4d
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0bb6487fd8fc245b04044180805a57
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_26
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 472
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24160e83d81ebc641a80d012000bc5d8
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff567e49f1bfb0c4c83a1405a6a2ffeb
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d5efd3f23152e4d80d0a9aad251bdc
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1a0342edd433e4c8d649b8f2f2f642
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_30
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9f9c60e7fa3a946b5c9f304117e658
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_31
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ceae6ede3d27046b5dc8bb817cb054
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_32
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4b1b8813830864e85f0b83957c0257
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1280b608af866a04c84644c6544194dd
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_34
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398292f9ebca5d544927343095043776
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_35
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 459
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15771b868f3ae9468baef8528ff6c2e
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d78bb6da0f771645a1ce481b65b0491
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_37
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154cccefdee1dc24988c18ae05a1f68a
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30399e663d056994a88426a7cbbde098
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_39
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4daaaae7f57bff34986646ab2b6d0118
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_40
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c9526492784a045bcc706b53f39670
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_41
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfd4c93cb7cf524690f7f29c76d9a5c
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_42
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bb5a92d567adb48ab7686a7f1d2250
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_43
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba4cbe3ddae0fa4698c02eafa2ebda4
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_44
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 446
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ba112ea1d2b3a43aceedb8fccec87f
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_45
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e174bb0b8d20045a98c231a5a9632d
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_46
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c415e8b3add2fe45a9072682ec260b5
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec5a6fff2ae69440960b66e667736ca
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_48
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2dadef87d630941b49306b3780694e
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_49
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e4c0891395bcd46b88aa01c23b2466
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_50
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d103b21116a8ec4787c72138437ffb7
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_51
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424ce6c7b4e7d9742b379784366296d1
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_52
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2663efc20263e684e90c1c8a5095cb8c
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_53
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 433
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99500ac3bdbdee4dbed67fb9114c08c
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_54
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b4427d3b6a3704b8ed29a98de18b0e
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_55
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db5566a6fd01e44db0920b713c6d5db
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55af1185dad8e704b899b1ca74944c35
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_57
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57da6dfddf6f2124886e0bf0f46448eb
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_58
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40003b870b8dfd94b847f8a42322bbaf
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_59
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cccc488abc40049be4ba1e50a33a38
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_60
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64acb1f3e0be770479a9a4e00f126185
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_61
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e332c66f998df40997d296c4ac3cd5
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_62
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 420
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acb80797c25a8c4eae403c0652b8c7a
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab8a7d31ebbc8d499b7946db7753e4a
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_64
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f96821eeb296524fbdfb5cead1db3c3
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1e27b77ca0e804b9cc9adf9b03dc2c
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_66
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c3c8bb6c64dfa439dde392ee234cb6
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_67
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4d5775f9fd57141a7e082b7c983e33
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_68
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab3627e71c791c40852ac99e063bafa
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_69
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55407d9595fb76147a6c6985407a860d
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_70
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fccc8b62c2dc314fa4565b87326cab7
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_71
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 407
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccb421e725493e47960fd1df649d2a7
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_72
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8772d73e763c3f245bdff6fcb2903897
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_73
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bb9bfc2888cff4ebee44d593d739c0
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3bab120505cc23428892dbe812e0913
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_75
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d447812333d22146b3936e1fe3b402e
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_76
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45067b96e8f110f4fa74f175460fc743
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_77
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c06d9917ed90f7468f4017524d3f3b6
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_78
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87e937d779f8ed4fa6751a7ca0cbca0
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_79
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8911753f5d6fab945b1631942c0e01cb
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_80
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 394
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f076ae9e83ed0c429178a526a781695
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_81
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc24fcb5a436054c93bfb0395d5b512
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_82
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b118245db5ec5e740a8eeb83ae0bad72
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92691ffe82819d545bf556b09628f314
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_84
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd8e024cfba7584f912fc8bdc8ec89e
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_85
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33467c6fd71f6b49a5b01aed3392dc4
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_86
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8c18991ced79d46ba52db223946002
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_87
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce584145d88d80489681757328941e2
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_88
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085a6e37e5e30cd42947561553c10a5e
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_89
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfd2f5a4026cc74f99707a6fb4fcc03
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_90
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758289d5e2693e64ea76c7fc0d1f3abc
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_91
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02c2febd74a113479b7296cc000a2ff
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5506d9ccf293ead4b8d958763367a507
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_93
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f7bd6971dbb0547995e58ceecb9bbd
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_94
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6338b17e0a7f46540abedf5532990126
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_95
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3644aafb3fabbc744af3c94c81453225
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_96
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219dbc85f76ee0649a81da2a37f7ea1b
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_97
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e4d2590aa51ae4ea093414034b1ed2
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_98
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 368
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1722cab377c4e4b4985837148c13ff40
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_99
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2cfc78b3c157944a7554e468e357b0
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_100
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535a3176ad84bf44eab946ea669a485c
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_101
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de10340bd73dd544ab5a127f5e56875a
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_102
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4466e6d5d79b73f4f8f10743921d9e89
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_103
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4535cfae0cac328489421cfc3ae3dae5
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_104
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec4a5ab487084e46bb3aeeb2bfc1572
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_105
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5300ef000f74b304b9e04c5ade59c0ab
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_106
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d9856460dacf54a891b249ca443f34
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_107
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 350
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebefe4ad3a701a44881ac739133ea08
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_108
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a9f9bdd18a7ea4188a18005bf41250
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_109
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fb17e62dddeee43af92ddd07c848f8
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e848f26b68bf454ab40500d616446e3
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_111
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695e19cec06d380468c0bcc1bb26b624
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_112
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb59893c0e55c624180d98251a208f41
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_113
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18fca025665f6d42beda5a3e6d2e652
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_114
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae39f962ba1e2a478a9025980b4b693
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_115
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b25c0b1d8b8fc60438136d472940cf41
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_116
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a845ef44b4dbbca4597a6fadf8c1f389
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_117
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faaf2c32be81a3d43b0d60d51a3d4fbe
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_118
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0464290a7bdcf448aabe36b1855eff
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_119
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537f479d11d536c48b92e62dc3acd3c2
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_120
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9731a8b8015f348a1e849c3b1c5eba
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_121
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bdaf960ef549504385aa6ec7c9ef639
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_122
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dcf8cc196f121459ece5b89c549ab0
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_123
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31af6ef0090a09d4e92eb8dd4c751a63
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_124
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5769b5e091df04ababeff109d02b05
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_125
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 324
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731bfded5675dcc4a82a48a1901567ad
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_126
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9badf79f4c864424db9376a28d332f9e
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_127
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e75cefb4ba18145967f90a14090077
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_128
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20f7a0c02ed0fc469c36afc3f4b9390
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_129
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb357ee71fdfde488f26b761926f393
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_130
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aac507d3cb31a44db357c0d1003f80c
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_131
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91501508bbef9874a9e41018b8ffec33
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_132
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09a2f120955e5c43b56e522e67c2f94
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_133
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80894be555738294eb4a4252754d1172
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c636ca4b8a544c247842ef20e8a66e74
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_135
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79eec13a17d559f4087f2bf688216c5e
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_136
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3027890e1ea2fbc43852ccfaf7adda61
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_137
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a61bd5712ea19742aa02b2e7b661849
+      internalID: 21300274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_138
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7dc87b28d6ee2428d2df911610fab0
+      internalID: 21300276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_139
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721eb3070cc76034fa589debbf892e5c
+      internalID: 21300278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_140
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31746a6b75c0a44ebca6ae17593322a
+      internalID: 21300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_141
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4860270740295ef4e8fbb526cba9385a
+      internalID: 21300282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_142
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9688bd71da7fa7c499e1ad568a817bae
+      internalID: 21300284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_143
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 298
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca869d3750e374a438cd98a884c249ba
+      internalID: 21300286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_144
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1c7f3f1a0437f4c844d2729c34ece8
+      internalID: 21300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_145
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09592c106aace543b8165b2c453820c
+      internalID: 21300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43364ff351a9123429845ae0f9079c92
+      internalID: 21300292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_147
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a593dee2e106d8e4a8ee040b1ae1d058
+      internalID: 21300294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_148
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9164c294710e643bf4c5675bde1b7d
+      internalID: 21300296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_149
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a83ff7c495e6348862eb990d3cfcb9
+      internalID: 21300298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_150
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951cafad36fd43448a32a949371fad26
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_151
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fe681e2e836fe4ba5d1219b25eb461
+      internalID: 21300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_152
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2747ee5555f06d5448be27eb807941eb
+      internalID: 21300304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_153
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5823b4499d0ae4cb3061d499bc94c0
+      internalID: 21300306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_154
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39812d826ce9ef343aae723d5ef6da55
+      internalID: 21300308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_155
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd2b0a318be51f4580199655a1f92a3
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_156
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b037318df5866b74b897f5a4d4c2e323
+      internalID: 21300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_157
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6cea11ddf343e4e8756414f4e0d838
+      internalID: 21300314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_158
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003c48fea4ef6c64ea0fcc0d350ddbab
+      internalID: 21300316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_159
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1575fc3a71b305a44b004fd4563f4f32
+      internalID: 21300318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_160
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4028285b2beaf44292e2a1b50ae9f62
+      internalID: 21300320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_161
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ff4b5d4ccc3b341bf8d0f4567d677d
+      internalID: 21300322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_162
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c710356521010da4ca16e558963b7e06
+      internalID: 21300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_163
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27e5e5d465a8ea4a9b0fd50dd9440f8
+      internalID: 21300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_164
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79767be8dc567ab4eb527ac3af6b676c
+      internalID: 21300328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_165
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35c53a455d2f3e4a9314fa0c80ca4d8
+      internalID: 21300330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_166
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d71c895706333e42ae11526397b73c3
+      internalID: 21300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_167
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a23d8a2b54c51e40829a5512970db4b
+      internalID: 21300334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_168
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b42d4e9fbad46343a6fc0201cc14d4e
+      internalID: 21300336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_169
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cc86c1c24e32444a301c0d8ac22270
+      internalID: 21300338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_170
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1bf6ad5ac9d814f893f6ed3e85010c
+      internalID: 21300340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_171
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d307921a4859774e99d5ad8b2ef294e
+      internalID: 21300342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_172
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4c1ce11dd25b34ea340684e14e4cac
+      internalID: 21300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_173
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db58d66fead18244a905383d0d940edc
+      internalID: 21300346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_174
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd97850c98c2a674c94878d864230fb6
+      internalID: 21300348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_175
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8538ce63785e7e542b0131edffc21089
+      internalID: 21300350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_176
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c58c5cd52b279449e529ff036ed6d8
+      internalID: 21300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_177
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266f0ceb64f14484f9add4ddbce854cf
+      internalID: 21300354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_178
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f499d1ec7c21df4f85e4a66f2a7aac5
+      internalID: 21300356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_179
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 241
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65acc6a95ae4f8847adebee490c80caa
+      internalID: 21300358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_180
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8f70bd3c1ade44bbd00c1222a5786e
+      internalID: 21300360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_181
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2699f3cfd30c5e438ed447c3eef4d93
+      internalID: 21300362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_182
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae086665e3665845800b519f526b759
+      internalID: 21300364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_183
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2b3c197f67c9f4abe001ad7d23cbbd
+      internalID: 21300366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_184
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af891decca9965048a02a3f3f8fb3845
+      internalID: 21300368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_185
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9545daca053c043b5b10871785a869
+      internalID: 21300370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_186
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2b42512aadecf49ad5f82a2ac9da82
+      internalID: 21300372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_187
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257ecc2456ff4f34186b8bea46e12563
+      internalID: 21300374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_188
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 228
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aae475efbaa1e41a9feec836e88c80
+      internalID: 21300376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_189
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88acec706ceb8ce4691a0b566191bfab
+      internalID: 21300378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_190
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4880dd3637e864bb890780b4cc6ab6
+      internalID: 21300380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_191
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e19ca64c0ad47e40801070dd80dd091
+      internalID: 21300382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_192
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8317c8443b34cb444ad0feb5802974c1
+      internalID: 21300384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_193
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492d0313d45a55649b1423e3395ccf27
+      internalID: 21300386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_194
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0db636f4ffa2742a6dd88511feab5f
+      internalID: 21300388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_195
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8523569bb3e73974ead0facf550c18ce
+      internalID: 21300390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_196
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a8b22199d90a84e82a6cea9233ed94
+      internalID: 21300392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_197
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 215
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c275307675978db4da1044112f19fc35
+      internalID: 21300394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_198
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c1ed7f6219d544393acc7c436bf24e
+      internalID: 21300396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_199
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85004552fe128b2428d7f477d0f949ac
+      internalID: 21300398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_200
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421a8eaf1ca0e18408b20d74820c2092
+      internalID: 21300400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_201
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7924e42854edb4fa9c79345d6ee7f4
+      internalID: 21300402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_202
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b002208171c8fc3458e51a8336b02d90
+      internalID: 21300404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_203
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1de1516d648744cb4f3791b7874c75
+      internalID: 21300406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_204
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599973e2b46ecf64eab5b93250d58ebe
+      internalID: 21300408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_205
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee243b6de575454ab91366280d5647e
+      internalID: 21300410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_206
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 202
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcb2fb6c9c4a054d8512ec4015a1d65
+      internalID: 21300412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_207
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d2419105003ad42afb4637a238028b
+      internalID: 21300414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_208
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5074497c025075c449a50d879b1fc45a
+      internalID: 21300416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_209
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5459f6ec4632c644190893b29d4dc22e
+      internalID: 21300418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_210
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2095340aea6644a9343ebe55adefc1
+      internalID: 21300420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_211
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc7e68613574f24888f03e20bd51e89
+      internalID: 21300422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_212
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be7d94a577cbdf499f5696456efee4e
+      internalID: 21300424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_213
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2837aaddb14629e47983d0b435e7d092
+      internalID: 21300426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_214
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55954f967bb89db48b3ee7b84e6edbb8
+      internalID: 21300428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_215
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 189
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26da76122223c7b4fbc4bfde69f81bb4
+      internalID: 21300430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_216
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102d2635fe45aef499fc98e57185e4f1
+      internalID: 21300432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_217
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d2d728a7876c149b684c0765286dcc
+      internalID: 21300434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_218
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e17dcb4a8785f44993b9254d9c200b5
+      internalID: 21300436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_219
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39c84d1ce28dee45a511b422ee5d230
+      internalID: 21300438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_220
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16668ff79f5f10c4fbb4c50c68058d0c
+      internalID: 21300440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_221
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66902cb89dc38044b63ed09424e7651
+      internalID: 21300442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_222
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c78d6ef72a61b40b426339f3c47cff
+      internalID: 21300444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_223
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b729458d6c88845bfc2b29cfba8fae
+      internalID: 21300446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_224
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9da61b13c89b45498b8aff4f56f04bf
+      internalID: 21300448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_225
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f4b976ec549f645a34ce53ef586882
+      internalID: 21300450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_226
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9697aca44635884bb53a641fb76d673
+      internalID: 21300452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_227
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e755e29e4699bc48a78b56186afd302
+      internalID: 21300454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_228
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317bf49db7e0f694d8b0cb3be5e1a91f
+      internalID: 21300456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_229
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338c1dfd1135dff45ae8be90fee156d2
+      internalID: 21300458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_230
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf805eab3e88fe74ab628ed157ed2556
+      internalID: 21300460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_231
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe42131ac3e7664aa6af247ab0d8bcc
+      internalID: 21300462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_232
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fde8664dde1a24e81f14dd2e0721ca
+      internalID: 21300464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_233
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 163
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc01c390108bf54a9bfd3d2bf25dd5d
+      internalID: 21300466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_234
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db40d96b8fa1144e9ce53c8a7369ca1
+      internalID: 21300468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_235
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87766461c6e6190439fa0ac1f7722f89
+      internalID: 21300470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_236
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6522b56527544c46a4428150cc29f61
+      internalID: 21300472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_237
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd16c7a2bc07b614490541ad8c22413b
+      internalID: 21300474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_238
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9c262e6d152e343bcc443336af07d3
+      internalID: 21300476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_239
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bc70130ffc53641bfcf61b26c5f0e5
+      internalID: 21300478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_240
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b780de42f069b6942beb7421a4493e1e
+      internalID: 21300480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_241
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e455c8d38ca942044b3f1494ede15097
+      internalID: 21300482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_242
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 150
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88eaf330d73d81438ac966d2ed74cf4
+      internalID: 21300484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_243
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d37ab06e85117843ae9e2f01a290f07
+      internalID: 21300486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_244
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168db9c8207a367419f44dff96ec0800
+      internalID: 21300488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_245
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f785014f1d7dc419d05d2da4c8fa80
+      internalID: 21300490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_246
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4d7b694bd84d846babf3c5009b09dc
+      internalID: 21300492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_247
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6d1701a558a114cba10ce1da14fdcc
+      internalID: 21300494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_248
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ff0c491cac51b42ad3df0e6ca72f4b
+      internalID: 21300496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_249
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13b5d8dbc6516b44a68c2b9ebb82834
+      internalID: 21300498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_250
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbac57c7dc087240807cfadb440b300
+      internalID: 21300500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_251
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 137
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7c942452aa79747ac3b55e12f48fab
+      internalID: 21300502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_252
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467a91953e930244193261c1c8e56287
+      internalID: 21300504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_253
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f7f5837ab53d74e97faa48581dddb6
+      internalID: 21300506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_254
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74550bd4aedb9954c9a50be8662f88f0
+      internalID: 21300508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_255
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d5a692b08113b4a9c928b8bdacd0ff
+      internalID: 21300510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_256
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc62a9a4eb5c05419b78752b9771a42
+      internalID: 21300512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_257
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5636a559586b234a94fcce785252bce
+      internalID: 21300514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_258
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198cb128fdd979a478a23878cf65490c
+      internalID: 21300516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_259
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b985dba33f8f854b8fe87bb4eabdcfd
+      internalID: 21300518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_260
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab5c8041c23d1a418b1141ce281beb8
+      internalID: 21300520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_261
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6609930a09aab904a9163b1e8f2b4e4f
+      internalID: 21300522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_262
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dade78c62f21e24ebc21ed8ef5334d0
+      internalID: 21300524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_263
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c2333003159ad438e9ce9f0cca332e
+      internalID: 21300526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_264
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb6f2b632bac2e4884c3f5ab6076478
+      internalID: 21300528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_265
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be32c2752d127aa4d80506d400f78b4c
+      internalID: 21300530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_266
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5720b4915bd2b14eadac09ab0a658f8
+      internalID: 21300532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_267
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afb9249bb44e2b49945f2938825fcb1
+      internalID: 21300534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_268
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b10eefd62f133248a937f8a405425fb
+      internalID: 21300536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_269
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc39fe4fc7ac254392bde75f3ec7036
+      internalID: 21300538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_270
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d777d1c8edabf7479d0a5de8fd5a8b0
+      internalID: 21300540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_271
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a68b9b13e33b34dadd83c5d70ea9a9
+      internalID: 21300542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_272
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f70359bb3aa7b646ab8d0cc778a2940
+      internalID: 21300544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_273
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f1a621ef30b8344a58991067ffc28b
+      internalID: 21300546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_274
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fc33ea3edf37440be45863bdb45ff2
+      internalID: 21300548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_275
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2606085e879a7348b2ab532dee7a5c7
+      internalID: 21300550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_276
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcad0dd626d1094ca45158f44b6e736
+      internalID: 21300552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_277
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2729856fbfa663141b512e4e2d4b8a63
+      internalID: 21300554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_278
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f09d31836cb0284789c516a0bb9fcd9
+      internalID: 21300556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_279
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68a0ceee2576a34286a180711a8fda4
+      internalID: 21300558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_280
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e985759471ace4749871893c5f0ed06f
+      internalID: 21300560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_281
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7826e349bb06b24e87bf0de2d83d909
+      internalID: 21300562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_282
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bda7d461bc9e344fa291510f465d29f
+      internalID: 21300564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_283
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5b66998d090fc41853b220f618803e
+      internalID: 21300566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_284
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040fe1d6414b1d4449d7247b3044f565
+      internalID: 21300568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_285
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68aa9b7739f585f44b614222ccf71e97
+      internalID: 21300570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_286
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d45277c1d4b5b1448c8a583993dd91f
+      internalID: 21300572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_287
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 80
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff61120d2877f834884b49cde648f5a1
+      internalID: 21300574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_288
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0679914373ace94aa92d8a5f538fafe
+      internalID: 21300576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_289
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f124dfd205e3d4da469cae3366a9c6
+      internalID: 21300578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_290
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6599e2e5aa5dc4eab3a13b3109c4df
+      internalID: 21300580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_291
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdd314cb3a35a5438593f6914c991b7
+      internalID: 21300582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_292
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cfd4eb6e810094ebc4f4f03911fa53
+      internalID: 21300584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_293
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ad9ca43e3bbea4daffd02d0f06d339
+      internalID: 21300586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_294
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d9b052112d3df46ba3a3d324d3aecf
+      internalID: 21300588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_295
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e011e57df0b68614baf6b6e976f209cf
+      internalID: 21300590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_296
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597bdfa2bc3bb4e40ac6abf717f6e336
+      internalID: 21300592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_297
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a68337a8926624fa5376917b5756de
+      internalID: 21300594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_298
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83011261c222cb4d89d35c634b159e9
+      internalID: 21300596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_299
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a0c48f1096c1b4bac1759bb35a6b15
+      internalID: 21300598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_300
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fb8c390c925b041b7c5d58e7e04a29
+      internalID: 21300600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_301
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff87d5243bb62a499c97c9031faa1ac
+      internalID: 21300602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_302
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eea44684b8a1b240a7e8f72805140cf
+      internalID: 21300604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_303
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214ff43ff0a68e44294f0653cc2d0348
+      internalID: 21300606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_304
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30313b94e4fbde48a719f6fef4712ef
+      internalID: 21300608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_305
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa76d0fd6a6a104b996035f092f9011
+      internalID: 21300610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_306
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7834182982f274ab8ee359910fa6e0
+      internalID: 21300612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_307
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e7d8e67f26573459f99bd054faf9de
+      internalID: 21300614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_308
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2254cc4e6ddbb754bae30fd7872e8625
+      internalID: 21300616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_309
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d005ef0abe68e140a89cfb27fda44d4
+      internalID: 21300618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_310
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71875271effdb3046931246150b7ce26
+      internalID: 21300620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_311
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620684e39ff58e147825acd09ea2a2f7
+      internalID: 21300622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_312
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1c41b4e86863149b71e146264210f9
+      internalID: 21300624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_313
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc7fa95c4998f643b0b95482864951c
+      internalID: 21300626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_314
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d877723ea3c0145a8008b5d4c51f38
+      internalID: 21300628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_315
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fb02c17608cdf4997575b9df08e1fa
+      internalID: 21300630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_316
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb48571e86ead82409b4e7987e7eec73
+      internalID: 21300632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_317
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7c0e885e5dece498d8f0fc0cb8c365
+      internalID: 21300634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_318
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c7484cb39dffc4891b4d57c3b3558e
+      internalID: 21300636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_319
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33ae3925f3634d42ad38068678fc4b7
+      internalID: 21300638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_320
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a70ab6a4d40d5542b2a5c63afeaf1a7
+      internalID: 21300640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_321
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9642c3499480284db7ce689c64bfffd
+      internalID: 21300642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_322
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d4480adf745fb4797406c91954a3e4
+      internalID: 21300644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japanese1kana_323
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 28
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c68df4b07944c45b5fc09e6c4dda66
+      internalID: 21300646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
