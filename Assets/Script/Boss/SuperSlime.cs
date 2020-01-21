@@ -13,7 +13,9 @@ public class SuperSlime : MonoBehaviour
 
     public float shotInterval; //ショットの間隔
    float shotCount; //shotカウント
-   
+    bool guardFlag;
+    bool trapFlag;
+
 
     public Explotion explosionPrefab; //爆発エフェクト
 
@@ -134,6 +136,20 @@ public class SuperSlime : MonoBehaviour
             Destroy(gameObject);
         }
 
+        int trap = 30;
+        //トラップ
+        if (collision.name.Contains("Trap"))
+        {
+            trapFlag = true;
+            // 敵のHPを減らす
+            bossHp -= trap;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < bossHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+
         //Playerにダメージ
         if (collision.name.Contains("Knight"))
         {
@@ -156,5 +172,6 @@ public class SuperSlime : MonoBehaviour
             if (mage == null) return;
             mage.Damage(damage);
         }
+      
     }
 }

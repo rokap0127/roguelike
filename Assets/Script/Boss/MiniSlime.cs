@@ -6,53 +6,73 @@ public class MiniSlime : MonoBehaviour
 {
     public float moveSpeed;
     public int damage;
-   
     public int enemyMaxHp; //最大Hp
     public int enemyHp; //現在のHp
 
     public Explotion explosionPrefab;
 
+    bool guardFlag;
+    bool trapFlag;
+    float angle;
+    Vector3 direction;
+    float trapCount;
+
     // Start is called before the first frame update
     void Start()
     {
         enemyHp = enemyMaxHp; //最大Hpにする
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        guardFlag = false;
+        trapFlag = false;
     }
 
     private void FixedUpdate()
     {
         //プレイヤーの位置へ向かうベクトルを生成する
-        var angle = Utils.GetAngle(
+        //ナイト
+        if (Operation.knightFlag)
+        {
+            angle = Utils.GetAngle(
             transform.localPosition,
             Knight.instance.transform.localPosition);
-        var direction = Utils.GetDirection(angle);
+            direction = Utils.GetDirection(angle);
+        }
+        //アーチャー
+        if (Operation.archerFlag)
+        {
+            angle = Utils.GetAngle(
+            transform.localPosition,
+            Archer.instance.transform.localPosition);
+            direction = Utils.GetDirection(angle);
+        }
+        //メイジ
+        if (Operation.mageFlag)
+        {
+            angle = Utils.GetAngle(
+            transform.localPosition,
+            Mage.instance.transform.localPosition);
+            direction = Utils.GetDirection(angle);
+        }
 
-        //プレイヤーが存在する方向へ移動する
-        transform.localPosition += direction * moveSpeed;
+
+        if (!guardFlag && !trapFlag)
+        {
+            //プレイヤーが存在する方向へ移動する
+            transform.localPosition += direction * moveSpeed;
+        }
+
+        if (trapFlag)
+        {
+            trapCount++;
+            if (trapCount == 240)
+            {
+                trapFlag = false;
+                trapCount = 0;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "PlayerAttack")
-        {
-            //エフェクト生成
-            Instantiate(
-    explosionPrefab,
-    collision.transform.position,
-    Quaternion.identity);
-            //敵のHPを減らす
-            enemyHp--;
-            //敵のHPがまだ残っている場合はここで処理を終える
-            if (0 < enemyHp) { return; }
-
-            //敵を削除する
-            Destroy(gameObject);
-        }
         //ナイト
         int knightAttack = 80;
         if (collision.gameObject.tag == "PlayerAttack")
@@ -136,6 +156,38 @@ public class MiniSlime : MonoBehaviour
             var mage = collision.GetComponent<Mage>();
             if (mage == null) return;
             mage.Damage(damage);
+        }
+        int trap = 30;
+        //トラップ
+        if (collision.name.Contains("Trap"))
+        {
+            trapFlag = true;
+            // 敵のHPを減らす
+            enemyHp -= trap;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+
+
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.name.Contains("Guard"))
+        {
+            //moveSpeed = 0;
+            guardFlag = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Guard")
+        {
+            //moveSpeed = 0.01f;
+            guardFlag = false;
         }
     }
 }
