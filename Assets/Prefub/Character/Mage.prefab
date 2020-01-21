@@ -159,7 +159,7 @@ MonoBehaviour:
   teleportRange: 1
   slopeRange: 0.5
   playerHp: 0
-  playerMaxHp: 70
+  playerMaxHp: 1000
   playerMp: 0
   playerMaxMp: 100
   shootMp: 10

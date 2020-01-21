@@ -1726,7 +1726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &153829943
 Transform:
   m_ObjectHideFlags: 0
@@ -31989,6 +31989,7 @@ MonoBehaviour:
   - {fileID: 4902001450418590346, guid: 70faed102969f8645b4e6654f8322b74, type: 3}
   itemlim: 0
   shutter: {fileID: 1733909209}
+  boss: {fileID: 3529390483457480908, guid: f83b287b4199ff44d997b03fef639229, type: 3}
 --- !u!1001 &1351468895
 PrefabInstance:
   m_ObjectHideFlags: 0
