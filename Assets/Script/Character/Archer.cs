@@ -24,8 +24,11 @@ public class Archer : MonoBehaviour
     bool isAttack = false; //攻撃中か？
     float playerAngle; //プレイヤーの方向
     new CapsuleCollider2D collider2D;
-    float mpCount;　//Mp回復スピード
+    float mpCount; //Mp回復スピード
 
+    GameObject iChecker;
+    ItemChecker ic;
+    float defaultMoveSpeed;
 
     void Awake()
     {
@@ -42,12 +45,15 @@ public class Archer : MonoBehaviour
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp; //Hpを最大に設定
         playerMp = playerMaxMp; //Mpを最大に設定する
+        defaultMoveSpeed = moveSpeed;
     }
     int count;
     // Update is called once per frame
     void Update()
     {
-       //操作モード
+        iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
+        ic = iChecker.GetComponent<ItemChecker>();
+        //操作モード
         if (Operation.archerFlag)
         {
             //当たり判定 オン
@@ -68,6 +74,10 @@ public class Archer : MonoBehaviour
             {
                 //攻撃する
                 Attack();
+            }
+            if (!ic.SpeedFlag)
+            {
+                moveSpeed = defaultMoveSpeed;
             }
         }
         //追尾モード

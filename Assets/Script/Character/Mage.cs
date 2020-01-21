@@ -28,6 +28,10 @@ public class Mage : MonoBehaviour
     new CapsuleCollider2D collider2D;
     float mpCount;　//Mp回復スピード
 
+    GameObject iChecker;
+    ItemChecker ic;
+    float defaultMoveSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,7 @@ public class Mage : MonoBehaviour
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp;　//Hpを最大に設定する
         playerMp = playerMaxMp;  //Mpを最大に設定する
+        defaultMoveSpeed = moveSpeed;
     }
 
     void Awake()
@@ -48,6 +53,8 @@ public class Mage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
+        ic = iChecker.GetComponent<ItemChecker>();
         if (Operation.mageFlag)
         {
             //当たり判定 オン
@@ -72,6 +79,10 @@ public class Mage : MonoBehaviour
 
             //Teleport(teleportRange, slopeRange);
 
+            if (!ic.SpeedFlag)
+            {
+                moveSpeed = defaultMoveSpeed;
+            }
         }
         else
         {
