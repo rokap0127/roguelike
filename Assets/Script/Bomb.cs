@@ -34,6 +34,12 @@ public class Bomb : MonoBehaviour
             explosionPrefab,
             transform.position,
             Quaternion.identity);
+        float pos = (transform.position).magnitude;
+        GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemys)
+        {
+            Destroy(enemy);
+        }
         Destroy(gameObject);
     }
 }
