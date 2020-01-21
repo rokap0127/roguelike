@@ -11,6 +11,8 @@ public class Skeleton : MonoBehaviour
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab; //メイジスキルエフェクト
 
+    bool guardFlag;
+    bool trapFlag;
     Direction direciton;  //向き
     Animator anim; //アニメーション
     GameObject knight; //ナイト
@@ -18,6 +20,7 @@ public class Skeleton : MonoBehaviour
     GameObject mage; //メイジ
     float angle;
     Vector3 direction;
+    float trapCount;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,10 @@ public class Skeleton : MonoBehaviour
         knight = GameObject.FindGameObjectWithTag("Knight");
         archer = GameObject.FindGameObjectWithTag("Archer");
         mage = GameObject.FindGameObjectWithTag("Mage");
+        guardFlag = false;
+        trapFlag = false;
+  
+
 
     }
 
@@ -62,8 +69,22 @@ public class Skeleton : MonoBehaviour
             direction = Utils.GetDirection(angle);
         }
 
-        //プレイヤーが存在する方向へ移動する
-        transform.localPosition += direction * moveSpeed;
+        if(!guardFlag && !trapFlag)
+        {
+            //プレイヤーが存在する方向へ移動する
+            transform.localPosition += direction * moveSpeed;
+        }
+
+        if (trapFlag)
+        {
+            trapCount++;
+            if (trapCount == 240)
+            {
+                trapFlag = false;
+                trapCount = 0;
+            }
+        }
+        
 
         //向き
         PlayerRote(angle);
@@ -268,18 +289,27 @@ public class Skeleton : MonoBehaviour
             mage.Damage(damage);
         }
 
-        if (collision.name.Contains("Guard"))
+        int trap = 60;
+        //トラップ
+        if (collision.name.Contains("Trap"))
         {
-            moveSpeed = 0;
+            trapFlag = true;
+            // 敵のHPを減らす
+            enemyHp -= trap;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        moveSpeed = 0.01f;
         if (collision.name.Contains("Guard"))
         {
-            moveSpeed = 0;
+            //moveSpeed = 0;
+            guardFlag = true;
         }
     }
 
@@ -287,7 +317,8 @@ public class Skeleton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Guard")
         {
-            moveSpeed = 0.01f;
+            //moveSpeed = 0.01f;
+            guardFlag = false;
         }
     }
 }

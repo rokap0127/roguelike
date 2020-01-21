@@ -9,12 +9,14 @@ public class Archer : MonoBehaviour
     public float moveSpeed;  //移動の速さ
     public Arrow arrow;      //矢のプレハブ
     public float arrowSpeed; //矢の移動の速さ
+    public Trap trap;
 
     public int playerHp;    //現在のHP
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
     public int shootMp; //shootのMp
+    public int trapMp;
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
@@ -339,6 +341,15 @@ public class Archer : MonoBehaviour
                 //Mpを減らす
                 playerMp -= shootMp;
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            if(playerMp >= trapMp)
+            {
+                playerMp -= trapMp;
+                Instantiate(trap, transform.localPosition, Quaternion.identity);
+            }
+            
         }
     }
 
