@@ -96,12 +96,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.01
-  damage: 10
+  damage: 8
   enemyHp: 0
   enemyMaxHp: 100
   shotPrefab: {fileID: 8405426756736967674, guid: 5a6947b378bcac443a4d812bc5d113e3,
     type: 3}
-  shotSpeed: 0.05
+  shotSpeed: 0.02
   shotAngleRange: 20
   shotTimer: 0
   shotCount: 3
