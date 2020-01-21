@@ -17,6 +17,8 @@ public class SkeletonAcher : MonoBehaviour
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab;
 
+    bool guardFlag;
+    bool trapFlag;
     GameObject knight; //ナイト
     GameObject archer; //アーチャー
     GameObject mage; //メイジ
@@ -24,6 +26,7 @@ public class SkeletonAcher : MonoBehaviour
     Animator anim; //アニメージョン
     float angle;
     Vector3 _direction;
+    float trapCount;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,8 @@ public class SkeletonAcher : MonoBehaviour
         knight = GameObject.FindGameObjectWithTag("Knight");
         archer = GameObject.FindGameObjectWithTag("Archer");
         mage = GameObject.FindGameObjectWithTag("Mage");
+        guardFlag = false;
+        trapFlag = false;
     }
 
     // Update is called once per frame
@@ -67,22 +72,38 @@ public class SkeletonAcher : MonoBehaviour
             _direction = Utils.GetDirection(angle);
         }
 
-        //プレイヤーが存在する方向へ移動する
-        transform.localPosition += _direction * moveSpeed;
-        PlayerRote(angle);
+        if(!guardFlag && !trapFlag)
+        {
+            //プレイヤーが存在する方向へ移動する
+            transform.localPosition += _direction * moveSpeed;
+            PlayerRote(angle);
 
-        //弾の発射を管理するタイマーを更新する
-        shotTimer += Time.deltaTime;
+            //弾の発射を管理するタイマーを更新する
+            shotTimer += Time.deltaTime;
 
-        //まだ弾を発射するタイミングではない場合ここで処理を終える
-        if (shotTimer < shotInterval) return;
+            //まだ弾を発射するタイミングではない場合ここで処理を終える
+            if (shotTimer < shotInterval) return;
 
-        //弾を発射するタイマーをリセットする
-        shotTimer = 0;
+            //弾を発射するタイマーをリセットする
+            shotTimer = 0;
 
-        //弾を発射する
+            //弾を発射する
             ShootNWay(angle, shotAngleRange, shotSpeed, shotCount);
+        }
+
+        if (trapFlag)
+        {
+            trapCount++;
+            if (trapCount == 240)
+            {
+                trapFlag = false;
+                trapCount = 0;
+            }
+
+
+        }
     }
+       
 
     void PlayerRote(float angle)
     {
@@ -320,9 +341,23 @@ public class SkeletonAcher : MonoBehaviour
             mage.Damage(damage);
         }
 
-        if (collision.name.Contains("Guard"))
+        //if (collision.name.Contains("Guard"))
+        //{
+        //    moveSpeed = 0;
+        //}
+
+          int trap = 60;
+        //トラップ
+        if (collision.name.Contains("Trap"))
         {
-            moveSpeed = 0;
+            trapFlag = true;
+            // 敵のHPを減らす
+            enemyHp -= trap;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
         }
     }
 
@@ -331,7 +366,7 @@ public class SkeletonAcher : MonoBehaviour
         moveSpeed = 0.01f;
         if (collision.name.Contains("Guard"))
         {
-            moveSpeed = 0;
+            guardFlag = true;
         }
     }
 
@@ -339,7 +374,7 @@ public class SkeletonAcher : MonoBehaviour
     {
         if (collision.gameObject.tag == "Guard")
         {
-            moveSpeed = 0.01f;
+            guardFlag = false;
         }
     }
 }
