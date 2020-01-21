@@ -4,33 +4,63 @@ using UnityEngine;
 
 public class Skeleton : MonoBehaviour
 {
-    public float moveSpeed;
-    public int damage;
-    public int enemyHp;
-    public int enemyMaxHp;
+    public float moveSpeed; //移動速度
+    public int damage; //攻撃力
+    public int enemyHp; //現在のHp
+    public int enemyMaxHp; //最大のHp
     public Explotion explosionPrefab; //爆発エフェクト
-    public Explotion magicPrefab;
+    public Explotion magicPrefab; //メイジスキルエフェクト
 
-    Direction direciton = Direction.DOWN; //現在の向き
-    Animator anim;
+    Direction direciton;  //向き
+    Animator anim; //アニメーション
+    GameObject knight; //ナイト
+    GameObject archer; //アーチャー
+    GameObject mage; //メイジ
+    float angle;
+    Vector3 direction;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        //最大Hpにする
         enemyHp = enemyMaxHp;
+        //現在の向き
+        direciton = Direction.DOWN;
+        anim = GetComponent<Animator>();
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject knight = GameObject.FindGameObjectWithTag("Knight");
-
         //プレイヤーの位置へ向かうベクトルを生成する
-        var angle = Utils.GetAngle(
+        //ナイト
+        if (Operation.knightFlag)
+        {
+           angle = Utils.GetAngle(
+           transform.localPosition,
+           Knight.instance.transform.localPosition);
+           direction = Utils.GetDirection(angle);
+        }
+        //アーチャー
+        if (Operation.archerFlag)
+        {
+          angle = Utils.GetAngle(
+          transform.localPosition,
+          Archer.instance.transform.localPosition);
+          direction = Utils.GetDirection(angle);
+        }
+        //メイジ
+        if (Operation.mageFlag)
+        {
+            angle = Utils.GetAngle(
             transform.localPosition,
-            Knight.instance.transform.localPosition);
-        var direction = Utils.GetDirection(angle);
+            Mage.instance.transform.localPosition);
+            direction = Utils.GetDirection(angle);
+        }
 
         //プレイヤーが存在する方向へ移動する
         transform.localPosition += direction * moveSpeed;
@@ -153,27 +183,61 @@ public class Skeleton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("Magic"))
+        //ナイト
+        int knightAttack = 80;
+        if (collision.gameObject.tag == "PlayerAttack")
         {
-            Instantiate(magicPrefab,
+            Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp--;
+            enemyHp -= knightAttack;
+
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
             //敵を削除する
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "PlayerAttack")
+        //アーチャー
+        int arrow = 50;
+        if (collision.name.Contains("Arrow"))
         {
-            Instantiate(
-                explosionPrefab,
+            Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp--;
+            enemyHp -= arrow;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+
+        //メイジ
+        int m_shot = 25;
+        if (collision.name.Contains("Shot_M"))
+        {
+            Instantiate(explosionPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= m_shot;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        int magic = 100;
+        if (collision.name.Contains("Magic"))
+        {
+            Instantiate(magicPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= magic;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6267827001510263930}
   m_Layer: 0
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3642729701603576719, guid: acfa875999075ef45a54ba99279577d6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -143,7 +143,7 @@ MonoBehaviour:
   moveSpeed: 0.01
   damage: 10
   enemyHp: 0
-  enemyMaxHp: 1
+  enemyMaxHp: 100
   explosionPrefab: {fileID: 8971686452076375958, guid: c8b6e47383c07b54aaea49359b9c99c7,
     type: 3}
   magicPrefab: {fileID: 1172302413244965821, guid: 72cd820ef24413a4b847f803546e3c66,

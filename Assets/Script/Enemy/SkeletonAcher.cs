@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class SkeletonAcher : MonoBehaviour
 {
     public float moveSpeed;
     public int damage;
@@ -17,33 +17,58 @@ public class Enemy2 : MonoBehaviour
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab;
 
-    int Hp;
-    Vector3 direction;
-    Direction direciton = Direction.DOWN; //現在の向き
-    Animator anim;
+    GameObject knight; //ナイト
+    GameObject archer; //アーチャー
+    GameObject mage; //メイジ
+    Direction direciton; //向き
+    Animator anim; //アニメージョン
+    float angle;
+    Vector3 _direction;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        //Hpを最大にする
         enemyHp = enemyMaxHp;
+        //現在の向き
+        direciton = Direction.DOWN;
+        knight = GameObject.FindGameObjectWithTag("Knight");
+        archer = GameObject.FindGameObjectWithTag("Archer");
+        mage = GameObject.FindGameObjectWithTag("Mage");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        GameObject knight = GameObject.FindGameObjectWithTag("Knight");
-        float pos = (transform.position - knight.transform.position).magnitude;
         //プレイヤーの位置へ向かうベクトルを生成する
-        var angle = Utils.GetAngle(
+        //ナイト
+        if (Operation.knightFlag)
+        {
+            angle = Utils.GetAngle(
             transform.localPosition,
             Knight.instance.transform.localPosition);
-        direction = Utils.GetDirection(angle);
-        if (pos < 7 && pos > -7)
-        {
-            //プレイヤーが存在する方向へ移動する
-            transform.localPosition += direction * moveSpeed;
+            _direction = Utils.GetDirection(angle);
         }
+        //アーチャー
+        if (Operation.archerFlag)
+        {
+            angle = Utils.GetAngle(
+            transform.localPosition,
+            Archer.instance.transform.localPosition);
+            _direction = Utils.GetDirection(angle);
+        }
+        //メイジ
+        if (Operation.mageFlag)
+        {
+            angle = Utils.GetAngle(
+            transform.localPosition,
+            Mage.instance.transform.localPosition);
+            _direction = Utils.GetDirection(angle);
+        }
+
+        //プレイヤーが存在する方向へ移動する
+        transform.localPosition += _direction * moveSpeed;
         PlayerRote(angle);
 
         //弾の発射を管理するタイマーを更新する
@@ -56,7 +81,6 @@ public class Enemy2 : MonoBehaviour
         shotTimer = 0;
 
         //弾を発射する
-        if (pos < 5 && pos > -5)
             ShootNWay(angle, shotAngleRange, shotSpeed, shotCount);
     }
 
@@ -177,7 +201,7 @@ public class Enemy2 : MonoBehaviour
         float angleBase, float angleRange, float speed, int count)
     {
         var pos = transform.localPosition; //プレイヤーの位置       
-        transform.localEulerAngles = direction;
+        transform.localEulerAngles = _direction;
         var rot = transform.localRotation;
 
         //弾を複数発射する場合
@@ -210,13 +234,31 @@ public class Enemy2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name.Contains("Magic"))
+        //ナイト
+        int knightAttack = 80;
+        if (collision.gameObject.tag == "PlayerAttack")
         {
-            Instantiate(magicPrefab,
+            Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp--;
+            enemyHp -= knightAttack;
+
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        //アーチャー
+        int arrow = 50;
+        if (collision.name.Contains("Arrow"))
+        {
+            Instantiate(explosionPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= arrow;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
@@ -224,14 +266,29 @@ public class Enemy2 : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "PlayerAttack")
+        //メイジ
+        int m_shot = 25;
+        if (collision.name.Contains("Shot_M"))
         {
-            Instantiate(
-                explosionPrefab,
+            Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp--;
+            enemyHp -= m_shot;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        int magic = 100;
+        if (collision.name.Contains("Magic"))
+        {
+            Instantiate(magicPrefab,
+                collision.transform.position,
+                Quaternion.identity);
+            //敵のHPを減らす
+            enemyHp -= magic;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 

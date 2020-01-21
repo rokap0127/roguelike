@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Operation : MonoBehaviour
 {
-    public bool knightFlag; //ナイト
-    public bool archerFlag; //アーチャー
-    public bool mageFlag;   //メイジ
+    //コントロール中か
+    public static bool knightFlag; //ナイト
+    public static bool archerFlag; //アーチャー
+    public static bool mageFlag;   //メイジ
+    //生きているか？
+    public static bool knightDead; //ナイト
+    public static bool archerDead; //アーチャー
+    public static bool mageDead;   //メイジ
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +20,11 @@ public class Operation : MonoBehaviour
         knightFlag = true;  //オン
         archerFlag = false; //オフ
         mageFlag = false;   //オフ
-       
+        knightDead = false; //オフ
+        archerDead = false; //オフ
+        mageDead = false;   //オフ
+
+
     }
     private void Awake()
     {
@@ -25,42 +35,59 @@ public class Operation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!knightFlag &
+        //1ボタンを押したとき
+        if(!knightDead &&
+            !knightFlag &&
             Input.GetKeyDown(KeyCode.Alpha1))
         {
-            knightFlag = true;
-            archerFlag = false;
-            mageFlag = false;
+            //ナイト オン
+            KnightFlagOn();
            
         }
-        else if(!archerFlag &
+        //2ボタンを押したとき
+        if(!archerDead&&
+            !archerFlag &&
             Input.GetKeyDown(KeyCode.Alpha2))
         {
-            knightFlag = false;
-            archerFlag = true;
-            mageFlag = false;
+            //アーチャー オン
+            ArcherFlagOn();
         }
-        else if (!mageFlag &
+        //3ボタンを押したとき
+        if (!mageDead&&
+            !mageFlag &&
             Input.GetKeyDown(KeyCode.Alpha3))
-        {       
-            knightFlag = false;
-            archerFlag = false;
-            mageFlag = true;
+        {
+            //メイジ オン
+            MageFlagOn();
         }
+
+  
+
     }
 
-    public bool GetArcherFlag()
+    public static void KnightFlagOn()
     {
-        return archerFlag;
+        //ナイト オン
+        knightFlag = true;
+        archerFlag = false;
+        mageFlag = false;
     }
 
-    public bool GetKnightFlag()
+    public static void ArcherFlagOn()
     {
-        return knightFlag;
+        //アーチャー オン
+        knightFlag = false;
+        archerFlag = true;
+        mageFlag = false;
     }
 
-    public bool GetMageFlag()
+    public static void MageFlagOn()
     {
-        return mageFlag;
+        //メイジ オン
+        knightFlag = false;
+        archerFlag = false;
+        mageFlag = true;
     }
+
+    
 }

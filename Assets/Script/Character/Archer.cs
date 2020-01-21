@@ -14,10 +14,7 @@ public class Archer : MonoBehaviour
     public int playerMaxHp; //最大のHP
     public int playerMp;    //現在のMP
     public int playerMaxMp; //最大のMP
-    int shootMp = 10; //shootのMp
-
-    GameObject operation;
-    Operation operationScript;
+    public int shootMp; //shootのMp
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
@@ -40,8 +37,6 @@ public class Archer : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        operation = GameObject.Find("Operation");
-        operationScript = operation.GetComponent<Operation>();
         collider2D = GetComponent<CapsuleCollider2D>();
         playerHp = playerMaxHp; //Hpを最大に設定
         playerMp = playerMaxMp; //Mpを最大に設定する
@@ -51,8 +46,9 @@ public class Archer : MonoBehaviour
     void Update()
     {
        //操作モード
-        if (operationScript.GetArcherFlag())
+        if (Operation.archerFlag)
         {
+            //当たり判定 オン
             collider2D.enabled = true;
             //マウスのほうへ向く
             //プレイヤーのスクリーン座標を計算する
@@ -73,7 +69,7 @@ public class Archer : MonoBehaviour
             }
         }
         //追尾モード
-        else if (!operationScript.GetArcherFlag())
+        else
         {
             //Mp回復
             mpCount += Time.deltaTime;
@@ -88,14 +84,13 @@ public class Archer : MonoBehaviour
             var angle = Utils.GetAngle(Vector3.zero, direction);
             PlayerRote(angle);
             Tracking();
-
         }
        
     }
 
     private void FixedUpdate()
     {
-        if (operationScript.GetArcherFlag())
+        if (Operation.archerFlag)
         {
             //＊移動＊
             //攻撃してない時
@@ -115,41 +110,73 @@ public class Archer : MonoBehaviour
 
     void Tracking()
     {
-        if (Knight.instance.gameObject.transform.localPosition != transform.localPosition)
-        {
+
             playerRigidbody.velocity = Vector2.zero;
             float _range = 0.25f;
             float _speed = 0.033f;
-            if (Knight.instance.transform.position.x > transform.position.x + _range)
+                if (Knight.instance.transform.position.x > transform.position.x + _range)
+                {
+                    transform.localPosition = Vector3.MoveTowards(transform.position,
+                        new Vector3(Knight.instance.transform.position.x
+                        - _range, Knight.instance.transform.position.y),
+                        _speed);
+                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
+                }
+                if (Knight.instance.transform.position.x < transform.position.x - _range)
+                {
+                    transform.localPosition = Vector3.MoveTowards(transform.localPosition,
+                        new Vector3(Knight.instance.transform.position.x + _range, Knight.instance.transform.position.y),
+                        _speed);
+                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
+                }
+                if (Knight.instance.transform.position.y > transform.position.y + _range)
+                {
+                    transform.localPosition = Vector3.MoveTowards(transform.position,
+                        new Vector3(Knight.instance.transform.position.x, Knight.instance.transform.position.y - _range),
+                        _speed);
+                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
+                }
+                if (Knight.instance.transform.position.y < transform.position.y - _range)
+                {
+                    transform.position = Vector3.MoveTowards(transform.localPosition,
+                        new Vector3(Knight.instance.transform.position.x, Knight.instance.transform.position.y + _range),
+                        _speed);
+                    //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
+                }
+        else if (Operation.mageFlag && Operation.knightDead)
+        {
+            if (Mage.instance.transform.position.x > transform.position.x + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
-                    new Vector3(Knight.instance.transform.position.x
-                    - _range, Knight.instance.transform.position.y),
+                    new Vector3(Mage.instance.transform.position.x
+                    - _range, Mage.instance.transform.position.y),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x - _range, Archer.archerInstance.transform.position.y);
             }
-            if (Knight.instance.transform.position.x < transform.position.x - _range)
+            if (Mage.instance.transform.position.x < transform.position.x - _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Knight.instance.transform.position.x + _range, Knight.instance.transform.position.y),
+                    new Vector3(Mage.instance.transform.position.x + _range, Mage.instance.transform.position.y),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x + _range, Archer.archerInstance.transform.position.y);
             }
-            if (Knight.instance.transform.position.y > transform.position.y + _range)
+            if (Mage.instance.transform.position.y > transform.position.y + _range)
             {
                 transform.localPosition = Vector3.MoveTowards(transform.position,
-                    new Vector3(Knight.instance.transform.position.x, Knight.instance.transform.position.y - _range),
+                    new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y - _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y - _range);
             }
-            if (Knight.instance.transform.position.y < transform.position.y - _range)
+            if (Mage.instance.transform.position.y < transform.position.y - _range)
             {
                 transform.position = Vector3.MoveTowards(transform.localPosition,
-                    new Vector3(Knight.instance.transform.position.x, Knight.instance.transform.position.y + _range),
+                    new Vector3(Mage.instance.transform.position.x, Mage.instance.transform.position.y + _range),
                     _speed);
                 //transform.position = new Vector2(Archer.archerInstance.transform.position.x, Archer.archerInstance.transform.position.y + _range);
             }
         }
+            
+        
     }
 
     //移動
@@ -305,7 +332,7 @@ public class Archer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (playerMp > shootMp)
+            if (playerMp >= shootMp)
             {
                 //矢を発射する
                 ShootNWay(playerAngle, 0, arrowSpeed, 1);
@@ -351,8 +378,21 @@ public class Archer : MonoBehaviour
 
         //HPがまだある場合、ここで処理を終える
         if (0 < playerHp) { return; }
-
+        //アーチャー非表示
         gameObject.SetActive(false);
+        //アーチャーデスフラッグオン
+        Operation.archerDead = true;
+        Operation.archerFlag = false;
+        //メイジが生きているなら
+        if (!Operation.mageDead)
+        {
+            Operation.MageFlagOn();
+        }
+        //ナイトが生きているなら
+        else
+        {
+            Operation.KnightFlagOn();
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D collision)

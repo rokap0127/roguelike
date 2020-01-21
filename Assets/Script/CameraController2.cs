@@ -42,17 +42,17 @@ public class CameraController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(op.knightFlag)
+        if(Operation.knightFlag)
         {
             knight = GameObject.FindGameObjectWithTag("Knight");
             pos = knight.transform.position;
         }
-        if(op.archerFlag)
+        if(Operation.archerFlag)
         {
             archer = GameObject.FindGameObjectWithTag("Archer");
             pos = archer.transform.position;
         }
-        if(op.mageFlag)
+        if(Operation.mageFlag)
         {
             mage = GameObject.FindGameObjectWithTag("Mage");
             pos = mage.transform.position;
@@ -205,7 +205,7 @@ public class CameraController2 : MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
+                enemylim = Random.Range(2, 4);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(3.3f, 10.4f), Random.Range(-4.0f, -0.5f), 0), transform.rotation);
@@ -254,7 +254,7 @@ public class CameraController2 : MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
+                enemylim = Random.Range(2, 4);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(4.3f, 9.4f), Random.Range(1.1f, 3.6f), 0), transform.rotation);
@@ -303,7 +303,7 @@ public class CameraController2 : MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
+                enemylim = Random.Range(2, 4);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(-11.3f, -6.2f), Random.Range(-0.1f, 2.3f), 0), transform.rotation);
@@ -352,7 +352,7 @@ public class CameraController2 : MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(3, 8);
+                enemylim = Random.Range(3, 6);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(-12.3f, -5.25f), Random.Range(3.8f, 7.15f), 0), transform.rotation);

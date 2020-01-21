@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8396547233742792404}
   m_Layer: 0
   m_Name: Shot_M
-  m_TagString: PlayerAttack
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
