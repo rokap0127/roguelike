@@ -275,7 +275,7 @@ public class CameraController3: MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(12, 16);
+                enemylim = Random.Range(4, 5);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(-4.3f, 5.4f), Random.Range(2.0f, 6.2f), 0), transform.rotation);

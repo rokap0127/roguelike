@@ -107,7 +107,7 @@ public class CameraController2 : MonoBehaviour
                 callEnemy1 = true;
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
+                enemylim = Random.Range(2, 4);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(-4.0f, 1.1f), Random.Range(-4.0f, -1.5f), 0), transform.rotation);
@@ -156,7 +156,7 @@ public class CameraController2 : MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
+                enemylim = Random.Range(2, 4);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(-4.0f, 1.1f), Random.Range(0.1f, 2.3f), 0), transform.rotation);
@@ -352,7 +352,7 @@ public class CameraController2 : MonoBehaviour
                 }
                 int e = 0;
                 enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(3, 6);
+                enemylim = Random.Range(3, 5);
                 while (e < enemylim)
                 {
                     Instantiate(enemy[enemynum], new Vector3(Random.Range(-12.3f, -5.25f), Random.Range(3.8f, 7.15f), 0), transform.rotation);
