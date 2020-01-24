@@ -9,7 +9,7 @@ public class Bomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -28,17 +28,20 @@ public class Bomb : MonoBehaviour
             Quaternion.identity);
         Destroy(gameObject);
     }
-        void Blast()
+    void Blast()
     {
         Instantiate(
             explosionPrefab,
             transform.position,
             Quaternion.identity);
-        float pos = (transform.position).magnitude;
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemys)
         {
-            Destroy(enemy);
+            float pos = (transform.position - enemy.transform.position).magnitude;
+            if (pos < 1.5f && pos > -1.5f)
+            {
+                Destroy(enemy);
+            }
         }
         Destroy(gameObject);
     }
