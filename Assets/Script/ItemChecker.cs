@@ -80,8 +80,21 @@ public class ItemChecker : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.LeftShift)||
                Input.GetKeyDown(KeyCode.RightShift))
             {
-                Instantiate(bombActive, new Vector3(knight.transform.position.x, knight.transform.position.y+0.3f, 0), transform.rotation);
-                BombFlag = false;
+                if(Operation.knightFlag)
+                {
+                    Instantiate(bombActive, new Vector3(knight.transform.position.x, knight.transform.position.y + 0.3f, 0), transform.rotation);
+                    BombFlag = false;
+                }
+                if (Operation.archerFlag)
+                {
+                    Instantiate(bombActive, new Vector3(archer.transform.position.x, archer.transform.position.y + 0.3f, 0), transform.rotation);
+                    BombFlag = false;
+                }
+                if (Operation.mageFlag)
+                {
+                    Instantiate(bombActive, new Vector3(mage.transform.position.x, mage.transform.position.y + 0.3f, 0), transform.rotation);
+                    BombFlag = false;
+                }
             }
         }
     }
