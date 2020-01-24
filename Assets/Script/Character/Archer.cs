@@ -434,9 +434,5 @@ public class Archer : MonoBehaviour
         {
             playerHp -= 30;
         }
-        if (collision.gameObject.tag == "Bomb")
-        {
-            playerHp -= 10;
-        }
     }
 }
