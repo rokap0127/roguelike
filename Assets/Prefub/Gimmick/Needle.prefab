@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3603959738948094586}
   - component: {fileID: 1492432085663007367}
   - component: {fileID: 3552195490585198323}
+  - component: {fileID: 520190260576613559}
+  - component: {fileID: 4689519226408773135}
   m_Layer: 0
   m_Name: Needle
   m_TagString: Needle
@@ -69,8 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1594497857027393317, guid: 400efc36787a1e7428b556a4ea7a03df,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55acfe5fd12ada74bbcd6066c7e2ce5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,16 +95,54 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.001180917, y: 0.17258056}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.29}
+    oldSize: {x: 0.08, y: 0.64}
     newSize: {x: 0.69, y: 0.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.69, y: 0.78}
+  m_Size: {x: 0.059402525, y: 0.26845273}
   m_EdgeRadius: 0
+--- !u!61 &520190260576613559
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397548966702560916}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0006538499, y: -0.17119628}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.08, y: 0.64}
+    newSize: {x: 0.69, y: 0.78}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.05515374, y: 0.26883805}
+  m_EdgeRadius: 0
+--- !u!114 &4689519226408773135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397548966702560916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be274ca1e7bcf5e4181557f27dd925a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
