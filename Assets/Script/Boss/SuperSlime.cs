@@ -10,6 +10,7 @@ public class SuperSlime : MonoBehaviour
     public int bossHp; //現在のHp
     public int bossMaxHp; //最大のHp
     public SlimeShot slimeShot; //スライムショット
+    public GameObject treasure;
 
     public float shotInterval; //ショットの間隔
    float shotCount; //shotカウント
@@ -69,7 +70,7 @@ public class SuperSlime : MonoBehaviour
             bossHp--;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-
+            Instantiate(treasure, transform.position, Quaternion.identity);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -86,7 +87,7 @@ public class SuperSlime : MonoBehaviour
 
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-
+            Instantiate(treasure, transform.position, Quaternion.identity);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -101,7 +102,7 @@ public class SuperSlime : MonoBehaviour
             bossHp -= arrow;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-
+            Instantiate(treasure, transform.position, Quaternion.identity);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -117,7 +118,7 @@ public class SuperSlime : MonoBehaviour
             bossHp -= m_shot;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-
+            Instantiate(treasure, transform.position, Quaternion.identity);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -131,7 +132,7 @@ public class SuperSlime : MonoBehaviour
             bossHp -= magic;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-
+            Instantiate(treasure, transform.position, Quaternion.identity);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -145,7 +146,7 @@ public class SuperSlime : MonoBehaviour
             bossHp -= trap;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-
+            Instantiate(treasure, transform.position, Quaternion.identity);
             //敵を削除する
             Destroy(gameObject);
         }

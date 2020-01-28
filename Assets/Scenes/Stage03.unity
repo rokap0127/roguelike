@@ -444,6 +444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Treasure
       objectReference: {fileID: 0}
+    - target: {fileID: 7821208551852019589, guid: e02544884a61ec34688415f8abe25c02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821208551852019590, guid: e02544884a61ec34688415f8abe25c02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1726,7 +1731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &153829943
 Transform:
   m_ObjectHideFlags: 0
@@ -11639,7 +11644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &629193389
 Transform:
   m_ObjectHideFlags: 0
@@ -14742,7 +14747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &964145916
 Transform:
   m_ObjectHideFlags: 0
@@ -14886,7 +14891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &979016409
 Transform:
   m_ObjectHideFlags: 0
@@ -38294,7 +38299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1481997501
 Transform:
   m_ObjectHideFlags: 0
@@ -61526,7 +61531,7 @@ PrefabInstance:
     - target: {fileID: 8915705216638863607, guid: de46b7cae2931b740bf0996577f3eee4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.04
+      value: 5.46
       objectReference: {fileID: 0}
     - target: {fileID: 8915705216638863607, guid: de46b7cae2931b740bf0996577f3eee4,
         type: 3}
