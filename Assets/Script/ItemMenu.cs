@@ -56,7 +56,7 @@ public class ItemMenu : MonoBehaviour
             kt = knight.GetComponent<Knight>();
             if (ic.HpPortion > 0 && kt.playerHp < kt.playerMaxHp)
             {
-                kt.playerHp += 10;
+                kt.playerHp += 20;
                 ic.HpPortion -= 1;
             }
         }
@@ -66,7 +66,7 @@ public class ItemMenu : MonoBehaviour
             ac = archer.GetComponent<Archer>();
             if (ic.HpPortion > 0 && ac.playerHp < ac.playerMaxHp)
             {
-                ac.playerHp += 10;
+                ac.playerHp += 20;
                 ic.HpPortion -= 1;
             }
         }
@@ -76,7 +76,7 @@ public class ItemMenu : MonoBehaviour
             mg = mage.GetComponent<Mage>();
             if (ic.HpPortion > 0 && mg.playerHp < mg.playerMaxHp)
             {
-                mg.playerHp += 10;
+                mg.playerHp += 20;
                 ic.HpPortion -= 1;
             }
         }
@@ -89,7 +89,7 @@ public class ItemMenu : MonoBehaviour
             kt = knight.GetComponent<Knight>();
             if (ic.MpPortion > 0 && kt.playerMp < kt.playerMaxMp)
             {
-                kt.playerMp += 10;
+                kt.playerMp += 20;
                 ic.MpPortion -= 1;
             }
         }
@@ -99,7 +99,7 @@ public class ItemMenu : MonoBehaviour
             ac = archer.GetComponent<Archer>();
             if (ic.MpPortion > 0 && ac.playerMp < ac.playerMaxMp)
             {
-                ac.playerMp += 10;
+                ac.playerMp += 20;
                 ic.MpPortion -= 1;
             }
         }
@@ -109,7 +109,7 @@ public class ItemMenu : MonoBehaviour
             mg = mage.GetComponent<Mage>();
             if (ic.MpPortion > 0 && mg.playerMp < mg.playerMaxMp)
             {
-                mg.playerMp += 10;
+                mg.playerMp += 20;
                 ic.MpPortion -= 1;
             }
         }

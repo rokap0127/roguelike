@@ -158,7 +158,7 @@ MonoBehaviour:
   playerHp: 0
   playerMaxHp: 200
   playerMp: 0
-  playerMaxMp: 100
+  playerMaxMp: 120
   shootMp: 20
   guardMp: 5
   playerAttack: {fileID: 6352817548670071303, guid: a517aebec5bf90346a2473f4972003f0,
