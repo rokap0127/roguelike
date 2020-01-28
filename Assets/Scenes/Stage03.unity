@@ -444,6 +444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Treasure
       objectReference: {fileID: 0}
+    - target: {fileID: 7821208551852019589, guid: e02544884a61ec34688415f8abe25c02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821208551852019590, guid: e02544884a61ec34688415f8abe25c02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -62120,7 +62125,7 @@ PrefabInstance:
     - target: {fileID: 8915705216638863607, guid: de46b7cae2931b740bf0996577f3eee4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.04
+      value: 5.46
       objectReference: {fileID: 0}
     - target: {fileID: 8915705216638863607, guid: de46b7cae2931b740bf0996577f3eee4,
         type: 3}

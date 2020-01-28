@@ -146,6 +146,8 @@ MonoBehaviour:
   bossMaxHp: 300
   slimeShot: {fileID: 7051151963027882561, guid: d90f1ebc372e2e540ab15d384023e0e9,
     type: 3}
+  treasure: {fileID: 7821208551852019589, guid: e02544884a61ec34688415f8abe25c02,
+    type: 3}
   shotInterval: 120
   explosionPrefab: {fileID: 7837651628159285544, guid: b11633b2601984447a33ab8ff91e83a9,
     type: 3}

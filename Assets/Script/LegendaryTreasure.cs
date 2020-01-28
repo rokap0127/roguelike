@@ -36,7 +36,7 @@ public class LegendaryTreasure : MonoBehaviour
                 Destroy(mage);
                 Destroy(archer);
 
-                SceneManager.LoadScene("TitleScene");
+                SceneManager.LoadScene("GameClear");
             }
         }
     }
