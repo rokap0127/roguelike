@@ -419,30 +419,6 @@ public class Archer : MonoBehaviour
         }
     }
     
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Needle")
-        {
-            playerHp -= 20;
-            //HPがまだある場合、ここで処理を終える
-            if (0 < playerHp) { return; }
-            //ナイト非表示
-            gameObject.SetActive(false);
-            //ナイトデスフラッグオン
-            Operation.knightDead = true;
-            Operation.knightFlag = false;
-            //アーチャーが生きているなら
-            if (!Operation.archerDead)
-            {
-                Operation.ArcherFlagOn();
-            }
-            //メイジが生きているなら
-            else
-            {
-                Operation.MageFlagOn();
-            }
-        }
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -452,15 +428,15 @@ public class Archer : MonoBehaviour
             playerHp -= 30;
             //HPがまだある場合、ここで処理を終える
             if (0 < playerHp) { return; }
-            //ナイト非表示
+            //アーチャー非表示
             gameObject.SetActive(false);
-            //ナイトデスフラッグオン
-            Operation.knightDead = true;
-            Operation.knightFlag = false;
-            //アーチャーが生きているなら
-            if (!Operation.archerDead)
+            //アーチャーデスフラッグオン
+            Operation.archerDead = true;
+            Operation.archerFlag = false;
+            //ナイトが生きているなら
+            if (!Operation.knightDead)
             {
-                Operation.ArcherFlagOn();
+                Operation.KnightFlagOn();
             }
             //メイジが生きているなら
             else

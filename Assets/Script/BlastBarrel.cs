@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlastBarrel : MonoBehaviour
 {
     public Explotion explosionPrefab; //爆発エフェクト
+    public int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class BlastBarrel : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (collision.gameObject.tag == "Knight" ||
             collision.gameObject.tag == "Archer" ||
             collision.gameObject.tag == "Mage")
@@ -27,5 +29,7 @@ public class BlastBarrel : MonoBehaviour
                 Quaternion.identity);
             Destroy(gameObject);
         }
+      
+            
     }
 }
