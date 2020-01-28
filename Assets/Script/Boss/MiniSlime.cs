@@ -77,6 +77,8 @@ public class MiniSlime : MonoBehaviour
         int knightAttack = 80;
         if (collision.gameObject.tag == "PlayerAttack")
         {
+            transform.position = Vector3.MoveTowards(transform.position, transform.position + direction * -1 * 0.5f, 1.0f);
+
             Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
