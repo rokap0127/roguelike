@@ -13,11 +13,17 @@ public class UI : MonoBehaviour
     public Image archerMpGauge;
     public Image mageMpGauge;
 
+    public Image knightPlayFlag;
+    public Image archerPlayFlag;
+    public Image magePlayFlag;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        knightPlayFlag.fillAmount = 0;
+        archerPlayFlag.fillAmount = 0;
+        magePlayFlag.fillAmount = 0;
     }
 
     // Update is called once per frame
@@ -29,6 +35,25 @@ public class UI : MonoBehaviour
         KnightMpGauge();
         ArcherMpGauge();
         MageMpGauge();
+
+        if (Operation.knightFlag)
+        {
+            knightPlayFlag.fillAmount = 1;
+            archerPlayFlag.fillAmount = 0;
+            magePlayFlag.fillAmount = 0;
+        }
+        if (Operation.archerFlag)
+        {
+            knightPlayFlag.fillAmount = 0;
+            archerPlayFlag.fillAmount = 1;
+            magePlayFlag.fillAmount = 0;
+        }
+        if (Operation.mageFlag)
+        {
+            knightPlayFlag.fillAmount = 0;
+            archerPlayFlag.fillAmount = 0;
+            magePlayFlag.fillAmount = 1;
+        }
     }
 
     void KnightHpGauge()
