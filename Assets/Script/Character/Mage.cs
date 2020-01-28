@@ -515,6 +515,23 @@ public class Mage : MonoBehaviour
         if (collision.gameObject.tag == "Needle")
         {
             playerHp -= 20;
+            //HPがまだある場合、ここで処理を終える
+            if (0 < playerHp) { return; }
+            //ナイト非表示
+            gameObject.SetActive(false);
+            //ナイトデスフラッグオン
+            Operation.knightDead = true;
+            Operation.knightFlag = false;
+            //アーチャーが生きているなら
+            if (!Operation.archerDead)
+            {
+                Operation.ArcherFlagOn();
+            }
+            //メイジが生きているなら
+            else
+            {
+                Operation.MageFlagOn();
+            }
         }
     }
 
@@ -524,6 +541,23 @@ public class Mage : MonoBehaviour
         if (collision.gameObject.tag == "BlastBarrel")
         {
             playerHp -= 30;
+            //HPがまだある場合、ここで処理を終える
+            if (0 < playerHp) { return; }
+            //ナイト非表示
+            gameObject.SetActive(false);
+            //ナイトデスフラッグオン
+            Operation.knightDead = true;
+            Operation.knightFlag = false;
+            //アーチャーが生きているなら
+            if (!Operation.archerDead)
+            {
+                Operation.ArcherFlagOn();
+            }
+            //メイジが生きているなら
+            else
+            {
+                Operation.MageFlagOn();
+            }
         }
     }
 }
