@@ -510,13 +510,7 @@ public class Mage : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Needle")
-        {
-            playerHp -= 20;
-        }
-    }
+  
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -524,6 +518,23 @@ public class Mage : MonoBehaviour
         if (collision.gameObject.tag == "BlastBarrel")
         {
             playerHp -= 30;
+            //HPがまだある場合、ここで処理を終える
+            if (0 < playerHp) { return; }
+            //メイジ非表示
+            gameObject.SetActive(false);
+            //メイジデスフラッグオン
+            Operation.mageDead = true;
+            Operation.mageFlag = false;
+            //アーチャーが生きているなら
+            if (!Operation.archerDead)
+            {
+                Operation.ArcherFlagOn();
+            }
+            //メイジが生きているなら
+            else
+            {
+                Operation.KnightFlagOn();
+            }
         }
     }
 }
