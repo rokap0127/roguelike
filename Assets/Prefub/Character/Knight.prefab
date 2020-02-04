@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6529347868099120847}
   - component: {fileID: 2857565500843373984}
   - component: {fileID: 4587362303536656389}
-  - component: {fileID: 7734106486935106642}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Knight
@@ -165,29 +164,3 @@ MonoBehaviour:
     type: 3}
   guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
   str: 0
---- !u!114 &7734106486935106642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2857565500843373990}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b65506d39967b540adfd378f39e5794, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HpPortion: 0
-  MpPortion: 0
-  SpeedUP: 0
-  DamageUP: 0
-  RevivalPendant: 0
-  Armor: 0
-  Bomb: 0
-  DamageFlag: 0
-  SpeedFlag: 0
-  ArmorFlag: 0
-  RevivalFlag: 0
-  BombFlag: 0
-  bombActive: {fileID: 3312841034028474684, guid: c72f902de075ee44d80a4219ea10db10,
-    type: 3}

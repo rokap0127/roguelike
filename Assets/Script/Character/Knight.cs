@@ -59,8 +59,6 @@ public class Knight : MonoBehaviour
     void Awake()
     {
         instance = this;
-        //シーンが変わっても削除されない
-        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update

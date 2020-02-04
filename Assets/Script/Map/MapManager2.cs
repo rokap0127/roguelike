@@ -16,9 +16,6 @@ public class MapManager2 : MonoBehaviour
     }
     void Start()
     {
-        Instantiate(knight, new Vector3(-8.8f, -4, 0), transform.rotation);
-        Instantiate(archer, new Vector3(-8.8f, -3.8f), transform.rotation);
-        Instantiate(mage, new Vector3(-8.8f, -3.6f), transform.rotation);
         Invoke("Shut", 0.5f);
     }
 
