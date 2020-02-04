@@ -82,16 +82,19 @@ public class ItemChecker : MonoBehaviour
             {
                 if(Operation.knightFlag)
                 {
+                    knight = GameObject.FindGameObjectWithTag("Knight");
                     Instantiate(bombActive, new Vector3(knight.transform.position.x, knight.transform.position.y + 0.3f, 0), transform.rotation);
                     BombFlag = false;
                 }
                 if (Operation.archerFlag)
                 {
+                    archer = GameObject.FindGameObjectWithTag("Archer");
                     Instantiate(bombActive, new Vector3(archer.transform.position.x, archer.transform.position.y + 0.3f, 0), transform.rotation);
                     BombFlag = false;
                 }
                 if (Operation.mageFlag)
                 {
+                    mage = GameObject.FindGameObjectWithTag("Mage");
                     Instantiate(bombActive, new Vector3(mage.transform.position.x, mage.transform.position.y + 0.3f, 0), transform.rotation);
                     BombFlag = false;
                 }

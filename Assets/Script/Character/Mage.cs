@@ -46,8 +46,6 @@ public class Mage : MonoBehaviour
     void Awake()
     {
         instance = this;
-        //シーンが変わっても削除されない
-        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

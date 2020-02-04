@@ -96,36 +96,6 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(false);
-            if (!callEnemy1)
-            {
-                int i = 0;
-                itemnum = Random.Range(0, 3);
-                itemlim = Random.Range(3,8);
-                while (i < itemlim)
-                {
-                    if(itemnum >= 2)
-                    {
-                       rareItemnum = Random.Range(0, 5);
-                       Instantiate(rareItem[rareItemnum], new Vector3(Random.Range(-8.8f, -3.7f), Random.Range(-5.6f, -3.1f), 0), transform.rotation);
-                    }
-                    else
-                    {
-                        Instantiate(item[itemnum], new Vector3(Random.Range(-8.8f, -3.7f), Random.Range(-5.6f, -3.1f), 0), transform.rotation);
-                    }
-                    itemnum = Random.Range(0,3);
-                    i++;
-                }
-                int e = 0;
-                enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
-                while (e < enemylim)
-                {
-                    Instantiate(enemy[enemynum], new Vector3(Random.Range(-8.8f, -3.7f), Random.Range(-5.6f, -3.1f), 0), transform.rotation);
-                    enemynum = Random.Range(0, 2);
-                    e++;
-                }
-                callEnemy1 = true;
-            }
         }
         if (pos.x > entrance3.transform.position.x && pos.y < entrance1.transform.position.y)
         {
@@ -136,36 +106,6 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(false);
-            if (!callEnemy2)
-            {
-                int i = 0;
-                itemnum = Random.Range(0, 3);
-                itemlim = Random.Range(3, 8);
-                while (i < itemlim)
-                {
-                    if (itemnum >= 2)
-                    {
-                        rareItemnum = Random.Range(0, 5);
-                        Instantiate(rareItem[rareItemnum], new Vector3(Random.Range(4.6f, 9.7f), Random.Range(-5.6f, -3.1f), 0), transform.rotation);
-                    }
-                    else
-                    {
-                        Instantiate(item[itemnum], new Vector3(Random.Range(4.6f, 9.7f), Random.Range(-5.6f, -3.1f), 0), transform.rotation);
-                    }
-                    itemnum = Random.Range(0, 3);
-                    i++;
-                }
-                int e = 0;
-                enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
-                while (e < enemylim)
-                {
-                    Instantiate(enemy[enemynum], new Vector3(Random.Range(4.6f, 9.7f), Random.Range(-5.6f, -3.1f), 0), transform.rotation);
-                    enemynum = Random.Range(0, 2);
-                    e++;
-                }
-                callEnemy2 = true;
-            }
         }
         if (pos.x < entrance4.transform.position.x && pos.y > entrance1.transform.position.y && pos.y < entrance6.transform.position.y)
         {
@@ -176,36 +116,6 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(true);
             camera6.SetActive(false);
             camera7.SetActive(false);
-            if (!callEnemy3)
-            {
-                int i = 0;
-                itemnum = Random.Range(0, 3);
-                itemlim = Random.Range(3, 8);
-                while (i < itemlim)
-                {
-                    if (itemnum >= 2)
-                    {
-                        rareItemnum = Random.Range(0, 5);
-                        Instantiate(rareItem[rareItemnum], new Vector3(Random.Range(-9.1f, -4.0f), Random.Range(-2.1f, 0.5f), 0), transform.rotation);
-                    }
-                    else
-                    {
-                        Instantiate(item[itemnum], new Vector3(Random.Range(-9.1f, -4.0f), Random.Range(-2.1f, 0.5f), 0), transform.rotation);
-                    }
-                    itemnum = Random.Range(0, 3);
-                    i++;
-                }
-                int e = 0;
-                enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
-                while (e < enemylim)
-                {
-                    Instantiate(enemy[enemynum], new Vector3(Random.Range(-9.1f, -4.0f), Random.Range(-2.1f, 0.5f), 0), transform.rotation);
-                    enemynum = Random.Range(0, 2);
-                    e++;
-                }
-                callEnemy3 = true;
-            }
         }
         if (pos.x > entrance5.transform.position.x && pos.y > entrance1.transform.position.y&& pos.y < entrance6.transform.position.y)
         {
@@ -216,36 +126,6 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(true);
             camera7.SetActive(false);
-            if (!callEnemy4)
-            {
-                int i = 0;
-                itemnum = Random.Range(0, 2);
-                itemlim = Random.Range(3, 8);
-                while (i < itemlim)
-                {
-                    if (itemnum >= 2)
-                    {
-                        rareItemnum = Random.Range(0, 5);
-                        Instantiate(rareItem[rareItemnum], new Vector3(Random.Range(5.0f, 10.1f), Random.Range(-2.1f, 0.5f), 0), transform.rotation);
-                    }
-                    else
-                    {
-                        Instantiate(item[itemnum], new Vector3(Random.Range(5.0f, 10.1f), Random.Range(-2.1f, 0.5f), 0), transform.rotation);
-                    }
-                    itemnum = Random.Range(0, 3);
-                    i++;
-                }
-                int e = 0;
-                enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 5);
-                while (e < enemylim)
-                {
-                    Instantiate(enemy[enemynum], new Vector3(Random.Range(5.0f, 10.1f), Random.Range(-2.1f, 0.5f), 0), transform.rotation);
-                    enemynum = Random.Range(0, 2);
-                    e++;
-                }
-                callEnemy4 = true;
-            }
         }
         if (pos.y > entrance6.transform.position.y)
         {
@@ -256,28 +136,6 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(true);
-            if (!callEnemy5)
-            {
-                int i = 0;
-                itemnum = Random.Range(0, 3);
-                itemlim = Random.Range(10, 21);
-                while (i < itemlim)
-                {
-                    if (itemnum == 2)
-                    {
-                        rareItemnum = Random.Range(0, 5);
-                        Instantiate(rareItem[rareItemnum], new Vector3(Random.Range(-4.3f, 5.4f), Random.Range(2.0f, 6.2f), 0), transform.rotation);
-                    }
-                    else
-                    {
-                        Instantiate(item[itemnum], new Vector3(Random.Range(-4.3f, 5.4f), Random.Range(2.0f, 6.2f), 0), transform.rotation);
-                    }
-                    itemnum = Random.Range(0, 3);
-                    i++;
-                }
-                Instantiate(boss, bossPosition.transform.position, transform.rotation);
-                callEnemy5 = true;
-            }
             //Invoke("Shut", 0.5f);
         }
         //if (Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl))
