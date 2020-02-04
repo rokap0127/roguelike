@@ -16,12 +16,12 @@ public class Title : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //Debug.Log("クリック");
-            SceneManager.LoadScene("Stage02");
+            SceneManager.LoadScene("Stage01");
         }
     }
 
     public void OnButtonClick()
     {
-        SceneManager.LoadScene("Stage02");
+        SceneManager.LoadScene("Stage01");
     }
 }
