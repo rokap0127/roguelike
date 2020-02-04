@@ -23,20 +23,5 @@ public class DataShare : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Operation.knightDead)
-        {
-            knightHp = 0;
-            knightMp = 0;
-        }
-        if(Operation.archerDead)
-        {
-            archerHp = 0;
-            archerMp = 0;
-        }
-        if(Operation.mageDead)
-        {
-            mageHp = 0;
-            mageMp = 0;
-        }
     }
 }
