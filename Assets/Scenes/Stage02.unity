@@ -5345,6 +5345,11 @@ PrefabInstance:
       propertyPath: menuUI
       value: 
       objectReference: {fileID: 336654976}
+    - target: {fileID: 888617836653013001, guid: eb299c33572364e44b3fe467338e7254,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb299c33572364e44b3fe467338e7254, type: 3}
 --- !u!1 &336654976 stripped
