@@ -15,15 +15,15 @@ public class SkeletonAcher : MonoBehaviour
     public int shotCount; //弾の発射数
     public float shotInterval; //弾の発射間隔(秒)
     public Explotion explosionPrefab; //爆発エフェクト
-    public Explotion magicPrefab;
+    public Explotion magicPrefab; //メイジスキルエフェクト
+    public List<Sprite> sprites;//スプライトリスト
 
-    bool guardFlag;
-    bool trapFlag;
-    GameObject knight; //ナイト
-    GameObject archer; //アーチャー
-    GameObject mage; //メイジ
-    Direction direciton; //向き
-    Animator anim; //アニメージョン
+    bool guardFlag = false;
+    bool trapFlag = false;
+    Direction direciton = Direction.DOWN; //向き
+    //Animator anim; //アニメージョン
+    SpriteRenderer spriteRenderer; //スプライトレンダラー
+
     float angle;
     Vector3 _direction;
     float trapCount;
@@ -31,16 +31,12 @@ public class SkeletonAcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+       
         //Hpを最大にする
         enemyHp = enemyMaxHp;
-        //現在の向き
-        direciton = Direction.DOWN;
-        knight = GameObject.FindGameObjectWithTag("Knight");
-        archer = GameObject.FindGameObjectWithTag("Archer");
-        mage = GameObject.FindGameObjectWithTag("Mage");
-        guardFlag = false;
-        trapFlag = false;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        //anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -112,108 +108,116 @@ public class SkeletonAcher : MonoBehaviour
         if (68 <= angle && angle < 113)
         {
             direciton = Direction.UP;
-            anim.SetBool("Move@Up", true);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", true);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", false);
         }
         //右上を向く
         if (23 <= angle && angle < 68)
         {
             direciton = Direction.UPRIGHT;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", true);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", true);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", false);
         }
         //右を向く
         if (-23 <= angle && angle < 23)
         {
             direciton = Direction.RIGHT;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", true);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", true);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", false);
 
         }
         //右下を向く
         if (-68 <= angle && angle < -23)
         {
             direciton = Direction.DOWNRIGHT;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", true);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", true);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", false);
         }
         //下を向く
         if (-113 <= angle && angle < -68)
         {
             direciton = Direction.DOWN;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", true);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", true);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", false);
 
         }
         //左下を向く
         if (-158 <= angle && angle < -113)
         {
             direciton = Direction.DOWNLEFT;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", true);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", true);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", false);
         }
         //左を向く
         if (-158 > angle || angle >= 158)
         {
             direciton = Direction.LEFT;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", true);
-            anim.SetBool("Move@UpLeft", false);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", true);
+            //anim.SetBool("Move@UpLeft", false);
 
         }
         //左上を向く
         if (113 <= angle && angle < 158)
         {
             direciton = Direction.UPLEFT;
-            anim.SetBool("Move@Up", false);
-            anim.SetBool("Move@UpRight", false);
-            anim.SetBool("Move@Right", false);
-            anim.SetBool("Move@DownRight", false);
-            anim.SetBool("Move@Down", false);
-            anim.SetBool("Move@DownLeft", false);
-            anim.SetBool("Move@Left", false);
-            anim.SetBool("Move@UpLeft", true);
+            spriteRenderer.sprite = sprites[(int)direciton];
+            //anim.SetBool("Move@Up", false);
+            //anim.SetBool("Move@UpRight", false);
+            //anim.SetBool("Move@Right", false);
+            //anim.SetBool("Move@DownRight", false);
+            //anim.SetBool("Move@Down", false);
+            //anim.SetBool("Move@DownLeft", false);
+            //anim.SetBool("Move@Left", false);
+            //anim.SetBool("Move@UpLeft", true);
         }
     }
 
