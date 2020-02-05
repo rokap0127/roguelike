@@ -17,6 +17,7 @@ public class SkeletonAcher : MonoBehaviour
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab; //メイジスキルエフェクト
     public List<Sprite> sprites;//スプライトリスト
+    public float attackDistance; //近づく距離
 
     bool guardFlag = false;
     bool trapFlag = false;
@@ -24,6 +25,7 @@ public class SkeletonAcher : MonoBehaviour
     //Animator anim; //アニメージョン
     SpriteRenderer spriteRenderer; //スプライトレンダラー
 
+    float distance;
     float angle;
     Vector3 _direction;
     float trapCount;
@@ -50,6 +52,10 @@ public class SkeletonAcher : MonoBehaviour
             transform.localPosition,
             Knight.instance.transform.localPosition);
             _direction = Utils.GetDirection(angle);
+
+            //プレイヤーとの距離の絶対値
+            distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
+                Knight.instance.transform.localPosition));
         }
         //アーチャー
         if (Operation.archerFlag)
@@ -57,6 +63,10 @@ public class SkeletonAcher : MonoBehaviour
             angle = Utils.GetAngle(
             transform.localPosition,
             Archer.instance.transform.localPosition);
+
+            //プレイヤーとの距離の絶対値
+            distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
+               Archer.instance.transform.localPosition));
             _direction = Utils.GetDirection(angle);
         }
         //メイジ
@@ -66,12 +76,19 @@ public class SkeletonAcher : MonoBehaviour
             transform.localPosition,
             Mage.instance.transform.localPosition);
             _direction = Utils.GetDirection(angle);
+
+            //プレイヤーとの距離の絶対値
+            distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
+              Mage.instance.transform.localPosition));
         }
 
         if(!guardFlag && !trapFlag)
         {
-            //プレイヤーが存在する方向へ移動する
-            transform.localPosition += _direction * moveSpeed;
+            if (distance >= attackDistance)
+            {
+                //プレイヤーが存在する方向へ移動する
+                transform.localPosition += _direction * moveSpeed;
+            }
             PlayerRote(angle);
 
             //弾の発射を管理するタイマーを更新する

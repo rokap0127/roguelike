@@ -11,6 +11,7 @@ public class Skeleton : MonoBehaviour
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab; //メイジスキルエフェクト
     public List<Sprite> sprites; //スプライトリスト
+    public float attackDistance; //近づく距離
 
     //ガードに触れているか
     bool guardFlag = false;
@@ -21,6 +22,7 @@ public class Skeleton : MonoBehaviour
     //Animator anim; //アニメーション
     SpriteRenderer spriteRenderer; //スプライトレンダラー
 
+    float distance;
     float angle;
     Vector3 direction;
     float trapCount;
@@ -46,14 +48,22 @@ public class Skeleton : MonoBehaviour
            transform.localPosition,
            Knight.instance.transform.localPosition);
            direction = Utils.GetDirection(angle);
+
+           //プレイヤーとの距離の絶対値
+           distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
+               Knight.instance.transform.localPosition));
         }
         //アーチャー
         if (Operation.archerFlag)
         {
-          angle = Utils.GetAngle(
-          transform.localPosition,
-          Archer.instance.transform.localPosition);
-          direction = Utils.GetDirection(angle);
+              angle = Utils.GetAngle(
+              transform.localPosition,
+              Archer.instance.transform.localPosition);
+              direction = Utils.GetDirection(angle);
+
+            //プレイヤーとの距離の絶対値
+             distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
+                Archer.instance.transform.localPosition));
         }
         //メイジ
         if (Operation.mageFlag)
@@ -62,12 +72,20 @@ public class Skeleton : MonoBehaviour
             transform.localPosition,
             Mage.instance.transform.localPosition);
             direction = Utils.GetDirection(angle);
+
+            //プレイヤーとの距離の絶対値
+            distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
+              Mage.instance.transform.localPosition));
         }
 
         if(!guardFlag && !trapFlag)
         {
-            //プレイヤーが存在する方向へ移動する
-            transform.localPosition += direction * moveSpeed;
+            //プレイヤーとの距離が
+            if(distance >= attackDistance)
+            {
+                //プレイヤーが存在する方向へ移動する
+                transform.localPosition += direction * moveSpeed;
+            }          
         }
 
         if (trapFlag)

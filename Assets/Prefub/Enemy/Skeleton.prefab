@@ -137,3 +137,4 @@ MonoBehaviour:
   - {fileID: -4405176270211078928, guid: acfa875999075ef45a54ba99279577d6, type: 3}
   - {fileID: -4446710360090378017, guid: acfa875999075ef45a54ba99279577d6, type: 3}
   - {fileID: 7750155447766734482, guid: acfa875999075ef45a54ba99279577d6, type: 3}
+  attackDistance: 0.5
