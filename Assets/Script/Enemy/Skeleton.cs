@@ -10,6 +10,7 @@ public class Skeleton : MonoBehaviour
     public int enemyMaxHp; //最大のHp
     public Explotion explosionPrefab; //爆発エフェクト
     public Explotion magicPrefab; //メイジスキルエフェクト
+    public List<Sprite> sprites;
 
     bool guardFlag;
     bool trapFlag;
@@ -30,6 +31,7 @@ public class Skeleton : MonoBehaviour
         //現在の向き
         direciton = Direction.DOWN;
         anim = GetComponent<Animator>();
+
         knight = GameObject.FindGameObjectWithTag("Knight");
         archer = GameObject.FindGameObjectWithTag("Archer");
         mage = GameObject.FindGameObjectWithTag("Mage");
