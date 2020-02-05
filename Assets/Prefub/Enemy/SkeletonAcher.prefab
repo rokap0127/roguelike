@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2478756979409202284}
   - component: {fileID: 2478756979409202578}
   - component: {fileID: 2478756979409202577}
-  - component: {fileID: -6712969308720308317}
   m_Layer: 0
   m_Name: SkeletonAcher
   m_TagString: Enemy
@@ -110,6 +109,15 @@ MonoBehaviour:
     type: 3}
   magicPrefab: {fileID: 1172302413244965821, guid: 72cd820ef24413a4b847f803546e3c66,
     type: 3}
+  sprites:
+  - {fileID: 5884156833234552113, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: 648473483529312221, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: -2774113984610458145, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: -6703072814582417263, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: -5037716828933491678, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: -5311043699626982045, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: 5310500525416814056, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
+  - {fileID: 3422173217404715373, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
 --- !u!61 &2478756979409202577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,22 +144,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28922713, y: 0.5069203}
   m_EdgeRadius: 0
---- !u!95 &-6712969308720308317
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2478756979409202285}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d986a5585c37eeb4995e52ecdbb71dfe, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
