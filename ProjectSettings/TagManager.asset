@@ -24,6 +24,7 @@ TagManager:
   - Operation
   - ItemMenu
   - Treasure
+  - Key
   layers:
   - Default
   - TransparentFX

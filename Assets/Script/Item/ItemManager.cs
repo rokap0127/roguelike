@@ -58,6 +58,11 @@ public class ItemManager : MonoBehaviour
                 ic.Bomb += 1;
                 Destroy(gameObject);
             }
+            if (this.tag == "Key")
+            {
+                ic.KeyFlag = true;
+                Destroy(gameObject);
+            }
             if (this.tag == "Treasure")
             {
                 int rnd = Random.Range(0, 3);

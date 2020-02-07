@@ -23,6 +23,7 @@ public class ItemChecker : MonoBehaviour
     public bool ArmorFlag = false;
     public bool RevivalFlag = false;
     public bool BombFlag = false;
+    public bool KeyFlag = false;
     public GameObject bombActive;
     private void Awake()
     {
