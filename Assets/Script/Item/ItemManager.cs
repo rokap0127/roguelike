@@ -6,6 +6,7 @@ public class ItemManager : MonoBehaviour
 {
     GameObject iChecker;
     ItemChecker ic;
+    public int num;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,8 +66,7 @@ public class ItemManager : MonoBehaviour
             }
             if (this.tag == "Treasure")
             {
-                int rnd = Random.Range(0, 3);
-                switch (rnd)
+                switch (num)
                 {
                     case 0:
                         ic.HpPortion += 2;
@@ -77,6 +77,10 @@ public class ItemManager : MonoBehaviour
                         ic.HpPortion += 1;
                         ic.MpPortion += 2;
                         ic.Bomb += 1;
+                        break;
+                    case 2:
+                        ic.HpPortion += 2;
+                        ic.MpPortion += 2;
                         break;
                     default:
                         ic.HpPortion += 1;
