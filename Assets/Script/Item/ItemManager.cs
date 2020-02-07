@@ -6,7 +6,13 @@ public class ItemManager : MonoBehaviour
 {
     GameObject iChecker;
     ItemChecker ic;
-    public int num;
+    public int THpPortion;
+    public int TMpPortion;
+    public int TSpeedUP;
+    public int TDamageUP;
+    public int TRevivalPendant;
+    public int TArmor;
+    public int TBomb;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,32 +72,13 @@ public class ItemManager : MonoBehaviour
             }
             if (this.tag == "Treasure")
             {
-                switch (num)
-                {
-                    case 0:
-                        ic.HpPortion += 2;
-                        ic.MpPortion += 1;
-                        ic.SpeedUP += 1;
-                        break;
-                    case 1:
-                        ic.HpPortion += 1;
-                        ic.MpPortion += 2;
-                        ic.Bomb += 1;
-                        break;
-                    case 2:
-                        ic.HpPortion += 2;
-                        ic.MpPortion += 2;
-                        break;
-                    default:
-                        ic.HpPortion += 1;
-                        ic.MpPortion += 1;
-                        ic.SpeedUP += 1;
-                        //ic.DamageUP += 1;
-                        //ic.RevivalPendant += 1;
-                        //ic.Armor += 1;
-                        ic.Bomb += 1;
-                        break;
-                }
+                ic.HpPortion += THpPortion;
+                ic.MpPortion += TMpPortion;
+                ic.SpeedUP += TSpeedUP;
+                ic.DamageUP += TDamageUP;
+                ic.RevivalPendant += TRevivalPendant;
+                ic.Armor += TArmor;
+                ic.Bomb += TBomb;
                 Destroy(gameObject);
             }
 
