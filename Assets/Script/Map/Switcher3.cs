@@ -8,27 +8,37 @@ public class Switcher3 : MonoBehaviour
     public GameObject bridge;
     public GameObject hole;
     public GameObject wall;
+    public GameObject lever;
+    SwitchOn so;
     // Start is called before the first frame update
     void Start()
     {
-
+        so = GetComponent<SwitchOn>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Knight"
-            || collision.gameObject.tag == "Archer"
-            || collision.gameObject.tag == "Mage")
+        if(Input.GetKeyDown(KeyCode.E) && so.OnFlag)
         {
             swich.SetActive(false);
             bridge.SetActive(true);
             hole.SetActive(false);
             wall.SetActive(true);
+            lever.SetActive(true);
         }
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Knight"
+    //        || collision.gameObject.tag == "Archer"
+    //        || collision.gameObject.tag == "Mage")
+    //    {
+    //        swich.SetActive(false);
+    //        bridge.SetActive(true);
+    //        hole.SetActive(false);
+    //        wall.SetActive(true);
+    //        lever.SetActive(true);
+    //    }
+    //}
 }
