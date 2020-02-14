@@ -3889,10 +3889,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich: {fileID: 215175716}
+  swich2: {fileID: 565655964}
   bridge: {fileID: 1955088772}
   hole: {fileID: 1911317495}
   wall: {fileID: 153829942}
   lever: {fileID: 443131596}
+  lever2: {fileID: 835272904}
 --- !u!70 &215175719
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4761,10 +4763,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich: {fileID: 240983036}
+  swich2: {fileID: 0}
   bridge: {fileID: 382530898}
   hole: {fileID: 1700464405}
   wall: {fileID: 576924125}
   lever: {fileID: 0}
+  lever2: {fileID: 0}
 --- !u!1 &255201098
 GameObject:
   m_ObjectHideFlags: 0
@@ -10529,10 +10533,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich: {fileID: 565655964}
+  swich2: {fileID: 215175716}
   bridge: {fileID: 1955088772}
   hole: {fileID: 1911317495}
   wall: {fileID: 153829942}
   lever: {fileID: 835272904}
+  lever2: {fileID: 443131596}
 --- !u!70 &565655967
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10675,23 +10681,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich1: {fileID: 573136538}
-  swich2: {fileID: 1357765681}
-  swich3:
-  - {fileID: 565655964}
-  - {fileID: 215175716}
+  swich3: {fileID: 215175716}
   bridge1: {fileID: 1378680854}
-  bridge2:
-  - {fileID: 1228849107}
-  - {fileID: 1937130343}
+  bridge2: {fileID: 1937130343}
   hole1: {fileID: 218180211}
-  hole2:
-  - {fileID: 186110646}
-  - {fileID: 1354931096}
-  wall:
-  - {fileID: 1446411023}
-  - {fileID: 1105930292}
+  hole2: {fileID: 1354931096}
+  wall: {fileID: 1105930292}
   lever: {fileID: 1631937720}
-  rnd: 0
 --- !u!70 &573136541
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -12219,10 +12215,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich: {fileID: 593178455}
+  swich2: {fileID: 0}
   bridge: {fileID: 1955088772}
   hole: {fileID: 1911317495}
   wall: {fileID: 153829942}
   lever: {fileID: 0}
+  lever2: {fileID: 0}
 --- !u!19719996 &593178458
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -13270,23 +13268,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich1: {fileID: 783200700}
-  swich2: {fileID: 1008539336}
-  swich3:
-  - {fileID: 593178455}
-  - {fileID: 1877439131}
+  swich3: {fileID: 0}
   bridge1: {fileID: 1378680854}
-  bridge2:
-  - {fileID: 1228849107}
-  - {fileID: 1937130343}
+  bridge2: {fileID: 0}
   hole1: {fileID: 218180211}
-  hole2:
-  - {fileID: 186110646}
-  - {fileID: 1354931096}
-  wall:
-  - {fileID: 1446411023}
-  - {fileID: 1105930292}
+  hole2: {fileID: 0}
+  wall: {fileID: 0}
   lever: {fileID: 0}
-  rnd: 0
 --- !u!19719996 &783200703
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -14454,19 +14442,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich1: {fileID: 851073125}
-  swich2: {fileID: 1293896807}
-  swich3:
-  - {fileID: 0}
+  swich3: {fileID: 0}
   bridge1: {fileID: 1613736508}
-  bridge2:
-  - {fileID: 0}
+  bridge2: {fileID: 0}
   hole1: {fileID: 823476675}
-  hole2:
-  - {fileID: 0}
-  wall:
-  - {fileID: 0}
+  hole2: {fileID: 0}
+  wall: {fileID: 0}
   lever: {fileID: 0}
-  rnd: 0
 --- !u!19719996 &851073130
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -17929,23 +17911,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich1: {fileID: 783200700}
-  swich2: {fileID: 1008539336}
-  swich3:
-  - {fileID: 593178455}
-  - {fileID: 1877439131}
+  swich3: {fileID: 0}
   bridge1: {fileID: 1378680854}
-  bridge2:
-  - {fileID: 1228849107}
-  - {fileID: 1937130343}
+  bridge2: {fileID: 0}
   hole1: {fileID: 218180211}
-  hole2:
-  - {fileID: 186110646}
-  - {fileID: 1354931096}
-  wall:
-  - {fileID: 1446411023}
-  - {fileID: 1105930292}
+  hole2: {fileID: 0}
+  wall: {fileID: 0}
   lever: {fileID: 0}
-  rnd: 0
 --- !u!19719996 &1008539339
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -19653,10 +19625,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich: {fileID: 1062581433}
+  swich2: {fileID: 0}
   bridge: {fileID: 382530898}
   hole: {fileID: 1700464405}
   wall: {fileID: 576924125}
   lever: {fileID: 0}
+  lever2: {fileID: 0}
 --- !u!1 &1067487620
 GameObject:
   m_ObjectHideFlags: 0
@@ -32980,19 +32954,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich1: {fileID: 851073125}
-  swich2: {fileID: 1293896807}
-  swich3:
-  - {fileID: 0}
+  swich3: {fileID: 0}
   bridge1: {fileID: 1613736508}
-  bridge2:
-  - {fileID: 0}
+  bridge2: {fileID: 0}
   hole1: {fileID: 823476675}
-  hole2:
-  - {fileID: 0}
-  wall:
-  - {fileID: 0}
+  hole2: {fileID: 0}
+  wall: {fileID: 0}
   lever: {fileID: 0}
-  rnd: 0
 --- !u!1001 &1311732465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33738,23 +33706,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich1: {fileID: 1357765681}
-  swich2: {fileID: 573136538}
-  swich3:
-  - {fileID: 565655964}
-  - {fileID: 215175716}
+  swich3: {fileID: 565655964}
   bridge1: {fileID: 1378680854}
-  bridge2:
-  - {fileID: 1228849107}
-  - {fileID: 1937130343}
+  bridge2: {fileID: 1228849107}
   hole1: {fileID: 218180211}
-  hole2:
-  - {fileID: 186110646}
-  - {fileID: 1354931096}
-  wall:
-  - {fileID: 1446411023}
-  - {fileID: 1105930292}
+  hole2: {fileID: 186110646}
+  wall: {fileID: 1446411023}
   lever: {fileID: 1836725385}
-  rnd: 0
 --- !u!70 &1357765684
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -56888,10 +56846,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swich: {fileID: 1877439131}
+  swich2: {fileID: 0}
   bridge: {fileID: 1955088772}
   hole: {fileID: 1911317495}
   wall: {fileID: 153829942}
   lever: {fileID: 0}
+  lever2: {fileID: 0}
 --- !u!19719996 &1877439134
 TilemapCollider2D:
   m_ObjectHideFlags: 0

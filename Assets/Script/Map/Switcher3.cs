@@ -5,10 +5,12 @@ using UnityEngine;
 public class Switcher3 : MonoBehaviour
 {
     public GameObject swich;
+    public GameObject swich2;
     public GameObject bridge;
     public GameObject hole;
     public GameObject wall;
     public GameObject lever;
+    public GameObject lever2;
     SwitchOn so;
     // Start is called before the first frame update
     void Start()
@@ -22,10 +24,12 @@ public class Switcher3 : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && so.OnFlag)
         {
             swich.SetActive(false);
+            swich2.SetActive(false);
             bridge.SetActive(true);
             hole.SetActive(false);
             wall.SetActive(true);
             lever.SetActive(true);
+            lever2.SetActive(true);
         }
     }
     //private void OnCollisionEnter2D(Collision2D collision)
