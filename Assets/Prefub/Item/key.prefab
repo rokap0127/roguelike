@@ -82,7 +82,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3588485152041996524}
   - component: {fileID: 3588485152041996525}
-  - component: {fileID: 3588485152041996526}
   - component: {fileID: 3588485152041996531}
   - component: {fileID: 4732443752857620424}
   m_Layer: 0
@@ -101,7 +100,7 @@ Transform:
   m_GameObject: {fileID: 3588485152041996520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.72, y: 1.2, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1672389279115244916}
   m_Father: {fileID: 0}
@@ -144,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4326180907796634664, guid: f04c4758c1d84484b80cc63c4e6b9db5,
+  m_Sprite: {fileID: 8092465744669156321, guid: f9bd11cc6301e25409e428a933f71e7e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -156,25 +155,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3588485152041996526
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3588485152041996520}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a0f2ed30dfa4ab543885b82ac6771324, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &3588485152041996531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,7 +172,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.34, y: 1.66}
+    oldSize: {x: 0.35, y: 0.2}
     newSize: {x: 1.34, y: 1.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -213,3 +193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9031320e3fbbd489a8794490419a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  THpPortion: 0
+  TMpPortion: 0
+  TSpeedUP: 0
+  TDamageUP: 0
+  TRevivalPendant: 0
+  TArmor: 0
+  TBomb: 0
