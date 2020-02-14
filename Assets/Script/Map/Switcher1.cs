@@ -12,7 +12,7 @@ public class Switcher1 : MonoBehaviour
     public GameObject hole1;
     public GameObject[] hole2;
     public GameObject[] wall;
-    public GameObject[] treasure;
+    public GameObject lever;
     public int rnd;
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class Switcher1 : MonoBehaviour
             hole1.SetActive(false);
             hole2[rnd].SetActive(false);
             wall[rnd].SetActive(true);
-            treasure[rnd].SetActive(true);
+            lever.SetActive(true);
         }
     }
 }
