@@ -8,6 +8,7 @@ public class Switcher3 : MonoBehaviour
     public GameObject bridge;
     public GameObject hole;
     public GameObject wall;
+    public GameObject lever;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class Switcher3 : MonoBehaviour
             bridge.SetActive(true);
             hole.SetActive(false);
             wall.SetActive(true);
+            lever.SetActive(true);
         }
     }
 }
