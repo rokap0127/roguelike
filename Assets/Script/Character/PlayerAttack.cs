@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine("Destory");
+        Destroy(gameObject, stop);
     }
 
     IEnumerator Destory()

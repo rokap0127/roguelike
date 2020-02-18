@@ -12,21 +12,25 @@ public class Skeleton : MonoBehaviour
     public Explotion magicPrefab; //メイジスキルエフェクト
     public List<Sprite> sprites; //スプライトリスト
     public float attackDistance; //近づく距離
+    public GameObject skeletonAttack; //攻撃オブジェクト
+    public float attackInterval; //攻撃間隔
+
+
 
     //ガードに触れているか
     bool guardFlag = false;
     //トラップにかかったか？
     bool trapFlag = false;
 
-    Direction direciton = Direction.DOWN;  //向き
+    Direction direction = Direction.DOWN;  //向き
     //Animator anim; //アニメーション
     SpriteRenderer spriteRenderer; //スプライトレンダラー
 
     float distance;
     float angle;
-    Vector3 direction;
+    Vector3 _direction;
     float trapCount;
-
+    float attackCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +51,7 @@ public class Skeleton : MonoBehaviour
            angle = Utils.GetAngle(
            transform.localPosition,
            Knight.instance.transform.localPosition);
-           direction = Utils.GetDirection(angle);
+           _direction = Utils.GetDirection(angle);
 
            //プレイヤーとの距離の絶対値
            distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
@@ -59,7 +63,7 @@ public class Skeleton : MonoBehaviour
               angle = Utils.GetAngle(
               transform.localPosition,
               Archer.instance.transform.localPosition);
-              direction = Utils.GetDirection(angle);
+              _direction = Utils.GetDirection(angle);
 
             //プレイヤーとの距離の絶対値
              distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
@@ -71,7 +75,7 @@ public class Skeleton : MonoBehaviour
             angle = Utils.GetAngle(
             transform.localPosition,
             Mage.instance.transform.localPosition);
-            direction = Utils.GetDirection(angle);
+            _direction = Utils.GetDirection(angle);
 
             //プレイヤーとの距離の絶対値
             distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
@@ -84,8 +88,26 @@ public class Skeleton : MonoBehaviour
             if(distance >= attackDistance)
             {
                 //プレイヤーが存在する方向へ移動する
-                transform.localPosition += direction * moveSpeed;
-            }          
+                transform.localPosition += _direction * moveSpeed;
+                attackCount = attackInterval;
+
+            }
+            else
+            {
+                attackCount += Time.deltaTime;
+
+                if(attackCount >= attackInterval)
+                {
+                    //攻撃生成
+                    Attack();
+                    attackCount = 0;
+                }
+                if (distance < attackDistance)
+                {
+                    //プレイヤーが存在する方向へ移動する
+                    transform.localPosition += _direction * moveSpeed * -1;
+                }
+            }
         }
 
         if (trapFlag)
@@ -103,14 +125,85 @@ public class Skeleton : MonoBehaviour
         PlayerRote(angle);
     }
 
+    void Attack()
+    {
+        //上
+        if(direction == Direction.UP)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack, 
+                transform.localPosition + new Vector3(0, 0.2f),
+                Quaternion.Euler(0, 0, 180));
+            attackObject.transform.parent = transform;
+        }
+        //右上
+        if (direction == Direction.UPRIGHT)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(0.15f, 0.15f),
+                Quaternion.Euler(0, 0, 135));
+            attackObject.transform.parent = transform;
+        }
+        //右
+        if (direction == Direction.RIGHT)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(0.2f, 0),
+                Quaternion.Euler(0, 0, 90));
+            attackObject.transform.parent = transform;
+        }
+        //右下
+        if (direction == Direction.DOWNRIGHT)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(0.1f, -0.1f),
+                Quaternion.Euler(0, 0, 45));
+            attackObject.transform.parent = transform;
+        }
+        //下
+        if(direction == Direction.DOWN)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(0, -0.3f),
+                Quaternion.Euler(0, 0, 0));
+            attackObject.transform.parent = transform;
+        }
+        //左下
+        if(direction == Direction.DOWNLEFT)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(-0.1f, -0.1f),
+                Quaternion.Euler(0, 0, -45));
+            attackObject.transform.parent = transform;
+        }
+        //左
+        if (direction == Direction.LEFT)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(-0.2f, 0),
+                Quaternion.Euler(0, 0, -90));
+            attackObject.transform.parent = transform;
+        }
+        //左上
+        if (direction == Direction.UPLEFT)
+        {
+            GameObject attackObject = Instantiate(skeletonAttack,
+                transform.localPosition + new Vector3(-0.1f, 0.1f),
+                Quaternion.Euler(0, 0, 225));
+            attackObject.transform.parent = transform;
+        }
+
+
+
+
+    }
     void PlayerRote(float angle)
     {
 
         //上を向く
         if (68 <= angle && angle < 113)
         {
-            direciton = Direction.UP;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.UP;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", true);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", false);
@@ -123,8 +216,8 @@ public class Skeleton : MonoBehaviour
         //右上を向く
         if (23 <= angle && angle < 68)
         {
-            direciton = Direction.UPRIGHT;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.UPRIGHT;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", true);
             //anim.SetBool("Move@Right", false);
@@ -137,8 +230,8 @@ public class Skeleton : MonoBehaviour
         //右を向く
         if (-23 <= angle && angle < 23)
         {
-            direciton = Direction.RIGHT;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.RIGHT;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", true);
@@ -152,8 +245,8 @@ public class Skeleton : MonoBehaviour
         //右下を向く
         if (-68 <= angle && angle < -23)
         {
-            direciton = Direction.DOWNRIGHT;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.DOWNRIGHT;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", false);
@@ -166,8 +259,8 @@ public class Skeleton : MonoBehaviour
         //下を向く
         if (-113 <= angle && angle < -68)
         {
-            direciton = Direction.DOWN;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.DOWN;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", false);
@@ -181,8 +274,8 @@ public class Skeleton : MonoBehaviour
         //左下を向く
         if (-158 <= angle && angle < -113)
         {
-            direciton = Direction.DOWNLEFT;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.DOWNLEFT;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", false);
@@ -195,8 +288,8 @@ public class Skeleton : MonoBehaviour
         //左を向く
         if (-158 > angle || angle >= 158)
         {
-            direciton = Direction.LEFT;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.LEFT;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", false);
@@ -210,8 +303,8 @@ public class Skeleton : MonoBehaviour
         //左上を向く
         if (113 <= angle && angle < 158)
         {
-            direciton = Direction.UPLEFT;
-            spriteRenderer.sprite = sprites[(int)direciton];
+            direction = Direction.UPLEFT;
+            spriteRenderer.sprite = sprites[(int)direction];
             //anim.SetBool("Move@Up", false);
             //anim.SetBool("Move@UpRight", false);
             //anim.SetBool("Move@Right", false);
@@ -229,7 +322,7 @@ public class Skeleton : MonoBehaviour
         int knightAttack = 80;
         if (collision.gameObject.tag == "PlayerAttack")
         {
-            transform.position = Vector3.MoveTowards(transform.position, transform.position + direction * -1 * 0.5f, 1.0f);
+            transform.position = Vector3.MoveTowards(transform.position, transform.position + _direction * -1 * 0.5f, 1.0f);
 
             Instantiate(explosionPrefab,
                 collision.transform.position,

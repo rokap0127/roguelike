@@ -44,7 +44,7 @@ public class Knight : MonoBehaviour
 
     float speed; //スピードを一時的に保存する
     GameObject guard_Prefab; //ガードのプレハブ
-    Direction direciton = Direction.DOWN; //現在の向き
+    Direction direction = Direction.DOWN; //現在の向き
     Rigidbody2D playerRigidbody; //プレイヤーRigidbody
     Animator anim; //アニメーター
     SpriteRenderer spriteRenderer; //スプライトレンダラー
@@ -308,7 +308,7 @@ public class Knight : MonoBehaviour
         //上を向く
         if (68 <= angle && angle < 113)
         {
-            direciton = Direction.UP;
+            direction = Direction.UP;
             anim.SetBool("Move@Up", true);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", false);
@@ -321,7 +321,7 @@ public class Knight : MonoBehaviour
         //右上を向く
         if (23 <= angle && angle < 68)
         {
-            direciton = Direction.UPRIGHT;
+            direction = Direction.UPRIGHT;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", true);
             anim.SetBool("Move@Right", false);
@@ -334,7 +334,7 @@ public class Knight : MonoBehaviour
         //右を向く
         if (-23 <= angle && angle < 23)
         {
-            direciton = Direction.RIGHT;
+            direction = Direction.RIGHT;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", true);
@@ -348,7 +348,7 @@ public class Knight : MonoBehaviour
         //右下を向く
         if (-68 <= angle && angle < -23)
         {
-            direciton = Direction.DOWNRIGHT;
+            direction = Direction.DOWNRIGHT;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", false);
@@ -361,7 +361,7 @@ public class Knight : MonoBehaviour
         //下を向く
         if (-113 <= angle && angle < -68)
         {
-            direciton = Direction.DOWN;
+            direction = Direction.DOWN;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", false);
@@ -375,7 +375,7 @@ public class Knight : MonoBehaviour
         //左下を向く
         if (-158 <= angle && angle < -113)
         {
-            direciton = Direction.DOWNLEFT;
+            direction = Direction.DOWNLEFT;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", false);
@@ -388,7 +388,7 @@ public class Knight : MonoBehaviour
         //左を向く
         if (-158 > angle || angle >= 158)
         {
-            direciton = Direction.LEFT;
+            direction = Direction.LEFT;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", false);
@@ -402,7 +402,7 @@ public class Knight : MonoBehaviour
         //左上を向く
         if (113 <= angle && angle < 158)
         {
-            direciton = Direction.UPLEFT;
+            direction = Direction.UPLEFT;
             anim.SetBool("Move@Up", false);
             anim.SetBool("Move@UpRight", false);
             anim.SetBool("Move@Right", false);
@@ -422,7 +422,7 @@ public class Knight : MonoBehaviour
             //Mpを減らす
             playerMp -= shootMp; 
             //上
-            if (direciton == Direction.UP)
+            if (direction == Direction.UP)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -435,7 +435,7 @@ public class Knight : MonoBehaviour
 
             }
             //右上
-            if (direciton == Direction.UPRIGHT)
+            if (direction == Direction.UPRIGHT)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -448,7 +448,7 @@ public class Knight : MonoBehaviour
 
             }
             //右
-            if (direciton == Direction.RIGHT)
+            if (direction == Direction.RIGHT)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -461,7 +461,7 @@ public class Knight : MonoBehaviour
 
             }
             //右下
-            if (direciton == Direction.DOWNRIGHT)
+            if (direction == Direction.DOWNRIGHT)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -473,7 +473,7 @@ public class Knight : MonoBehaviour
                 StartCoroutine("WaitForAttack");
             }
             //下
-            if (direciton == Direction.DOWN)
+            if (direction == Direction.DOWN)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -486,7 +486,7 @@ public class Knight : MonoBehaviour
 
             }
             //左下
-            if (direciton == Direction.DOWNLEFT)
+            if (direction == Direction.DOWNLEFT)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -498,7 +498,7 @@ public class Knight : MonoBehaviour
                 StartCoroutine("WaitForAttack");
             }
             //左
-            if (direciton == Direction.LEFT)
+            if (direction == Direction.LEFT)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -511,7 +511,7 @@ public class Knight : MonoBehaviour
 
             }
             //左上
-            if (direciton == Direction.UPLEFT)
+            if (direction == Direction.UPLEFT)
             {
                 //攻撃オブジェクトを生成する
                 GameObject attack_object = Instantiate(playerAttack,
@@ -538,7 +538,7 @@ public class Knight : MonoBehaviour
             moveSpeed = guard_MoveSpeed;
 
             //上
-            if (direciton == Direction.UP)
+            if (direction == Direction.UP)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
@@ -548,7 +548,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@Up", true);
             }
             //右上
-            if (direciton == Direction.UPRIGHT)
+            if (direction == Direction.UPRIGHT)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
@@ -558,7 +558,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@UpRight", true);
             }
             //右
-            if (direciton == Direction.RIGHT)
+            if (direction == Direction.RIGHT)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
@@ -568,7 +568,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@Right", true);
             }
             //右下
-            if (direciton == Direction.DOWNRIGHT)
+            if (direction == Direction.DOWNRIGHT)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
@@ -578,7 +578,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@DownRight", true);
             }
             //下
-            if (direciton == Direction.DOWN)
+            if (direction == Direction.DOWN)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard, transform.
@@ -588,7 +588,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@Down", true);
             }
             //左下
-            if (direciton == Direction.DOWNLEFT)
+            if (direction == Direction.DOWNLEFT)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
@@ -598,7 +598,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@DownLeft", true);
             }
             //左
-            if (direciton == Direction.LEFT)
+            if (direction == Direction.LEFT)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
@@ -608,7 +608,7 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@Left", true);
             }
             //左上
-            if (direciton == Direction.UPLEFT)
+            if (direction == Direction.UPLEFT)
             {
                 //ガード生成
                 guard_Prefab = Instantiate(guard,
