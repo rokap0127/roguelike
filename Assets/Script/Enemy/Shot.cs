@@ -30,7 +30,7 @@ public class Shot : MonoBehaviour
 
         //弾が進行方向を向くようにする
         var angles = transform.localEulerAngles;
-        angles.z = angle - 90;
+        angles.z = angle + 90 + 45;
         transform.localEulerAngles = angles;
 
         //10秒後削除する

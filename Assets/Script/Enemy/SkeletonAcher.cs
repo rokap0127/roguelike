@@ -262,7 +262,8 @@ public class SkeletonAcher : MonoBehaviour
                     angleRange * ((float)i / (count - 1) - 0.5f);
 
                 //発射する弾を生成する
-                var shot = Instantiate(shotPrefab, pos, rot);
+                var shot = Instantiate(shotPrefab, pos, Quaternion.identity);
+
 
                 //弾を発射する方向と速さを設定する
                 shot.Init(angle, speed);
@@ -271,7 +272,7 @@ public class SkeletonAcher : MonoBehaviour
         else if(count == 1)
         {
             //発射する弾を生成する
-            var shot = Instantiate(shotPrefab, pos, rot);
+            var shot = Instantiate(shotPrefab, pos, Quaternion.identity);
 
             //弾を発射する方向と速さを設定する
             shot.Init(angleBase, speed);
