@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8167253755425218961}
   - component: {fileID: 410310211188811045}
-  - component: {fileID: 6218705149797672515}
+  - component: {fileID: 2261956512558177594}
   - component: {fileID: 6267827001510263930}
   m_Layer: 0
   m_Name: Skeleton
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6218705149797672515
-BoxCollider2D:
+--- !u!70 &2261956512558177594
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,19 +95,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008548915, y: 0.0042746067}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.8}
-    newSize: {x: 0.7, y: 0.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 1
-  serializedVersion: 2
-  m_Size: {x: 0.59741306, y: 0.714511}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.00761652, y: 0.011411428}
+  m_Size: {x: 0.5629029, y: 0.71631604}
+  m_Direction: 0
 --- !u!114 &6267827001510263930
 MonoBehaviour:
   m_ObjectHideFlags: 0
