@@ -72,6 +72,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GetFlag: 0
   item: {fileID: 3588485152041996520}
+  THpPortion: 0
+  TMpPortion: 0
+  TSpeedUP: 0
+  TDamageUP: 0
+  TRevivalPendant: 0
+  TArmor: 0
+  TBomb: 0
 --- !u!1 &3588485152041996520
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +195,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3588485152041996520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf9031320e3fbbd489a8794490419a40, type: 3}
   m_Name: 
