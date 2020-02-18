@@ -17,6 +17,8 @@ public class Archer : MonoBehaviour
     public int playerMaxMp; //最大のMP
     public int shootMp; //shootのMp
     public int trapMp;
+    public float attackInterval; //攻撃間隔
+    public float attackCount; //攻撃カウント
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
@@ -44,6 +46,7 @@ public class Archer : MonoBehaviour
         playerHp = playerMaxHp; //Hpを最大に設定
         playerMp = playerMaxMp; //Mpを最大に設定する
         defaultMoveSpeed = moveSpeed;
+        attackCount = attackInterval; //すぐ打てる状態に
     }
     int count;
     // Update is called once per frame
@@ -67,11 +70,16 @@ public class Archer : MonoBehaviour
             //方向決定
             PlayerRote(playerAngle);
 
+            attackCount += Time.deltaTime;
             //メニューが閉じているなら
             if (Time.timeScale > 0)
             {
-                //攻撃する
-                Attack();
+                //攻撃カウントが足りているなら
+                if (attackInterval <= attackCount)
+                {
+                    //攻撃する
+                    Attack();            
+                }             
             }
             if (!ic.SpeedFlag)
             {
@@ -345,12 +353,14 @@ public class Archer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+
             if (playerMp >= shootMp)
             {
                 //矢を発射する
                 ShootNWay(playerAngle, 0, arrowSpeed, 1);
                 //Mpを減らす
                 playerMp -= shootMp;
+                attackCount = 0;
             }
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -392,6 +402,11 @@ public class Archer : MonoBehaviour
         }
 
         
+    }
+    IEnumerator AttackInterval()
+    {
+        //停止
+        yield return new WaitForSeconds(attackInterval);
     }
 
     public void Damage(int damage)
@@ -442,5 +457,6 @@ public class Archer : MonoBehaviour
                 Operation.MageFlagOn();
             }
         }
+        
     }
 }
