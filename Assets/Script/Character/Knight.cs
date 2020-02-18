@@ -38,6 +38,9 @@ public class Knight : MonoBehaviour
     public GameObject playerAttack; //攻撃オブジェクト
     public GameObject guard; //ガードオブジェクト
 
+    public float attackInterval; //攻撃間隔
+    public float attackCount; //攻撃カウント
+
     public int str;
     
     new CapsuleCollider2D collider2D;
@@ -75,6 +78,7 @@ public class Knight : MonoBehaviour
 
         collider2D = GetComponent<CapsuleCollider2D>();
         defaultMoveSpeed = moveSpeed;
+        attackCount = attackInterval; //すぐ打てる状態に
     }
 
     // Update is called once per frame
@@ -121,16 +125,23 @@ public class Knight : MonoBehaviour
                 anim.SetBool("Guard@Left", false);
             }
 
-          
+            attackCount += Time.deltaTime;
             //メニューが閉じているなら
-            if(Time.timeScale>0)
+            if (Time.timeScale>0)
             {
                 //ガードしていない時
                 if (!isGuard)
                 {
+                    //Mpがあるなら
                     if(playerMp > shootMp)
-                    //攻撃する
-                    Attack();
+                    {
+                        //攻撃カウントが足りているなら
+                        if (attackInterval <= attackCount)
+                        {
+                            //攻撃する
+                            Attack();
+                        }
+                    }                      
                 }               
             }
 
@@ -420,7 +431,8 @@ public class Knight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             //Mpを減らす
-            playerMp -= shootMp; 
+            playerMp -= shootMp;
+            attackCount = 0;
             //上
             if (direction == Direction.UP)
             {
