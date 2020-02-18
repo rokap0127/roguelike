@@ -17,8 +17,8 @@ public class Archer : MonoBehaviour
     public int playerMaxMp; //最大のMP
     public int shootMp; //shootのMp
     public int trapMp;
-    public float attackInterval;
-    public float attackCount;
+    public float attackInterval; //攻撃間隔
+    public float attackCount; //攻撃カウント
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
@@ -73,7 +73,8 @@ public class Archer : MonoBehaviour
             attackCount += Time.deltaTime;
             //メニューが閉じているなら
             if (Time.timeScale > 0)
-            {            
+            {
+                //攻撃カウントが足りているなら
                 if (attackInterval <= attackCount)
                 {
                     //攻撃する

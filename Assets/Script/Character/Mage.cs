@@ -19,6 +19,8 @@ public class Mage : MonoBehaviour
 
     public int shootMp; //通常攻撃
     public int skillMp; //スキル攻撃
+    public float attackInterval; //攻撃間隔
+    public float attackCount; //攻撃カウント
 
     Direction direciton = Direction.DOWN; //現在の向き
     Animator anim; //アニメーター
@@ -41,6 +43,7 @@ public class Mage : MonoBehaviour
         playerHp = playerMaxHp;　//Hpを最大に設定する
         playerMp = playerMaxMp;  //Mpを最大に設定する
         defaultMoveSpeed = moveSpeed;
+        attackCount = attackInterval; //すぐ打てる状態に
     }
 
     void Awake()
@@ -68,11 +71,16 @@ public class Mage : MonoBehaviour
             //方向指定
             PlayerRote(magicAngle);
 
+            attackCount += Time.deltaTime;
             //メニューが閉じているなら
             if (Time.timeScale > 0)
             {
-                //攻撃する
-                Attack();
+                //攻撃カウントが足りているなら
+                if (attackInterval <= attackCount)
+                {
+                    //攻撃する
+                    Attack();
+                }
             }
 
             //Teleport(teleportRange, slopeRange);
@@ -358,8 +366,8 @@ public class Mage : MonoBehaviour
             if(playerMp >= shootMp)
             {
                 ShootNWay2(magicAngle, 0, magicSpeed, 1);
-
                 playerMp -= shootMp;
+                attackCount = 0;
             }
             
         }
