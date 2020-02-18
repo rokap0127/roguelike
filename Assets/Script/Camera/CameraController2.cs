@@ -7,7 +7,7 @@ public class CameraController2 : MonoBehaviour
 {
     public GameObject[] sceneCamera;
     public GameObject[] entrance;
-
+    public GameObject[] enemy;
     GameObject operation;
     Operation op;
     GameObject knight;
@@ -49,6 +49,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(false);
             sceneCamera[6].SetActive(false);
             sceneCamera[7].SetActive(false);
+            enemy[1].SetActive(true);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x > entrance[0].transform.position.x&& pos.y < entrance[1].transform.position.y)
         {
@@ -59,6 +66,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(false);
             sceneCamera[6].SetActive(false);
             sceneCamera[7].SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(true);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.y > entrance[1].transform.position.y && pos.x > entrance[0].transform.position.x&&pos.x< entrance[2].transform.position.x)
         {
@@ -69,6 +83,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(false);
             sceneCamera[6].SetActive(false);
             sceneCamera[7].SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(true);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x > entrance[2].transform.position.x)
         {
@@ -79,6 +100,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(false);
             sceneCamera[6].SetActive(false);
             sceneCamera[7].SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(true);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x > entrance[2].transform.position.x && pos.y > entrance[3].transform.position.y)
         {
@@ -89,6 +117,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(true);
             sceneCamera[6].SetActive(false);
             sceneCamera[7].SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(true);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.y > entrance[1].transform.position.y && pos.x < entrance[0].transform.position.x)
         {
@@ -99,6 +134,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(false);
             sceneCamera[6].SetActive(true);
             sceneCamera[7].SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(true);
+            enemy[7].SetActive(false);
         }
         if (pos.y > entrance[4].transform.position.y && pos.x < entrance[1].transform.position.x)
         {
@@ -109,6 +151,13 @@ public class CameraController2 : MonoBehaviour
             sceneCamera[5].SetActive(false);
             sceneCamera[6].SetActive(false);
             sceneCamera[7].SetActive(true);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(true);
         }
         //if (Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl))
         //{

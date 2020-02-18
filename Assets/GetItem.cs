@@ -8,6 +8,13 @@ public class GetItem : MonoBehaviour
     ItemChecker ic;
     public bool GetFlag = false;
     public GameObject item;
+    public int THpPortion;
+    public int TMpPortion;
+    public int TSpeedUP;
+    public int TDamageUP;
+    public int TRevivalPendant;
+    public int TArmor;
+    public int TBomb;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,29 +62,14 @@ public class GetItem : MonoBehaviour
             }
             if (item.tag == "Treasure")
             {
-                int rnd = Random.Range(0, 3);
-                switch (rnd)
-                {
-                    case 0:
-                        ic.HpPortion += 2;
-                        ic.MpPortion += 1;
-                        ic.SpeedUP += 1;
-                        break;
-                    case 1:
-                        ic.HpPortion += 1;
-                        ic.MpPortion += 2;
-                        ic.Bomb += 1;
-                        break;
-                    default:
-                        ic.HpPortion += 1;
-                        ic.MpPortion += 1;
-                        ic.SpeedUP += 1;
-                        //ic.DamageUP += 1;
-                        //ic.RevivalPendant += 1;
-                        //ic.Armor += 1;
-                        ic.Bomb += 1;
-                        break;
-                }
+                ic.HpPortion += THpPortion;
+                ic.MpPortion += TMpPortion;
+                ic.SpeedUP += TSpeedUP;
+                ic.DamageUP += TDamageUP;
+                ic.RevivalPendant += TRevivalPendant;
+                ic.Armor += TArmor;
+                ic.Bomb += TBomb;
+                Destroy(gameObject);
             }
 
             if (item.tag == "Untagged")
