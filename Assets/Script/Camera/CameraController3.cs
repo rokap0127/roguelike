@@ -82,9 +82,9 @@ public class CameraController3: MonoBehaviour
             camera6.SetActive(false);
             camera7.SetActive(false);
             enemy[1].SetActive(false);
-            enemy[2].SetActive(true);
+            enemy[2].SetActive(false);
             enemy[3].SetActive(false);
-            enemy[4].SetActive(false);
+            enemy[4].SetActive(true);
             enemy[5].SetActive(false);
             enemy[6].SetActive(false);
             enemy[7].SetActive(false);
@@ -99,8 +99,8 @@ public class CameraController3: MonoBehaviour
             camera6.SetActive(false);
             camera7.SetActive(false);
             enemy[1].SetActive(false);
-            enemy[2].SetActive(false);
-            enemy[3].SetActive(true);
+            enemy[2].SetActive(true);
+            enemy[3].SetActive(false);
             enemy[4].SetActive(false);
             enemy[5].SetActive(false);
             enemy[6].SetActive(false);
@@ -117,8 +117,8 @@ public class CameraController3: MonoBehaviour
             camera7.SetActive(false);
             enemy[1].SetActive(false);
             enemy[2].SetActive(false);
-            enemy[3].SetActive(false);
-            enemy[4].SetActive(true);
+            enemy[3].SetActive(true);
+            enemy[4].SetActive(false);
             enemy[5].SetActive(false);
             enemy[6].SetActive(false);
             enemy[7].SetActive(false);
