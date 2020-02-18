@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 18013146}
   m_Layer: 0
-  m_Name: Enemy1- 7
+  m_Name: Enemy1-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,7 +244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18013145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5027528, y: -1.3900793, z: -25.90039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 351920798}
@@ -4032,7 +4032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 162620492}
   m_Layer: 0
-  m_Name: Enemy1- 5
+  m_Name: nemy1-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4046,7 +4046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162620491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5027528, y: -1.3900793, z: -25.90039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1501434468}
@@ -28768,7 +28768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020172987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5027528, y: -1.3900793, z: -25.90039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1790183702}
@@ -43522,11 +43522,6 @@ PrefabInstance:
       propertyPath: TSpeedUP
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3728527965531351112, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: THpPortion
@@ -43540,6 +43535,11 @@ PrefabInstance:
     - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: TSpeedUP
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728527965531351112, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: m_UsedByEffector
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -59257,7 +59257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900762185}
   m_Layer: 0
-  m_Name: Enemy1- 6
+  m_Name: Enemy1-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59271,7 +59271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900762184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5027528, y: -1.3900793, z: -25.90039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1866613639}
@@ -60577,7 +60577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966885924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5027528, y: -1.3900793, z: -25.90039}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 142859151}
