@@ -89,6 +89,11 @@ public class SkeletonAcher : MonoBehaviour
                 //プレイヤーが存在する方向へ移動する
                 transform.localPosition += _direction * moveSpeed;
             }
+            else if(distance < attackDistance)
+            {
+                //プレイヤーが存在する方向へ移動する
+                transform.localPosition += _direction * moveSpeed * -1;
+            }
             PlayerRote(angle);
 
             //弾の発射を管理するタイマーを更新する
