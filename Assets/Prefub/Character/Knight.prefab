@@ -163,4 +163,6 @@ MonoBehaviour:
   playerAttack: {fileID: 6352817548670071303, guid: a517aebec5bf90346a2473f4972003f0,
     type: 3}
   guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
+  attackInterval: 0.5
+  attackCount: 0
   str: 0
