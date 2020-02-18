@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 410310211188811045}
   - component: {fileID: 2261956512558177594}
   - component: {fileID: 6267827001510263930}
+  - component: {fileID: -4833890028984378503}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -127,7 +128,28 @@ MonoBehaviour:
   - {fileID: -4405176270211078928, guid: acfa875999075ef45a54ba99279577d6, type: 3}
   - {fileID: -4446710360090378017, guid: acfa875999075ef45a54ba99279577d6, type: 3}
   - {fileID: 7750155447766734482, guid: acfa875999075ef45a54ba99279577d6, type: 3}
-  attackDistance: 0.35
+  attackDistance: 0.38
   skeletonAttack: {fileID: 6352817548670071303, guid: 75c6b84495c231f4999d7204e881592c,
     type: 3}
   attackInterval: 3
+--- !u!50 &-4833890028984378503
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278591368226052380}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
