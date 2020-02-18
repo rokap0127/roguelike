@@ -155,11 +155,11 @@ MonoBehaviour:
   moveSpeed: 2
   guard_MoveSpeed: 0.5
   playerHp: 0
-  playerMaxHp: 200
+  playerMaxHp: 300
   playerMp: 0
-  playerMaxMp: 120
-  shootMp: 20
-  guardMp: 5
+  playerMaxMp: 150
+  shootMp: 15
+  guardMp: 2
   playerAttack: {fileID: 6352817548670071303, guid: a517aebec5bf90346a2473f4972003f0,
     type: 3}
   guard: {fileID: 3451095406084765281, guid: 61b15b62890d19f4f99cf4a5fa633b56, type: 3}
