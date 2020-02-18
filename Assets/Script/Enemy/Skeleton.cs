@@ -370,7 +370,7 @@ public class Skeleton : MonoBehaviour
             //敵を削除する
             Destroy(gameObject);
         }
-        int magic = 100;
+        int magic = 40;
         if (collision.name.Contains("Magic"))
         {
             Instantiate(magicPrefab,

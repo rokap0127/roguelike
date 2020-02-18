@@ -161,8 +161,8 @@ MonoBehaviour:
   playerHp: 0
   playerMaxHp: 150
   playerMp: 0
-  playerMaxMp: 200
+  playerMaxMp: 300
   shootMp: 10
-  skillMp: 55
+  skillMp: 50
   attackInterval: 0.5
   attackCount: 0
