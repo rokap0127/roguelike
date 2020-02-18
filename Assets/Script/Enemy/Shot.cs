@@ -66,6 +66,11 @@ public class Shot : MonoBehaviour
             mage.Damage(damage);
         }
 
+        if (collision.name.Contains("Wall"))
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 }

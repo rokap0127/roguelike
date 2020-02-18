@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2478756979409202579}
   - component: {fileID: 2478756979409202284}
+  - component: {fileID: -3360714777282000160}
   - component: {fileID: 2478756979409202578}
-  - component: {fileID: 2478756979409202577}
+  - component: {fileID: -9175728598236035678}
   m_Layer: 0
   m_Name: SkeletonAcher
   m_TagString: Enemy
@@ -82,6 +83,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &-3360714777282000160
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2478756979409202285}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0160923, y: 0.0064294934}
+  m_Size: {x: 0.51332927, y: 0.7228467}
+  m_Direction: 0
 --- !u!114 &2478756979409202578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,29 +136,24 @@ MonoBehaviour:
   - {fileID: 5310500525416814056, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
   - {fileID: 3422173217404715373, guid: 8e92737a67eff8240a215eb2164e8fc5, type: 3}
   attackDistance: 1
---- !u!61 &2478756979409202577
-BoxCollider2D:
+--- !u!50 &-9175728598236035678
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2478756979409202285}
-  m_Enabled: 1
-  m_Density: 1
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.027952045, y: 0.08060327}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.8}
-    newSize: {x: 0.32, y: 0.53}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.28922713, y: 0.5069203}
-  m_EdgeRadius: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
