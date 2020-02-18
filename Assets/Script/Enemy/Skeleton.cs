@@ -324,7 +324,7 @@ public class Skeleton : MonoBehaviour
         int knightAttack = 80;
         if (collision.gameObject.tag == "PlayerAttack")
         {
-            transform.position = Vector3.MoveTowards(transform.position, transform.position + _direction * -1 * 0.5f, 1.0f);
+            transform.position = Vector3.MoveTowards(transform.position, transform.position + _direction * -0.22f, 1.0f);
 
             Instantiate(explosionPrefab,
                 collision.transform.position,
