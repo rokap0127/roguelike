@@ -102,7 +102,7 @@ public class Skeleton : MonoBehaviour
                     Attack();
                     attackCount = 0;
                 }
-                if (distance < attackDistance)
+                if (distance < 0.2)
                 {
                     //プレイヤーが存在する方向へ移動する
                     transform.localPosition += _direction * moveSpeed * -1;
