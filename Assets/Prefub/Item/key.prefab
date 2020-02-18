@@ -79,6 +79,7 @@ MonoBehaviour:
   TRevivalPendant: 0
   TArmor: 0
   TBomb: 0
+  TextHUD: {fileID: 939087394340485326, guid: 773b1b7a453fc3c40ba71bfa8a3c0a9d, type: 3}
 --- !u!1 &3588485152041996520
 GameObject:
   m_ObjectHideFlags: 0
