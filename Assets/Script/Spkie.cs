@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Spkie : MonoBehaviour
 {
-    BoxCollider2D collider2D;
+    //BoxCollider2D collider2D;
+
+    public int damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +18,31 @@ public class Spkie : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        //Playerにダメージ
+        if (collision.name.Contains("Knight"))
+        {
+            //プレイヤーにダメージを与える
+            var knight = collision.GetComponent<Knight>();
+            if (knight == null) return;
+            knight.Damage(damage);
+        }
+        if (collision.name.Contains("Archer"))
+        {
+            //プレイヤーにダメージを与える
+            var archer = collision.GetComponent<Archer>();
+            if (archer == null) return;
+            archer.Damage(damage);
+        }
+        if (collision.name.Contains("Mage"))
+        {
+            //プレイヤーにダメージを与える
+            var mage = collision.GetComponent<Mage>();
+            if (mage == null) return;
+            mage.Damage(damage);
+        }
     }
 }
