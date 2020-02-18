@@ -18,19 +18,7 @@ public class CameraController3: MonoBehaviour
     public GameObject entrance4;
     public GameObject entrance5;
     public GameObject entrance6;
-    bool callEnemy1;
-    bool callEnemy2;
-    bool callEnemy3;
-    bool callEnemy4;
-    bool callEnemy5;
     public GameObject[] enemy;
-    int enemynum;
-    public int enemylim;
-    public GameObject[] item;
-    public GameObject[] rareItem;
-    public int itemlim;
-    int itemnum;
-    int rareItemnum;
     public GameObject shutter;
 
     GameObject operation;
@@ -76,6 +64,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(false);
+            enemy[1].SetActive(true);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.y > entrance1.transform.position.y)
         {
@@ -86,6 +81,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(true);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x < entrance2.transform.position.x && pos.y < entrance1.transform.position.y)
         {
@@ -96,6 +98,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(true);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x > entrance3.transform.position.x && pos.y < entrance1.transform.position.y)
         {
@@ -106,6 +115,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(true);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x < entrance4.transform.position.x && pos.y > entrance1.transform.position.y && pos.y < entrance6.transform.position.y)
         {
@@ -116,6 +132,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(true);
             camera6.SetActive(false);
             camera7.SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(true);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(false);
         }
         if (pos.x > entrance5.transform.position.x && pos.y > entrance1.transform.position.y&& pos.y < entrance6.transform.position.y)
         {
@@ -126,6 +149,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(true);
             camera7.SetActive(false);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(true);
+            enemy[7].SetActive(false);
         }
         if (pos.y > entrance6.transform.position.y)
         {
@@ -136,6 +166,13 @@ public class CameraController3: MonoBehaviour
             camera5.SetActive(false);
             camera6.SetActive(false);
             camera7.SetActive(true);
+            enemy[1].SetActive(false);
+            enemy[2].SetActive(false);
+            enemy[3].SetActive(false);
+            enemy[4].SetActive(false);
+            enemy[5].SetActive(false);
+            enemy[6].SetActive(false);
+            enemy[7].SetActive(true);
             //Invoke("Shut", 0.5f);
         }
         //if (Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl))
