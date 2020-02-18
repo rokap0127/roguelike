@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Open : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Open : MonoBehaviour
     public bool OpenFlag = false;
     public GameObject[] shutter;
     public GameObject[] bridge;
+    public Text TextHud;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class Open : MonoBehaviour
             bridge[0].SetActive(true);
             shutter[0].SetActive(false);
             shutter[1].SetActive(false);
+            TextHud.text = "扉を開けた！";
         }
     }
     private void OnTriggerEnter2D(Collider2D col)
