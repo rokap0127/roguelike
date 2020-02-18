@@ -12,6 +12,8 @@ public class Skeleton : MonoBehaviour
     public Explotion magicPrefab; //メイジスキルエフェクト
     public List<Sprite> sprites; //スプライトリスト
     public float attackDistance; //近づく距離
+    public GameObject skeletonAttack; //攻撃オブジェクト
+
 
     //ガードに触れているか
     bool guardFlag = false;
@@ -85,6 +87,9 @@ public class Skeleton : MonoBehaviour
             {
                 //プレイヤーが存在する方向へ移動する
                 transform.localPosition += direction * moveSpeed;
+
+                //攻撃生成
+                Instantiate(skeletonAttack, transform.position, Quaternion.identity);
             }          
         }
 
