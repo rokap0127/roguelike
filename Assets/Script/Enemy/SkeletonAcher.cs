@@ -92,7 +92,7 @@ public class SkeletonAcher : MonoBehaviour
                 transform.localPosition += _direction * moveSpeed;
                
             }
-            else if(distance < attackDistance)
+            else if(distance < attackDistance - 0.01f)
             {
                 //プレイヤーが存在する方向へ移動する
                 transform.localPosition += _direction * moveSpeed * -1;
