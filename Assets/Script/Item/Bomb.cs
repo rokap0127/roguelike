@@ -26,6 +26,15 @@ public class Bomb : MonoBehaviour
             explosionPrefab,
             collision.transform.position,
             Quaternion.identity);
+        GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemys)
+        {
+            float pos = (transform.position - enemy.transform.position).magnitude;
+            if (pos < 0.5f && pos > -0.5f)
+            {
+                Destroy(enemy);
+            }
+        }
         Destroy(gameObject);
     }
     void Blast()
@@ -38,7 +47,7 @@ public class Bomb : MonoBehaviour
         foreach (GameObject enemy in enemys)
         {
             float pos = (transform.position - enemy.transform.position).magnitude;
-            if (pos < 1.5f && pos > -1.5f)
+            if (pos < 1.0f && pos > -1.0f)
             {
                 Destroy(enemy);
             }

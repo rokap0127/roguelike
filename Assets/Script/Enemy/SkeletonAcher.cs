@@ -24,6 +24,8 @@ public class SkeletonAcher : MonoBehaviour
     Direction direciton = Direction.DOWN; //向き
     //Animator anim; //アニメージョン
     SpriteRenderer spriteRenderer; //スプライトレンダラー
+    Rigidbody2D enemyRigid;
+
 
     float distance;
     float angle;
@@ -37,6 +39,7 @@ public class SkeletonAcher : MonoBehaviour
         //Hpを最大にする
         enemyHp = enemyMaxHp;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        enemyRigid = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
 
     }
@@ -84,15 +87,23 @@ public class SkeletonAcher : MonoBehaviour
 
         if(!guardFlag && !trapFlag)
         {
-            if (distance >= attackDistance)
+            if (distance > attackDistance)
             {
                 //プレイヤーが存在する方向へ移動する
-                transform.localPosition += _direction * moveSpeed;
+
+                Vector3 movement = Vector2.zero;
+                movement = _direction * moveSpeed;
+                enemyRigid.MovePosition(transform.localPosition + movement );
+
+
+
             }
-            else if(distance < attackDistance)
+            else if(distance < attackDistance - 0.01f)
             {
-                //プレイヤーが存在する方向へ移動する
-                transform.localPosition += _direction * moveSpeed * -1;
+                //プレイヤーが存在する方向の逆へ移動する
+                Vector3 movement = Vector2.zero;
+                movement = _direction * moveSpeed * -1;
+                enemyRigid.MovePosition(transform.localPosition + movement);
             }
             PlayerRote(angle);
 
