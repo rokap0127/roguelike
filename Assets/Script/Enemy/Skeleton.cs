@@ -25,6 +25,7 @@ public class Skeleton : MonoBehaviour
     Direction direction = Direction.DOWN;  //向き
     //Animator anim; //アニメーション
     SpriteRenderer spriteRenderer; //スプライトレンダラー
+    Rigidbody2D enemyRigid;
 
     float distance;
     float angle;
@@ -39,6 +40,7 @@ public class Skeleton : MonoBehaviour
 
         //anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        enemyRigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
