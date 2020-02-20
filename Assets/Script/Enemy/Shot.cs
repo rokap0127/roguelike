@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shot : MonoBehaviour
 {
     public int damage; //プレイヤーに与えるダメージ
+    public float _angle;
 
     private Vector3 velocity;
 
@@ -30,7 +31,7 @@ public class Shot : MonoBehaviour
 
         //弾が進行方向を向くようにする
         var angles = transform.localEulerAngles;
-        angles.z = angle + 90 + 45;
+        angles.z = angle + _angle;
         transform.localEulerAngles = angles;
 
         //10秒後削除する
