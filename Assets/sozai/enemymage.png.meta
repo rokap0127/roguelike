@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 2806196d19890db44b27c879d4e15c50
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -955428165481392411
+    second: enemymage_UpLeft
+  - first:
+      213: 1857818681890785831
+    second: enemymage_Up
+  - first:
+      213: -5204366663423904412
+    second: enemymage_UpRight
+  - first:
+      213: 9167492456885656427
+    second: enemymage_Right
+  - first:
+      213: -4485824089709395850
+    second: enemymage_DownRight
+  - first:
+      213: 5113264969798185376
+    second: enemymage_Down
+  - first:
+      213: -4483861366775393236
+    second: enemymage_DownLeft
+  - first:
+      213: -944359400876925044
+    second: enemymage_Left
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +93,188 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enemymage_UpLeft
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 259
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aef8c4209ab082489f496c3151e696f
+      internalID: -955428165481392411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_Up
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 256
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4a5697da5e1474cb37acde2a29b03e
+      internalID: 1857818681890785831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_UpRight
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 263
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00815201592fe834c9b8ccebf5332bbd
+      internalID: -5204366663423904412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_Right
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 146
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00530e58d0c6ba040ad2014ecfc7cfef
+      internalID: 9167492456885656427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_DownRight
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 14
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c962b8990b2f22c4b9ec1a84fae32565
+      internalID: -4485824089709395850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_Down
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 12
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638dfabaddea0314c8f5bce8d3a70e1a
+      internalID: 5113264969798185376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_DownLeft
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95827222436bcc8478f8f57145c6a352
+      internalID: -4483861366775393236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemymage_Left
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 145
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade6cd0a0b6bd164c9139543e7c33657
+      internalID: -944359400876925044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

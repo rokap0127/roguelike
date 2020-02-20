@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkeletonAcher : MonoBehaviour
+public class MageEnemy : MonoBehaviour
 {
     public float moveSpeed;
     public int damage;
@@ -19,33 +19,28 @@ public class SkeletonAcher : MonoBehaviour
     public List<Sprite> sprites;//スプライトリスト
     public float attackDistance; //近づく距離
 
-    bool guardFlag = false;
-    bool trapFlag = false;
     Direction direciton = Direction.DOWN; //向き
-    //Animator anim; //アニメージョン
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     Rigidbody2D enemyRigid;
-
 
     float distance = 0;
     float angle = 0;
     Vector3 _direction = Vector3.zero;
     float trapCount = 0;
 
+    bool guardFlag = false;
+    bool trapFlag = false;
+
     // Start is called before the first frame update
     void Start()
     {
-       
         //Hpを最大にする
         enemyHp = enemyMaxHp;
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyRigid = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
-
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         //プレイヤーの位置へ向かうベクトルを生成する
         //ナイト
@@ -84,8 +79,7 @@ public class SkeletonAcher : MonoBehaviour
             distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
               Mage.instance.transform.localPosition));
         }
-
-        if(!guardFlag && !trapFlag)
+        if (!guardFlag && !trapFlag)
         {
             if (distance > attackDistance)
             {
@@ -93,12 +87,12 @@ public class SkeletonAcher : MonoBehaviour
 
                 Vector3 movement = Vector2.zero;
                 movement = _direction * moveSpeed;
-                enemyRigid.MovePosition(transform.localPosition + movement );
+                enemyRigid.MovePosition(transform.localPosition + movement);
 
 
 
             }
-            else if(distance < attackDistance - 0.01f)
+            else if (distance < attackDistance - 0.01f)
             {
                 //プレイヤーが存在する方向の逆へ移動する
                 Vector3 movement = Vector2.zero;
@@ -132,8 +126,6 @@ public class SkeletonAcher : MonoBehaviour
 
         }
     }
-       
-
     void PlayerRote(float angle)
     {
 
@@ -142,42 +134,18 @@ public class SkeletonAcher : MonoBehaviour
         {
             direciton = Direction.UP;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", true);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
         }
         //右上を向く
         if (23 <= angle && angle < 68)
         {
             direciton = Direction.UPRIGHT;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", true);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
         }
         //右を向く
         if (-23 <= angle && angle < 23)
         {
             direciton = Direction.RIGHT;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", true);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
 
         }
         //右下を向く
@@ -185,28 +153,12 @@ public class SkeletonAcher : MonoBehaviour
         {
             direciton = Direction.DOWNRIGHT;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", true);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
         }
         //下を向く
         if (-113 <= angle && angle < -68)
         {
             direciton = Direction.DOWN;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", true);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
 
         }
         //左下を向く
@@ -214,28 +166,12 @@ public class SkeletonAcher : MonoBehaviour
         {
             direciton = Direction.DOWNLEFT;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", true);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
         }
         //左を向く
         if (-158 > angle || angle >= 158)
         {
             direciton = Direction.LEFT;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", true);
-            //anim.SetBool("Move@UpLeft", false);
 
         }
         //左上を向く
@@ -243,30 +179,21 @@ public class SkeletonAcher : MonoBehaviour
         {
             direciton = Direction.UPLEFT;
             spriteRenderer.sprite = sprites[(int)direciton];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", true);
         }
     }
 
-
     private void ShootNWay(
-        float angleBase, float angleRange, float speed, int count)
+       float angleBase, float angleRange, float speed, int count)
     {
         var pos = transform.localPosition; //プレイヤーの位置       
         transform.localEulerAngles = _direction;
         var rot = transform.localRotation;
 
         //弾を複数発射する場合
-        if(1 < count)
+        if (1 < count)
         {
             //発射する回数分ループする
-            for(int i= 0; i< count; i++)
+            for (int i = 0; i < count; i++)
             {
                 //弾の発射角度を計算する
                 var angle = angleBase +
@@ -280,14 +207,14 @@ public class SkeletonAcher : MonoBehaviour
                 shot.Init(angle, speed);
             }
         }
-        else if(count == 1)
+        else if (count == 1)
         {
             //発射する弾を生成する
             var shot = Instantiate(shotPrefab, pos, Quaternion.identity);
 
             //弾を発射する方向と速さを設定する
             shot.Init(angleBase, speed);
-        
+
         }
     }
 
@@ -386,7 +313,7 @@ public class SkeletonAcher : MonoBehaviour
         //    moveSpeed = 0;
         //}
 
-          int trap = 30;
+        int trap = 30;
         //トラップ
         if (collision.name.Contains("Trap"))
         {
@@ -417,4 +344,5 @@ public class SkeletonAcher : MonoBehaviour
             guardFlag = false;
         }
     }
+
 }
