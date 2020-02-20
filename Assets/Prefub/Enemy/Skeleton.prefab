@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8167253755425218961}
   - component: {fileID: 410310211188811045}
+  - component: {fileID: -4833890028984378503}
   - component: {fileID: 2261956512558177594}
   - component: {fileID: 6267827001510263930}
-  - component: {fileID: -4833890028984378503}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -83,6 +83,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &-4833890028984378503
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278591368226052380}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!70 &2261956512558177594
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,24 +153,3 @@ MonoBehaviour:
   skeletonAttack: {fileID: 6352817548670071303, guid: 75c6b84495c231f4999d7204e881592c,
     type: 3}
   attackInterval: 3
---- !u!50 &-4833890028984378503
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278591368226052380}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

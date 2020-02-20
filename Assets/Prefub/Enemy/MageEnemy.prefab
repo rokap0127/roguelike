@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7553516533321291082}
   - component: {fileID: 7555243871068155654}
   - component: {fileID: 399892207071538089}
-  - component: {fileID: 5980121165429105410}
   - component: {fileID: -7829677981577645729}
+  - component: {fileID: 5980121165429105410}
   m_Layer: 0
   m_Name: MageEnemy
   m_TagString: Enemy
@@ -99,6 +99,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0.033672094, y: 0.018595457}
   m_Size: {x: 0.55701303, y: 0.69250584}
   m_Direction: 0
+--- !u!50 &-7829677981577645729
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572068235016238341}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &5980121165429105410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,24 +157,3 @@ MonoBehaviour:
   - {fileID: -944359400876925044, guid: 2806196d19890db44b27c879d4e15c50, type: 3}
   - {fileID: -955428165481392411, guid: 2806196d19890db44b27c879d4e15c50, type: 3}
   attackDistance: 1
---- !u!50 &-7829677981577645729
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3572068235016238341}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
