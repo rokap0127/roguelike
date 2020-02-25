@@ -2527,6 +2527,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TextHUD
+      value: 
+      objectReference: {fileID: 1036914647}
     - target: {fileID: 6891663402658906823, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2547,21 +2562,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TextHUD
-      value: 
-      objectReference: {fileID: 1036914647}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cd1733bc41313b4ea055c85c67de928, type: 3}
 --- !u!1 &87456731
@@ -5461,6 +5461,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TBomb
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6891663402658906823, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5485,21 +5500,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TBomb
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cd1733bc41313b4ea055c85c67de928, type: 3}
@@ -38109,6 +38109,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TSpeedUP
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6891663402658906823, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: m_SortingOrder
@@ -38133,21 +38148,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TSpeedUP
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cd1733bc41313b4ea055c85c67de928, type: 3}
@@ -42162,22 +42162,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: THpPortion
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: TMpPortion
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: THpPortion
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: TMpPortion
       value: 2
@@ -44829,6 +44829,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6891663402658906823, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: m_SortingOrder
@@ -44845,16 +44855,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: TMpPortion
       value: 2
@@ -46896,10 +46896,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TSpeedUP
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6891663402658906823, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728527965531351112, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
@@ -46934,26 +46954,6 @@ PrefabInstance:
     - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: TSpeedUP
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TSpeedUP
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728527965531351112, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: m_UsedByEffector
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -51393,6 +51393,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TBomb
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6891663402658906823, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: m_SortingOrder
@@ -51424,21 +51439,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TBomb
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: TBomb
       value: 1
@@ -52121,16 +52121,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: THpPortion
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
-        type: 3}
-      propertyPath: TMpPortion
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 9101363548433551806, guid: 7cd1733bc41313b4ea055c85c67de928,
         type: 3}
       propertyPath: THpPortion
@@ -52145,6 +52135,16 @@ PrefabInstance:
         type: 3}
       propertyPath: TBomb
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: THpPortion
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5989793031775728801, guid: 7cd1733bc41313b4ea055c85c67de928,
+        type: 3}
+      propertyPath: TMpPortion
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cd1733bc41313b4ea055c85c67de928, type: 3}
@@ -52485,7 +52485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1719504297
 Transform:
   m_ObjectHideFlags: 0
@@ -52571,33 +52571,6 @@ Tilemap:
   m_GameObject: {fileID: 1719504296}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 20, y: -1, z: 0}
-    second:
-      m_TileIndex: 40
-      m_TileSpriteIndex: 40
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 21, y: -1, z: 0}
-    second:
-      m_TileIndex: 40
-      m_TileSpriteIndex: 40
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 22, y: -1, z: 0}
-    second:
-      m_TileIndex: 40
-      m_TileSpriteIndex: 40
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: -40, y: 16, z: 0}
     second:
       m_TileIndex: 39
@@ -52707,8 +52680,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: ed4636bd286d9f547a12d0b0c9f64fbf, type: 2}
-  - m_RefCount: 3
-    m_Data: {fileID: 11400000, guid: faa6c2b5a7e04b84794b299e17f5185e, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -52791,11 +52764,10 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 1715862324802499037, guid: bc39e20425ba74142bc9a75eab2f6d34,
       type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: 2703485863965882733, guid: bc39e20425ba74142bc9a75eab2f6d34,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 6
+  - m_RefCount: 3
     m_Data:
       e00: 1
       e01: 0
@@ -52818,7 +52790,7 @@ Tilemap:
     m_Data: {r: 0, g: 0, b: 0, a: 0}
   - m_RefCount: 0
     m_Data: {r: 0.16783524, g: 0.16783524, b: 0.16783524, a: 0.16783524}
-  - m_RefCount: 6
+  - m_RefCount: 3
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
