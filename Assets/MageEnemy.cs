@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MageEnemy : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MageEnemy : MonoBehaviour
     public Explotion magicPrefab; //メイジスキルエフェクト
     public List<Sprite> sprites;//スプライトリスト
     public float attackDistance; //近づく距離
+    public Image hpGauge; //HPゲージ
 
     Direction direciton = Direction.DOWN; //向き
     SpriteRenderer spriteRenderer; //スプライトレンダラー
@@ -38,6 +40,11 @@ public class MageEnemy : MonoBehaviour
         enemyHp = enemyMaxHp;
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyRigid = GetComponent<Rigidbody2D>();
+    }
+    public void Update()
+    {
+        //Hpがを表示
+        hpGauge.fillAmount = (float)enemyHp / enemyMaxHp;
     }
 
     private void FixedUpdate()

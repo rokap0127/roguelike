@@ -134,11 +134,13 @@ public class SkeletonAcher : MonoBehaviour
 
 
         }
-
+    }
+    public void Update()
+    {
         //Hpがを表示
         hpGauge.fillAmount = (float)enemyHp / enemyMaxHp;
     }
-       
+
 
     void PlayerRote(float angle)
     {

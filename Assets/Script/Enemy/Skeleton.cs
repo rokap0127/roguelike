@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Skeleton : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Skeleton : MonoBehaviour
     public float attackDistance; //近づく距離
     public GameObject skeletonAttack; //攻撃オブジェクト
     public float attackInterval; //攻撃間隔
+    public Image hpGauge; //HPゲージ
 
 
 
@@ -41,6 +43,11 @@ public class Skeleton : MonoBehaviour
         //anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyRigid = GetComponent<Rigidbody2D>();
+    }
+    public void Update()
+    {
+        //Hpがを表示
+        hpGauge.fillAmount = (float)enemyHp / enemyMaxHp;
     }
 
     // Update is called once per frame
@@ -206,42 +213,21 @@ public class Skeleton : MonoBehaviour
         {
             direction = Direction.UP;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", true);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
+           
         }
         //右上を向く
         if (23 <= angle && angle < 68)
         {
             direction = Direction.UPRIGHT;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", true);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
+            
         }
         //右を向く
         if (-23 <= angle && angle < 23)
         {
             direction = Direction.RIGHT;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", true);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
+          
 
         }
         //右下を向く
@@ -249,28 +235,14 @@ public class Skeleton : MonoBehaviour
         {
             direction = Direction.DOWNRIGHT;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", true);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
+            
         }
         //下を向く
         if (-113 <= angle && angle < -68)
         {
             direction = Direction.DOWN;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", true);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
+            
 
         }
         //左下を向く
@@ -278,28 +250,14 @@ public class Skeleton : MonoBehaviour
         {
             direction = Direction.DOWNLEFT;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", true);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", false);
+           
         }
         //左を向く
         if (-158 > angle || angle >= 158)
         {
             direction = Direction.LEFT;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", true);
-            //anim.SetBool("Move@UpLeft", false);
+            
 
         }
         //左上を向く
@@ -307,14 +265,7 @@ public class Skeleton : MonoBehaviour
         {
             direction = Direction.UPLEFT;
             spriteRenderer.sprite = sprites[(int)direction];
-            //anim.SetBool("Move@Up", false);
-            //anim.SetBool("Move@UpRight", false);
-            //anim.SetBool("Move@Right", false);
-            //anim.SetBool("Move@DownRight", false);
-            //anim.SetBool("Move@Down", false);
-            //anim.SetBool("Move@DownLeft", false);
-            //anim.SetBool("Move@Left", false);
-            //anim.SetBool("Move@UpLeft", true);
+           
         }
     }
 
