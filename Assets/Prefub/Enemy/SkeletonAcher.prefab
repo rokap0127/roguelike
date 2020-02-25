@@ -138,7 +138,7 @@ MonoBehaviour:
   enemyMaxHp: 100
   shotPrefab: {fileID: 8405426756736967674, guid: 5a6947b378bcac443a4d812bc5d113e3,
     type: 3}
-  shotSpeed: 0.02
+  shotSpeed: 0.05
   shotAngleRange: 20
   shotTimer: 0
   shotCount: 3

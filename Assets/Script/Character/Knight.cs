@@ -182,7 +182,7 @@ public class Knight : MonoBehaviour
             mpCount += Time.deltaTime;
             if(mpCount >= 1 && playerMaxMp > playerMp)
             {
-                playerMp+=5;
+                playerMp+=10;
                 mpCount = 0;
             }
 

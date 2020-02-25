@@ -67,12 +67,17 @@ public class GetItem : MonoBehaviour
             }
             if (item.tag == "Key")
             {
-                TextHUD.text = "鍵を取った！";
-                ic.KeyFlag = true;                
+                //TextHUD.text = "鍵を取った！";
+                ic.KeyFlag = true;
+                if(ic.KeyFlag == true)
+                {
+                    TextHUD.text = "鍵を取った！";
+                }
             }
             if (item.tag == "Treasure")
             {
                 TextHUD.text = "宝箱を開けた！";
+                Invoke("textT", 5f);
                 ic.HpPortion += THpPortion;
                 ic.MpPortion += TMpPortion;
                 ic.SpeedUP += TSpeedUP;
@@ -106,5 +111,10 @@ public class GetItem : MonoBehaviour
         {
             GetFlag = false;
         }
+    }
+
+    void textT()
+    {
+        TextHUD.text = " ";
     }
 }

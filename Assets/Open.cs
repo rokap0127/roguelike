@@ -11,23 +11,25 @@ public class Open : MonoBehaviour
     public GameObject[] shutter;
     public GameObject[] bridge;
     public Text TextHud;
+
     // Start is called before the first frame update
     void Start()
-    {
+    {        
         iChecker = GameObject.FindGameObjectWithTag("ItemChecker");
         ic = iChecker.GetComponent<ItemChecker>();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         if (Input.GetKeyDown(KeyCode.E) && OpenFlag&&ic.KeyFlag)
         {
             bridge[0].SetActive(true);
             shutter[0].SetActive(false);
-            shutter[1].SetActive(false);
+            shutter[1].SetActive(false);            
             TextHud.text = "扉を開けた！";
-        }
+            Invoke("text", 5f);
+        }       
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -46,5 +48,9 @@ public class Open : MonoBehaviour
         {
             OpenFlag = false;
         }
+    }
+    void text()
+    {
+        TextHud.text = " ";
     }
 }

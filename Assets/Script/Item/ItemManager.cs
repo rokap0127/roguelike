@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class ItemManager : MonoBehaviour
                 Destroy(gameObject);
             }
             if (this.tag == "Key")
-            {
+            {                
                 ic.KeyFlag = true;
                 Destroy(gameObject);
             }

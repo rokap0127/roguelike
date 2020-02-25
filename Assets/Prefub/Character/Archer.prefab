@@ -139,9 +139,9 @@ MonoBehaviour:
   arrowSpeed: 0.06
   trap: {fileID: 6610362506693448993, guid: 62c2840f570f9ef40acfb98a3a374f6d, type: 3}
   playerHp: 0
-  playerMaxHp: 80
+  playerMaxHp: 250
   playerMp: 0
-  playerMaxMp: 110
+  playerMaxMp: 120
   shootMp: 10
   trapMp: 30
   attackInterval: 0.7
