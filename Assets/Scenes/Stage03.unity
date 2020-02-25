@@ -2177,7 +2177,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2762,12 +2762,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b7fe2b110275fb47bb820304b338a60, type: 3}
---- !u!1 &87968148 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4651721645738978161, guid: 2b7fe2b110275fb47bb820304b338a60,
-    type: 3}
-  m_PrefabInstance: {fileID: 87968147}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &102957625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,9 +4332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shutter: {fileID: 931098154}
-  knight: {fileID: 1728188299}
-  archer: {fileID: 2029079358}
-  mage: {fileID: 87968148}
+  knight: {fileID: 0}
+  archer: {fileID: 0}
+  mage: {fileID: 0}
 --- !u!1 &223676657
 GameObject:
   m_ObjectHideFlags: 0
@@ -16036,7 +16030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1095414321
 Transform:
   m_ObjectHideFlags: 0
@@ -20281,6 +20275,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3529390483457480904, guid: f83b287b4199ff44d997b03fef639229,
+        type: 3}
+      propertyPath: treasure
+      value: 
+      objectReference: {fileID: 7821208551852019589, guid: e02544884a61ec34688415f8abe25c02,
+        type: 3}
+    - target: {fileID: 3529390483457480904, guid: f83b287b4199ff44d997b03fef639229,
+        type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 1095414320}
+    - target: {fileID: 3529390483457480904, guid: f83b287b4199ff44d997b03fef639229,
+        type: 3}
+      propertyPath: shutter
+      value: 
+      objectReference: {fileID: 27178903}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83b287b4199ff44d997b03fef639229, type: 3}
 --- !u!4 &1191782139 stripped
@@ -30239,12 +30249,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2a078e874f9564c932bde38b1c2331, type: 3}
---- !u!1 &1728188299 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2857565500843373990, guid: 4f2a078e874f9564c932bde38b1c2331,
-    type: 3}
-  m_PrefabInstance: {fileID: 1728188298}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1733909209
 GameObject:
   m_ObjectHideFlags: 0
@@ -40220,6 +40224,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 1, y: 20, z: 0}
+    second:
+      m_TileIndex: 40
+      m_TileSpriteIndex: 40
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 2
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
@@ -40302,7 +40315,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 438
+  - m_RefCount: 439
     m_Data: {fileID: 11400000, guid: 2602a97b6f9501f409f1f220897adba4, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -40385,11 +40398,11 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 438
+  - m_RefCount: 439
     m_Data: {fileID: -3044006859229462777, guid: bc39e20425ba74142bc9a75eab2f6d34,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 438
+  - m_RefCount: 439
     m_Data:
       e00: 1
       e01: 0
@@ -40412,7 +40425,7 @@ Tilemap:
     m_Data: {r: 0, g: 0, b: 0, a: 0}
   - m_RefCount: 0
     m_Data: {r: 0.16783524, g: 0.16783524, b: 0.16783524, a: 0.16783524}
-  - m_RefCount: 438
+  - m_RefCount: 439
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -40997,12 +41010,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f6ae864a1ac084e93e753fc7882115, type: 3}
---- !u!1 &2029079358 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7283165910449965794, guid: 16f6ae864a1ac084e93e753fc7882115,
-    type: 3}
-  m_PrefabInstance: {fileID: 2029079357}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2041757833
 GameObject:
   m_ObjectHideFlags: 0

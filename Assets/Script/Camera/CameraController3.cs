@@ -186,6 +186,11 @@ public class CameraController3: MonoBehaviour
                 DataShare.knightHp = kt.playerHp;
                 DataShare.knightMp = kt.playerMp;
             }
+            else if (Operation.knightDead)
+            {
+                DataShare.knightHp = 0;
+                DataShare.knightMp = 0;
+            }
             if (!Operation.archerDead)
             {
                 archer = GameObject.FindGameObjectWithTag("Archer");
@@ -193,12 +198,22 @@ public class CameraController3: MonoBehaviour
                 DataShare.archerHp = ac.playerHp;
                 DataShare.archerMp = ac.playerMp;
             }
+            if (Operation.archerDead)
+            {
+                DataShare.archerHp = 0;
+                DataShare.archerMp = 0;
+            }
             if (!Operation.mageDead)
             {
                 mage = GameObject.FindGameObjectWithTag("Mage");
                 Mage mg = mage.GetComponent<Mage>();
                 DataShare.mageHp = mg.playerHp;
                 DataShare.mageMp = mg.playerMp;
+            }
+            if (Operation.mageDead)
+            {
+                DataShare.mageHp = 0;
+                DataShare.mageMp = 0;
             }
             SceneManager.LoadScene("Stage03");
         }

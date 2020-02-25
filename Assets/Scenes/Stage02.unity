@@ -1525,7 +1525,7 @@ Transform:
   - {fileID: 1351468896}
   - {fileID: 579596046}
   m_Father: {fileID: 153829943}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &104763566
 GameObject:
@@ -2445,6 +2445,7 @@ Transform:
   m_Children:
   - {fileID: 1174006767}
   - {fileID: 1733909210}
+  - {fileID: 353843690}
   - {fileID: 1663155948}
   - {fileID: 102957626}
   - {fileID: 1337782309}
@@ -6027,7 +6028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &353843690
 Transform:
   m_ObjectHideFlags: 0
@@ -6036,11 +6037,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353843689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -2.8000002, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 49090085}
-  m_RootOrder: 0
+  m_Father: {fileID: 153829943}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &353843691
 TilemapCollider2D:
@@ -34533,7 +34534,7 @@ Transform:
   m_Children:
   - {fileID: 49090085}
   m_Father: {fileID: 153829943}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1351468895
 PrefabInstance:
@@ -47882,7 +47883,7 @@ Transform:
   - {fileID: 1847431210}
   - {fileID: 69031789}
   m_Father: {fileID: 153829943}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1670835365
 PrefabInstance:

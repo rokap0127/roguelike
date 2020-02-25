@@ -11,6 +11,8 @@ public class SuperSlime : MonoBehaviour
     public int bossMaxHp; //最大のHp
     public SlimeShot slimeShot; //スライムショット
     public GameObject treasure;
+    public GameObject map;
+    public GameObject shutter;
 
     public float shotInterval; //ショットの間隔
    float shotCount; //shotカウント
@@ -70,7 +72,9 @@ public class SuperSlime : MonoBehaviour
             bossHp--;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-            Instantiate(treasure, transform.position, Quaternion.identity);
+            //Instantiate(treasure, transform.position, Quaternion.identity);
+            map.SetActive(true);
+            shutter.SetActive(false);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -87,7 +91,9 @@ public class SuperSlime : MonoBehaviour
 
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-            Instantiate(treasure, transform.position, Quaternion.identity);
+            //Instantiate(treasure, transform.position, Quaternion.identity);
+            map.SetActive(true);
+            shutter.SetActive(false);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -102,7 +108,9 @@ public class SuperSlime : MonoBehaviour
             bossHp -= arrow;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-            Instantiate(treasure, transform.position, Quaternion.identity);
+            //Instantiate(treasure, transform.position, Quaternion.identity);
+            map.SetActive(true);
+            shutter.SetActive(false);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -118,7 +126,9 @@ public class SuperSlime : MonoBehaviour
             bossHp -= m_shot;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-            Instantiate(treasure, transform.position, Quaternion.identity);
+            //Instantiate(treasure, transform.position, Quaternion.identity);
+            map.SetActive(true);
+            shutter.SetActive(false);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -132,7 +142,9 @@ public class SuperSlime : MonoBehaviour
             bossHp -= magic;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-            Instantiate(treasure, transform.position, Quaternion.identity);
+            //Instantiate(treasure, transform.position, Quaternion.identity);
+            map.SetActive(true);
+            shutter.SetActive(false);
             //敵を削除する
             Destroy(gameObject);
         }
@@ -146,7 +158,9 @@ public class SuperSlime : MonoBehaviour
             bossHp -= trap;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < bossHp) { return; }
-            Instantiate(treasure, transform.position, Quaternion.identity);
+            //Instantiate(treasure, transform.position, Quaternion.identity);
+            map.SetActive(true);
+            shutter.SetActive(false);
             //敵を削除する
             Destroy(gameObject);
         }
