@@ -18,12 +18,18 @@ public class UI : MonoBehaviour
     public Image magePlayFlag;
 
 
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+
         knightPlayFlag.fillAmount = 0;
         archerPlayFlag.fillAmount = 0;
         magePlayFlag.fillAmount = 0;
+
     }
 
     // Update is called once per frame
@@ -109,4 +115,6 @@ public class UI : MonoBehaviour
 
         mageMpGauge.fillAmount = (float)mp / mpMax;
     }
+
+   
 }

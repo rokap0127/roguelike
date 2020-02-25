@@ -5,88 +5,126 @@ using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject camera0;
-    public GameObject camera1;
-    public GameObject camera2;
-    public GameObject camera3;
-    public GameObject camera4;
-    public GameObject entrance1;
-    public GameObject entrance2;
-    public GameObject entrance3;
-    public GameObject[] enemy;
-    public GameObject item;
-    bool callEnemy;
+    public GameObject[] sceneCamera;
     public GameObject[] entrance;
-    int enemynum;
-    public int enemylim;
+    public GameObject enemy;
+    GameObject operation;
+    Operation op;
+    GameObject knight;
+    GameObject archer;
+    GameObject mage;
+    Vector2 pos;
     // Start is called before the first frame update
     void Start()
     {
-        camera1.SetActive(true);
+        operation = GameObject.FindGameObjectWithTag("Operation");
+        op = operation.GetComponent<Operation>();
+        sceneCamera[1].SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = player.transform.position;
-        if(pos.y<-2)
+        if (Operation.knightFlag)
         {
-            camera1.SetActive(true);
-            camera2.SetActive(false);
-            camera3.SetActive(false);
-            camera4.SetActive(false);
+            knight = GameObject.FindGameObjectWithTag("Knight");
+            pos = knight.transform.position;
         }
-        if (pos.x< entrance1.transform.position.x && pos.y> entrance1.transform.position.y)
+        if (Operation.archerFlag)
         {
-            camera1.SetActive(false);
-            camera2.SetActive(true);
-            camera3.SetActive(false);
-            camera4.SetActive(false);
+            archer = GameObject.FindGameObjectWithTag("Archer");
+            pos = archer.transform.position;
         }
-        if (pos.x > entrance1.transform.position.x && pos.y > entrance1.transform.position.y)
+        if (Operation.mageFlag)
         {
-            camera1.SetActive(false);
-            camera2.SetActive(false);
-            camera3.SetActive(true);
-            camera4.SetActive(false);
+            mage = GameObject.FindGameObjectWithTag("Mage");
+            pos = mage.transform.position;
         }
-        if (pos.y > entrance2.transform.position.y)
+        if (pos.y < entrance[0].transform.position.y)
         {
-            camera1.SetActive(false);
-            camera2.SetActive(false);
-            camera3.SetActive(false);
-            camera4.SetActive(true);
-            if (!callEnemy)
+            sceneCamera[1].SetActive(true);
+            sceneCamera[2].SetActive(false);
+            sceneCamera[3].SetActive(false);
+            enemy.SetActive(false);
+        }
+        if (pos.y > entrance[0].transform.position.y&& pos.y < entrance[1].transform.position.y)
+        {
+            sceneCamera[1].SetActive(false);
+            sceneCamera[2].SetActive(true);
+            sceneCamera[3].SetActive(false);
+            enemy.SetActive(true);
+        }
+        if (pos.y > entrance[1].transform.position.y)
+        {
+            sceneCamera[1].SetActive(false);
+            sceneCamera[2].SetActive(false);
+            sceneCamera[3].SetActive(true);
+            enemy.SetActive(false);
+        }
+        //if (Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl))
+        //{
+        //    sceneCamera[0].SetActive(true);
+        //    sceneCamera[1].SetActive(false);
+        //    sceneCamera[2].SetActive(false);
+        //    sceneCamera[3].SetActive(false);
+        //    sceneCamera[4].SetActive(false);
+        //    sceneCamera[5].SetActive(false);
+        //    sceneCamera[6].SetActive(false);
+        //    sceneCamera[7].SetActive(false);
+        //}
+        //if (Input.GetKeyUp(KeyCode.RightControl) || Input.GetKeyUp(KeyCode.LeftControl))
+        //{
+        //    sceneCamera[0].SetActive(false);
+        //}
+        if (pos.y > entrance[5].transform.position.y)
+        {
+            if (!Operation.knightDead)
             {
-                int e = 0;
-                enemynum = Random.Range(0, 2);
-                enemylim = Random.Range(2, 4);
-                while (e < enemylim)
-                {
-                    Instantiate(enemy[enemynum], new Vector3(Random.Range(-3.7f, 5.2f), Random.Range(2.7f, 5.2f), 0), transform.rotation);
-                    enemynum = Random.Range(0, 2);
-                    e++;
-                }
-                callEnemy = true;
+                knight = GameObject.FindGameObjectWithTag("Knight");
+                Knight kt = knight.GetComponent<Knight>();
+                DataShare.knightHp = kt.playerHp;
+                DataShare.knightMp = kt.playerMp;
             }
-
-        }
-        if (pos.y > entrance3.transform.position.y)
-        {
+            if (!Operation.archerDead)
+            {
+                archer = GameObject.FindGameObjectWithTag("Archer");
+                Archer ac = archer.GetComponent<Archer>();
+                DataShare.archerHp = ac.playerHp;
+                DataShare.archerMp = ac.playerMp;
+            }
+            if (!Operation.mageDead)
+            {
+                mage = GameObject.FindGameObjectWithTag("Mage");
+                Mage mg = mage.GetComponent<Mage>();
+                DataShare.mageHp = mg.playerHp;
+                DataShare.mageMp = mg.playerMp;
+            }
             SceneManager.LoadScene("Stage02");
         }
-        if (Input.GetKey(KeyCode.RightControl)|| Input.GetKey(KeyCode.LeftControl))
+        if (pos.x > entrance[6].transform.position.x)
         {
-            camera0.SetActive(true);
-            camera1.SetActive(false);
-            camera2.SetActive(false);
-            camera3.SetActive(false);
-            camera4.SetActive(false);
-        }
-        if (Input.GetKeyUp(KeyCode.RightControl) || Input.GetKeyUp(KeyCode.LeftControl))
-        {
-            camera0.SetActive(false);
+            if (!Operation.knightDead)
+            {
+                knight = GameObject.FindGameObjectWithTag("Knight");
+                Knight kt = knight.GetComponent<Knight>();
+                DataShare.knightHp = kt.playerHp;
+                DataShare.knightMp = kt.playerMp;
+            }
+            if (!Operation.archerDead)
+            {
+                archer = GameObject.FindGameObjectWithTag("Archer");
+                Archer ac = archer.GetComponent<Archer>();
+                DataShare.archerHp = ac.playerHp;
+                DataShare.archerMp = ac.playerMp;
+            }
+            if (!Operation.mageDead)
+            {
+                mage = GameObject.FindGameObjectWithTag("Mage");
+                Mage mg = mage.GetComponent<Mage>();
+                DataShare.mageHp = mg.playerHp;
+                DataShare.mageMp = mg.playerMp;
+            }
+            SceneManager.LoadScene("Stage02");
         }
     }
 }
