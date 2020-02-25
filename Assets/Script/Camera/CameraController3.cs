@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController3: MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class CameraController3: MonoBehaviour
     public GameObject entrance4;
     public GameObject entrance5;
     public GameObject entrance6;
+    public GameObject entrance7;
     public GameObject[] enemy;
     public GameObject shutter;
 
@@ -175,21 +177,31 @@ public class CameraController3: MonoBehaviour
             enemy[7].SetActive(true);
             //Invoke("Shut", 0.5f);
         }
-        //if (Input.GetKey(KeyCode.RightControl) || Input.GetKey(KeyCode.LeftControl))
-        //{
-        //    camera0.SetActive(true);
-        //    camera1.SetActive(false);
-        //    camera2.SetActive(false);
-        //    camera3.SetActive(false);
-        //    camera4.SetActive(false);
-        //    camera5.SetActive(false);
-        //    camera6.SetActive(false);
-        //    camera7.SetActive(false);
-        //}
-        //if (Input.GetKeyUp(KeyCode.RightControl) || Input.GetKeyUp(KeyCode.LeftControl))
-        //{
-        //    camera0.SetActive(false);
-        //}
+        if (pos.y > entrance7.transform.position.y)
+        {
+            if (!Operation.knightDead)
+            {
+                knight = GameObject.FindGameObjectWithTag("Knight");
+                Knight kt = knight.GetComponent<Knight>();
+                DataShare.knightHp = kt.playerHp;
+                DataShare.knightMp = kt.playerMp;
+            }
+            if (!Operation.archerDead)
+            {
+                archer = GameObject.FindGameObjectWithTag("Archer");
+                Archer ac = archer.GetComponent<Archer>();
+                DataShare.archerHp = ac.playerHp;
+                DataShare.archerMp = ac.playerMp;
+            }
+            if (!Operation.mageDead)
+            {
+                mage = GameObject.FindGameObjectWithTag("Mage");
+                Mage mg = mage.GetComponent<Mage>();
+                DataShare.mageHp = mg.playerHp;
+                DataShare.mageMp = mg.playerMp;
+            }
+            SceneManager.LoadScene("Stage03");
+        }
     }
     void Shut()
     {
