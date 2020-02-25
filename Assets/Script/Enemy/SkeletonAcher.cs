@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SkeletonAcher : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class SkeletonAcher : MonoBehaviour
     public Explotion magicPrefab; //メイジスキルエフェクト
     public List<Sprite> sprites;//スプライトリスト
     public float attackDistance; //近づく距離
+    public Image hpGauge; //HPゲージ
 
     bool guardFlag = false;
     bool trapFlag = false;
@@ -120,6 +122,7 @@ public class SkeletonAcher : MonoBehaviour
             ShootNWay(angle, shotAngleRange, shotSpeed, shotCount);
         }
 
+        //トラップにかかる
         if (trapFlag)
         {
             trapCount++;
@@ -132,7 +135,12 @@ public class SkeletonAcher : MonoBehaviour
 
         }
     }
-       
+    public void Update()
+    {
+        //Hpがを表示
+        hpGauge.fillAmount = (float)enemyHp / enemyMaxHp;
+    }
+
 
     void PlayerRote(float angle)
     {
