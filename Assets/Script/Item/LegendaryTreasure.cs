@@ -9,6 +9,7 @@ public class LegendaryTreasure : MonoBehaviour
     GameObject archer;
     GameObject mage;
     GameObject checker;
+    bool OpenFlag=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,29 +22,33 @@ public class LegendaryTreasure : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float pos = (transform.position - knight.transform.position).magnitude;
-        float mage_pos = (transform.position - mage.transform.position).magnitude;
-        float archer_pos = (transform.position - archer.transform.position).magnitude;
 
-        if (pos < 0.5f && pos > -0.5f
-            || mage_pos < 0.5f && mage_pos > -0.5f
-            || mage_pos < 0.5f && mage_pos > -0.5f)
+        if (Input.GetKeyDown(KeyCode.E) && OpenFlag)
         {
-            if (Input.GetMouseButtonDown(1))
-            {
-                Destroy(knight);
-                Destroy(checker);
-                Destroy(mage);
-                Destroy(archer);
+            Destroy(knight);
+            Destroy(checker);
+            Destroy(mage);
+            Destroy(archer);
 
-                SceneManager.LoadScene("GameClear");
-            }
+            SceneManager.LoadScene("GameClear");
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Knight" ||
+               col.gameObject.tag == "Archer" ||
+               col.gameObject.tag == "Mage")
         {
+            OpenFlag = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Knight" ||
+            collision.gameObject.tag == "Archer" ||
+            collision.gameObject.tag == "Mage")
+        {
+            OpenFlag = false;
         }
     }
 }
