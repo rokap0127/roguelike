@@ -21,6 +21,12 @@ public class MageEnemy : MonoBehaviour
     public float attackDistance; //近づく距離
     public Image hpGauge; //HPゲージ
 
+    public int knightAttack = 80; //ナイトからの攻撃
+    public int archerArow = 50; //アローからの攻撃
+    public int archerTrap = 30;　//トラップからの攻撃
+    public int mageShot = 25; //メイジの通常攻撃
+    public int mageSkill = 40; //メイジのスキル攻撃
+
     Direction direciton = Direction.DOWN; //向き
     SpriteRenderer spriteRenderer; //スプライトレンダラー
     Rigidbody2D enemyRigid;
@@ -86,7 +92,7 @@ public class MageEnemy : MonoBehaviour
             distance = Mathf.Abs(Vector2.Distance(transform.localPosition,
               Mage.instance.transform.localPosition));
         }
-        if (!guardFlag && !trapFlag)
+        if (/*!guardFlag &&*/ !trapFlag)
         {
             if (distance > attackDistance)
             {
@@ -228,7 +234,6 @@ public class MageEnemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //ナイト
-        int knightAttack = 80;
         if (collision.gameObject.tag == "PlayerAttack")
         {
             transform.position = Vector3.MoveTowards(transform.position, transform.position + _direction * -0.22f, 1.0f);
@@ -245,15 +250,26 @@ public class MageEnemy : MonoBehaviour
             //敵を削除する
             Destroy(gameObject);
         }
-        //アーチャー
-        int arrow = 50;
+        //アーチャ
         if (collision.name.Contains("Arrow"))
         {
             Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp -= arrow;
+            enemyHp -= archerArow;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        //トラップ
+        if (collision.name.Contains("Trap"))
+        {
+            trapFlag = true;
+            // 敵のHPを減らす
+            enemyHp -= archerTrap;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
@@ -261,29 +277,29 @@ public class MageEnemy : MonoBehaviour
             Destroy(gameObject);
         }
 
+
+
         //メイジ
-        int m_shot = 25;
         if (collision.name.Contains("Shot_M"))
         {
             Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp -= m_shot;
+            enemyHp -= archerTrap;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
             //敵を削除する
             Destroy(gameObject);
         }
-        int magic = 100;
         if (collision.name.Contains("Magic"))
         {
             Instantiate(magicPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp -= magic;
+            enemyHp -= mageSkill;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
@@ -293,63 +309,51 @@ public class MageEnemy : MonoBehaviour
 
 
         //Playerにダメージ
-        if (collision.name.Contains("Knight"))
-        {
-            //プレイヤーにダメージを与える
-            var knight = collision.GetComponent<Knight>();
-            if (knight == null) return;
-            knight.Damage(damage);
-        }
-        if (collision.name.Contains("Archer"))
-        {
-            //プレイヤーにダメージを与える
-            var archer = collision.GetComponent<Archer>();
-            if (archer == null) return;
-            archer.Damage(damage);
-        }
-        if (collision.name.Contains("Mage"))
-        {
-            //プレイヤーにダメージを与える
-            var mage = collision.GetComponent<Mage>();
-            if (mage == null) return;
-            mage.Damage(damage);
-        }
+        //if (collision.name.Contains("Knight"))
+        //{
+        //    //プレイヤーにダメージを与える
+        //    var knight = collision.GetComponent<Knight>();
+        //    if (knight == null) return;
+        //    knight.Damage(damage);
+        //}
+        //if (collision.name.Contains("Archer"))
+        //{
+        //    //プレイヤーにダメージを与える
+        //    var archer = collision.GetComponent<Archer>();
+        //    if (archer == null) return;
+        //    archer.Damage(damage);
+        //}
+        //if (collision.name.Contains("Mage"))
+        //{
+        //    //プレイヤーにダメージを与える
+        //    var mage = collision.GetComponent<Mage>();
+        //    if (mage == null) return;
+        //    mage.Damage(damage);
+        //}
 
         //if (collision.name.Contains("Guard"))
         //{
         //    moveSpeed = 0;
         //}
-
-        int trap = 30;
-        //トラップ
-        if (collision.name.Contains("Trap"))
-        {
-            trapFlag = true;
-            // 敵のHPを減らす
-            enemyHp -= trap;
-            //敵のHPがまだ残っている場合はここで処理を終える
-            if (0 < enemyHp) { return; }
-
-            //敵を削除する
-            Destroy(gameObject);
-        }
+     
+              
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        moveSpeed = 0.01f;
-        if (collision.name.Contains("Guard"))
-        {
-            guardFlag = true;
-        }
-    }
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    //moveSpeed = 0.01f;
+    //    if (collision.name.Contains("Guard"))
+    //    {
+    //        guardFlag = true;
+    //    }
+    //}
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Guard")
-        {
-            guardFlag = false;
-        }
-    }
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Guard")
+    //    {
+    //        guardFlag = false;
+    //    }
+    //}
 
 }

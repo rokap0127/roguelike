@@ -17,6 +17,11 @@ public class Skeleton : MonoBehaviour
     public float attackInterval; //攻撃間隔
     public Image hpGauge; //HPゲージ
 
+    public int knightAttack = 80; //ナイトからの攻撃
+    public int archerArow = 50; //アローからの攻撃
+    public int archerTrap = 30;　//トラップからの攻撃
+    public　int mageShot = 25; //メイジの通常攻撃
+    public int mageSkill = 40; //メイジのスキル攻撃
 
 
     //ガードに触れているか
@@ -91,7 +96,7 @@ public class Skeleton : MonoBehaviour
               Mage.instance.transform.localPosition));
         }
 
-        if(!guardFlag && !trapFlag)
+        if(!trapFlag)
         {
             //プレイヤーとの距離が
             if(distance >= attackDistance)
@@ -107,9 +112,12 @@ public class Skeleton : MonoBehaviour
 
                 if(attackCount >= attackInterval)
                 {
-                    //攻撃生成
-                    Attack();
-                    attackCount = 0;
+                    if (!guardFlag)
+                    {
+                        //攻撃生成
+                        Attack();
+                        attackCount = 0;
+                    }                 
                 }
                 if (distance < attackDistance-0.01)
                 {
@@ -272,7 +280,6 @@ public class Skeleton : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //ナイト
-        int knightAttack = 80;
         if (collision.gameObject.tag == "PlayerAttack")
         {
             transform.position = Vector3.MoveTowards(transform.position, transform.position + _direction * -0.22f, 1.0f);
@@ -290,7 +297,6 @@ public class Skeleton : MonoBehaviour
             Destroy(gameObject);
         }
         //アーチャー
-        int arrow = 50;
         if (collision.name.Contains("Arrow"))
         {
             
@@ -298,7 +304,19 @@ public class Skeleton : MonoBehaviour
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp -= arrow;
+            enemyHp -= archerArow;
+            //敵のHPがまだ残っている場合はここで処理を終える
+            if (0 < enemyHp) { return; }
+
+            //敵を削除する
+            Destroy(gameObject);
+        }
+        //トラップ
+        if (collision.name.Contains("Trap"))
+        {
+            trapFlag = true;
+            // 敵のHPを減らす
+            enemyHp -= archerTrap;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
@@ -307,14 +325,13 @@ public class Skeleton : MonoBehaviour
         }
 
         //メイジ
-        int m_shot = 25;
         if (collision.name.Contains("Shot_M"))
         {
             Instantiate(explosionPrefab,
                 collision.transform.position,
                 Quaternion.identity);
             //敵のHPを減らす
-            enemyHp -= m_shot;
+            enemyHp -= mageShot;
             //敵のHPがまだ残っている場合はここで処理を終える
             if (0 < enemyHp) { return; }
 
@@ -337,41 +354,30 @@ public class Skeleton : MonoBehaviour
         }
 
         //Playerにダメージ
-        if (collision.name.Contains("Knight"))
-        {
-            //プレイヤーにダメージを与える
-            var knight = collision.GetComponent<Knight>();
-            if (knight == null) return;
-            knight.Damage(damage);
-        }
-        if (collision.name.Contains("Archer"))
-        {
-            //プレイヤーにダメージを与える
-            var archer = collision.GetComponent<Archer>();
-            if (archer == null) return;
-            archer.Damage(damage);
-        }
-        if (collision.name.Contains("Mage"))
-        {
-            //プレイヤーにダメージを与える
-            var mage = collision.GetComponent<Mage>();
-            if (mage == null) return;
-            mage.Damage(damage);
-        }
+        //if (collision.name.Contains("Knight"))
+        //{
+        //    //プレイヤーにダメージを与える
+        //    var knight = collision.GetComponent<Knight>();
+        //    if (knight == null) return;
+        //    knight.Damage(damage);
+        //}
+        //if (collision.name.Contains("Archer"))
+        //{
+        //    //プレイヤーにダメージを与える
+        //    var archer = collision.GetComponent<Archer>();
+        //    if (archer == null) return;
+        //    archer.Damage(damage);
+        //}
+        //if (collision.name.Contains("Mage"))
+        //{
+        //    //プレイヤーにダメージを与える
+        //    var mage = collision.GetComponent<Mage>();
+        //    if (mage == null) return;
+        //    mage.Damage(damage);
+        //}
 
-        int trap = 30;
-        //トラップ
-        if (collision.name.Contains("Trap"))
-        {
-            trapFlag = true;
-            // 敵のHPを減らす
-            enemyHp -= trap;
-            //敵のHPがまだ残っている場合はここで処理を終える
-            if (0 < enemyHp) { return; }
-
-            //敵を削除する
-            Destroy(gameObject);
-        }
+        
+       
     }
 
     private void OnTriggerStay2D(Collider2D collision)
